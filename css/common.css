@@ -381,6 +381,10 @@ a .image-body::before {
 .image-body.image-ratio-4-3::before		{ padding-bottom: calc(100% / 4 * 3); }
 .image-body.image-ratio-16-9::before	{ padding-bottom: calc(100% / 16 * 9); }
 
+.inline-block-box > * {
+	display: inline-block;
+}
+
 .line-height-1		{ line-height: 1; }
 .line-height-1-2	{ line-height: 1.2; }
 .line-height-1-4	{ line-height: 1.4; }
