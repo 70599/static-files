@@ -120,15 +120,19 @@ body {
 	line-height: 1.618;
 }
 
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
 button, input, optgroup, select, textarea {
 	padding: 0;
 	line-height: inherit;
 	border: 0;
 }
 
-a {
-	text-decoration: none;
-	display: inline-block;
+button, input, select {
+	cursor: pointer;
 }
 
 h1, h2, h3, h4, h4, h5 {
