@@ -203,6 +203,10 @@ svg {
 
 svg.icon {
 	fill: currentColor;
+	position: relative;
+	top: -.125em;
+	width: 1.25em;
+	height: 1.25em;
 }
 
 /*
