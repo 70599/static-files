@@ -36,6 +36,7 @@ h1,
 a.button,
 a.font-color-white,
 .font-color-white					{ color: #fff; }
+.font-color-black					{ color: #000; }
 
 [class*="font-color-"] *,
 [class*="font-color-"] a	{ color: inherit; }
@@ -241,6 +242,8 @@ a.button.width-2 {
 	padding-right: 2em;
 }
 
+.bg-color-white				{ background-color: #fff; }
+.bg-color-black				{ background-color: #000; }
 .bg-color-241-241-241	{ background-color: rgb(241,241,241); }
 
 .click-through {
