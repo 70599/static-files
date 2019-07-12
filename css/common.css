@@ -421,6 +421,8 @@ ol, ul,
 .text-align-just		{ text-align: justify; }
 .text-align-right		{ text-align: right; }
 
+.upper-case	{ text-transform: uppercase; }
+
 .wp-block-image .image-wrap {
 	display: inline-block;
 	width: auto;
