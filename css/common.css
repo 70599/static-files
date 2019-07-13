@@ -420,6 +420,8 @@ a.button.width-2 {
 	background-size: cover;
 }
 
+.image-body.bordered::before,
+.video-body.bordered::before,
 a .image-body::before,
 .video-wrap iframe {
 	position: absolute;
@@ -431,6 +433,13 @@ a .image-body::before,
 	height: 100%;
 }
 
+.image-body.bordered::before,
+.video-body.bordered::before {
+	border: 1px solid rgba(0,0,0,.15);
+}
+
+.image-body.bordered::before,
+.video-body.bordered::before,
 a .image-body::before {
 	content: '';
 	z-index: 1;
