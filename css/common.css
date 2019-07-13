@@ -313,6 +313,17 @@ a.button.width-2 {
 	        align-items: center;
 }
 
+.flex-box.flex-flow-column {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-flow: column;
+}
+
+.flex-box.flex-1 {
+	-webkit-box-flex: 1;
+	        flex: 1;
+}
+
 .flex-box.swiper-wrapper {
 	display: -webkit-inline-box;
 	display: inline-flex;
