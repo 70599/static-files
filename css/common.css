@@ -219,6 +219,10 @@ p:last-of-type {
 	margin-bottom: 0;
 }
 
+table {
+	border-collapse: collapse;
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   svg
