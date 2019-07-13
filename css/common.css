@@ -334,58 +334,58 @@ a.button.width-2 {
 
 /*	align horizontal single line	*/
 
-.flex-box.flex-align-h-sl-start {
+.flex-box.flex-justify-start {
 	-webkit-box-pack: start;
 	        justify-content: flex-start;
 }
 
-.flex-box.flex-align-h-sl-end {
+.flex-box.flex-justify-end {
 	-webkit-box-pack: end;
 	        justify-content: flex-end;
 }
 
-.flex-box.flex-align-h-sl-center {
+.flex-box.flex-justify-center {
 	-webkit-box-pack: center;
 	        justify-content: center;
 }
 
-.flex-box.flex-align-h-sl-space-between {
+.flex-box.flex-justify-space-between {
 	-webkit-box-pack: justify;
 	        justify-content: space-between;
 }
 
-.flex-box.flex-align-h-sl-space-around {
+.flex-box.flex-justify-space-around {
 	justify-content: space-around;
 }
 
-.flex-box.flex-align-h-sl-space-evenly {
+.flex-box.flex-justify-space-evenly {
 	-webkit-box-pack: space-evenly;
 	        justify-content: space-evenly;
 }
 
 /*	align vertical single line	*/
 
-.flex-box.flex-align-v-sl-start {
+.flex-box.flex-align-items-start {
 	-webkit-box-align: start;
 	        align-items: flex-start;
 }
 
-.flex-box.flex-align-v-sl-baseline {
+.flex-box.flex-align-items-baseline {
 	-webkit-box-align: baseline;
 	        align-items: baseline;
 }
 
-.flex-box.flex-align-v-sl-center {
+.flex-box.flex-align-items-center {
 	-webkit-box-align: center;
 	        align-items: center;
 }
 
-.flex-box.flex-align-v-sl-stretch {
+.flex-box.flex-align-items-stretch {
 	-webkit-box-align: stretch;
 	        align-items: stretch;
 }
 
-.flex-box.flex-align-v-sl-end {
+.flex-box.flex-align-items-end {
 	-webkit-box-align: end;
 	        align-items: flex-end;
 }
