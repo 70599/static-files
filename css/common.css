@@ -392,23 +392,23 @@ a.button.width-2 {
 
 /*	align vertical multi line	*/
 
-.flex-box.flex-align-v-ml-start {
+.flex-box.flex-align-content-start {
 	align-content: flex-start;
 }
 
-.flex-box.flex-align-v-ml-center {
+.flex-box.flex-align-content-center {
 	align-content: center;
 }
 
-.flex-box.flex-align-v-ml-stretch {
+.flex-box.flex-align-content-stretch {
 	align-content: stretch;
 }
 
-.flex-box.flex-align-v-ml-space-between {
+.flex-box.flex-align-content-space-between {
 	align-content: space-between;
 }
 
-.flex-box.flex-align-v-ml-space-around {
+.flex-box.flex-align-content-space-around {
 	align-content: space-around;
 }
 
