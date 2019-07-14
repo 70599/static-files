@@ -239,7 +239,7 @@ svg {
 svg.icon {
 	fill: currentColor;
 	position: relative;
-	top: 10%;
+	margin-top: 3%;
 	width: 1.25em;
 	height: 1.25em;
 }
