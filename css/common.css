@@ -262,9 +262,17 @@ svg.icon {
 	vertical-align: text-top;
 }
 
+svg.icon.prefix {
+	margin-right: .25em;
+}
+
 svg.icon.middle {
 	margin-left: .25em;
 	margin-right: .25em;
+}
+
+svg.icon.suffix {
+	margin-left: .25em;
 }
 
 /*
