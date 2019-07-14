@@ -426,6 +426,10 @@ a.button.width-2 {
 	align-content: space-around;
 }
 
+.has-overlay {
+	position: relative;
+}
+
 .image-wrap,
 .video-wrap {
 	position: relative;
@@ -445,6 +449,7 @@ a.button.width-2 {
 	background-size: cover;
 }
 
+.has-overlay::before,
 a .image-body::before,
 .image-body[class*="overlay"]::before,
 .video-wrap iframe {
