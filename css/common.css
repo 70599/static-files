@@ -222,6 +222,24 @@ p:last-of-type {
 	margin-bottom: 0;
 }
 
+blockquote {
+	position: relative;
+	margin: 0;
+	padding-left: 2em;
+}
+
+blockquote::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	width: 2px;
+	height: 100%;
+	background-color: currentColor;
+	opacity: .25;
+}
+
 table {
 	border-collapse: collapse;
 }
