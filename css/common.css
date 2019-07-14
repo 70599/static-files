@@ -244,6 +244,11 @@ svg.icon {
 	vertical-align: text-top;
 }
 
+svg.icon.middle {
+	margin-left: .25em;
+	margin-right: .25em;
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   browser / feature specific
