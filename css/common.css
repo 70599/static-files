@@ -37,7 +37,7 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
-a.button,
+.button,
 .bg-color-black,
 a.font-color-white,
 .font-color-white					{ color: #fff; }
@@ -286,16 +286,16 @@ nav li::before	{ display: none; }
 |-------------------------------------------------------------------------------
 */
 
-a.button {
+.button {
 	padding: .5em 1em;
 }
 
-a.button.width-1 {
+.button.width-1 {
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-a.button.width-2 {
+.button.width-2 {
 	padding-left: 2em;
 	padding-right: 2em;
 }
