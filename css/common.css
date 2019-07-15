@@ -171,7 +171,9 @@ abbr::after {
 }
 
 abbr:hover::before,
-abbr:hover::after {
+abbr:hover::after,
+abbr.bottom:hover::before,
+abbr.bottom:hover::after {
 	transform: translate(-50%,0);
 	opacity: 1;
 }
