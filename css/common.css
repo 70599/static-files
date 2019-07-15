@@ -156,7 +156,7 @@ abbr::after {
 }
 
 abbr::before {
-	content: attr(title);
+	content: attr(data-title);
 	bottom: calc(100% + .5em);
 	padding: .618em 1em;
 	white-space: nowrap;
