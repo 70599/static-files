@@ -185,6 +185,10 @@ abbr.bottom::after {
 	transform: translate(-50%,-.618em);
 }
 
+abbr.bottom::before {
+	top: calc(100% + .5em);
+}
+
 abbr.bottom::after {
 	border-width: .5em;
 	border-top-width: 0;
