@@ -368,6 +368,10 @@ nav li::before	{ display: none; }
 |-------------------------------------------------------------------------------
 */
 
+.badge {
+	padding: .2em .6em;
+}
+
 .button {
 	padding: .5em 1em;
 }
