@@ -9,6 +9,7 @@ body	{ font-size: 16px; }
 .font-size-x0-4			{ font-size: .4em }
 .font-size-x0-45		{ font-size: .45em }
 .font-size-x0-5			{ font-size: .5em }
+.badge,
 .font-size-x0-75		{ font-size: .75em }		/*	12px	*/
 .font-size-x0-8125	{ font-size: .8125em }	/*	13px	*/
 .font-size-x0-875		{ font-size: .875em }		/*	14px	*/
@@ -369,7 +370,9 @@ nav li::before	{ display: none; }
 */
 
 .badge {
-	padding: .2em .6em;
+	padding: 0 .6em;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .button {
