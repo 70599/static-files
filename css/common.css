@@ -158,7 +158,7 @@ abbr::after {
 abbr::before {
 	content: attr(data-title);
 	bottom: calc(100% + .5em);
-	padding: .618em 1em;
+	padding: .4em .6em;
 	white-space: nowrap;
 	border-radius: .35em;
 }
