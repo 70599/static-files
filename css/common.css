@@ -377,6 +377,11 @@ nav li::before	{ display: none; }
 	border-radius: .15em;
 }
 
+.badge.outline {
+	background-color: transparent;
+	border: .125em solid;
+}
+
 .button {
 	padding: .5em 1em;
 }
