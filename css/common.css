@@ -184,11 +184,11 @@ abbr.bottom::after {
 	top: 100%;
 	bottom: auto;
 	transform-origin: top;
-	transform: translate(-50%,-.618em) scale(.85);
+	transform: translate(-50%,-.618em) scale(.5);
 }
 
 abbr.bottom::before {
-	top: calc(100% + .5em);
+	top: calc(100% + .5em - 1px);
 }
 
 abbr.bottom::after {
