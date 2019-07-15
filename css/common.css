@@ -141,6 +141,33 @@ a {
 	display: inline-block;
 }
 
+abbr {
+	position: relative;
+}
+
+abbr::before,
+abbr::after {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	transform: translate(-50%,.618em);
+	opacity: 0;
+}
+
+abbr::before {
+	content: attr(title);
+	bottom: calc(100% + .5em);
+	padding: .618em 1em;
+	border-radius: .35em;
+}
+
+abbr::after {
+	border-width: .5em .5em 0 .5em;
+	border-style: solid;
+	border-color: transparent;
+}
+
 button, input, optgroup, select, textarea {
 	padding: 0;
 	line-height: inherit;
