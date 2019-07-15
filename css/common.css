@@ -164,7 +164,8 @@ abbr::before {
 }
 
 abbr::after {
-	border-width: .5em .5em 0 .5em;
+	border-width: .5em;
+	border-bottom-width: 0;
 	border-style: solid;
 	border-color: transparent;
 }
@@ -173,6 +174,18 @@ abbr:hover::before,
 abbr:hover::after {
 	transform: translate(-50%,0);
 	opacity: 1;
+}
+
+abbr.bottom::before,
+abbr.bottom::after {
+	top: 100%;
+	bottom: auto;
+	transform: translate(-50%,-.618em);
+}
+
+abbr.bottom::after {
+	border-width: .5em;
+	border-top-width: 0;
 }
 
 button, input, optgroup, select, textarea {
