@@ -151,7 +151,8 @@ abbr::after {
 	position: absolute;
 	bottom: 100%;
 	left: 50%;
-	transform: translate(-50%,.618em);
+	transform-origin: bottom;
+	transform: translate(-50%,.618em) scale(.85);
 	opacity: 0;
 }
 
@@ -182,7 +183,8 @@ abbr.bottom::before,
 abbr.bottom::after {
 	top: 100%;
 	bottom: auto;
-	transform: translate(-50%,-.618em);
+	transform-origin: top;
+	transform: translate(-50%,-.618em) scale(.85);
 }
 
 abbr.bottom::before {
