@@ -386,6 +386,7 @@ nav li::before	{ display: none; }
 
 .button {
 	padding: .5em 1em;
+	white-space: nowrap;
 }
 
 .button.width-1 {
