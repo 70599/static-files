@@ -317,6 +317,7 @@ svg.icon {
 	width: 1.25em;
 	height: 1.25em;
 	vertical-align: text-top;
+	transform-origin: center;
 }
 
 svg.icon.prefix {
@@ -614,6 +615,8 @@ ol, ul,
 .text-align-center	{ text-align: center; }
 .text-align-just		{ text-align: justify; }
 .text-align-right		{ text-align: right; }
+
+.underline	{ border-bottom: 1px solid; }
 
 .upper-case	{ text-transform: uppercase; }
 
