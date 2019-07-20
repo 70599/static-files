@@ -430,6 +430,10 @@ nav li::before	{ display: none; }
 	        flex-flow: column;
 }
 
+.flex-box.flex-flow-column > * {
+	width: 100%;
+}
+
 .flex-1 {
 	-webkit-box-flex: 1;
 	        flex: 1;
