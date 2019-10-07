@@ -1,0 +1,14 @@
+body {
+	margin: 0;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+body > img {
+	margin: 0	auto;
+	width: 75vw;
+	max-width: 16em;
+}
