@@ -1,10 +1,14 @@
 body {
 	margin: 0;
+	display: -webkit-box;
 	display: flex;
 	align-content: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 	text-align: center;
 	width: 100vw;
 	height: 100vh;
+	background-color: rgb(240,240,240);
 }
 
 body > img {
