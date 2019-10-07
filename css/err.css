@@ -11,7 +11,7 @@ body {
 	background-color: rgb(240,240,240);
 }
 
-body > p {
+body > .err-code {
 	margin: 0 auto;
 	opacity: .07;
 }
