@@ -8,8 +8,8 @@ body {
 }
 
 body > img {
-	margin: 0	auto;
+	margin: 0 auto;
 	width: 75vw;
 	max-width: 16em;
-	opacity: .07
+	opacity: .07;
 }
