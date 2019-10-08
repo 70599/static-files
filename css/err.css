@@ -25,3 +25,9 @@ body > .err-code {
 	margin: 0 auto;
 	opacity: .07;
 }
+
+@media (max-width: 768px) {
+	body > .err-code {
+		font-size: 30vw;
+	}
+}
