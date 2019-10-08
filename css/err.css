@@ -15,7 +15,6 @@ body {
 	text-align: center;
 	width: 100vmin;
 	height: 100vmin;
-	background-color: rgb(240,240,240);
 }
 
 body > .err-code {
