@@ -19,6 +19,9 @@ body {
 }
 
 body > .err-code {
+	font-size: 10em;
 	font-weight: 100;
+	font-feature-settings: 'tnum' 1, 'ss01' 1, 'liga' 1;
+	margin: 0 auto;
 	opacity: .07;
 }
