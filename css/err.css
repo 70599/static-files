@@ -3,6 +3,7 @@ html {
 }
 
 body {
+	font-family: Inter, --apple-system, sans-serif;
 	margin: 0 auto;
 	display: -webkit-box;
 	display: flex;
@@ -18,5 +19,6 @@ body {
 }
 
 body > .err-code {
+	font-weight: 100;
 	opacity: .07;
 }
