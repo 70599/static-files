@@ -1,5 +1,9 @@
+html {
+	text-align: center;
+}
+
 body {
-	margin: 0;
+	margin: 0 auto;
 	display: -webkit-box;
 	display: flex;
 	align-content: center;
@@ -8,12 +12,11 @@ body {
 	-webkit-box-pack: center;
 	        justify-content: center;
 	text-align: center;
+	width: 100vmin;
+	height: 100vmin;
 	background-color: rgb(240,240,240);
 }
 
 body > .err-code {
-	margin: 0 auto;
-	width: 100vmin;
-	height: 100vmin;
 	opacity: .07;
 }
