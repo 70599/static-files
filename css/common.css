@@ -583,7 +583,8 @@ nav li::before	{ display: none; }
 .has-overlay::before,
 a .image-body::before,
 .image-body[class*="overlay"]::before,
-.video-wrap iframe {
+.video-wrap > iframe,
+figure > iframe {
 	content: '';
 	position: absolute;
 	top: 0;
