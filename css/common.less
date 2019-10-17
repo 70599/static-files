@@ -430,6 +430,12 @@ nav li::before	{ display: none; }
 		padding-left: 2em;
 		padding-right: 2em;
 	}
+
+	&.outline {
+		background-color: transparent;
+		border: .125em solid;
+		border-radius: .275em;
+	}
 }
 
 .menu-item {
@@ -456,6 +462,14 @@ nav li::before	{ display: none; }
 			& > a {
 				padding-left: 2em;
 				padding-right: 2em;
+			}
+		}
+
+		&.outline {
+			& > a {
+				background-color: transparent;
+				border: .125em solid;
+				border-radius: .275em;
 			}
 		}
 	}
