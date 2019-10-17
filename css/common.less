@@ -374,10 +374,7 @@ blockquote {
 
 	&::before {
 		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		bottom:0;
+		.mix-abso(0, auto, 0, 0);
 		width: .2em;
 		height: 100%;
 		background-color: currentColor;
@@ -739,11 +736,7 @@ a .image-body::before,
 .video-wrap > iframe,
 .iframe-wrap > iframe {
 	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	.mix-abso(0, 0, 0, 0);
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -784,11 +777,7 @@ a .image-body::before,
 
 .border-by-pseudo-class::before {
 	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	.mix-abso(0, 0, 0, 0);
 	border: 1px solid rgba(0,0,0,.17);
 }
 
