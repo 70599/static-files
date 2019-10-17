@@ -20,8 +20,9 @@
 @font-size-80:			5;
 
 @line-height:				1.6;
-@link-hover-color:	lighten(@link-color, 20%);
-@link-active-color:	darken(@link-color, 20%);
+
+@link-hover-color:	lighten(@link-color, 16%);
+@link-active-color:	darken(@link-color, 16%);
 
 /*
 |-------------------------------------------------------------------------------
@@ -113,6 +114,29 @@ a.font-color-white,
 
 /*
 |-------------------------------------------------------------------------------
+|   mix
+|-------------------------------------------------------------------------------
+*/
+
+.mix-a(@a) {
+	a {
+		color: inherit;
+
+		&:hover {
+			color: lighten(@a, 16%);
+			background-color: fade($color, 8.5%);
+		}
+
+		&:active,
+		&:active:hover {
+			color: darken(@a, 16%);
+			background-color: fade($color, 8.5%);
+		}
+	}
+}
+
+/*
+|-------------------------------------------------------------------------------
 |   guo du
 |-------------------------------------------------------------------------------
 */
@@ -170,20 +194,6 @@ html    { -webkit-text-size-adjust: 100%; }
 body {
 	margin: 0;
 	line-height: @line-height;
-}
-
-a {
-	text-decoration: none;
-	display: inline-block;
-
-	&:hover {
-		color: @link-hover-color;
-	}
-
-	&:active,
-	&:active:hover {
-		color: @link-active-color;
-	}
 }
 
 abbr {
