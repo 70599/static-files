@@ -26,6 +26,36 @@
 
 /*
 |-------------------------------------------------------------------------------
+|   mixin
+|-------------------------------------------------------------------------------
+*/
+
+.mix-a(@a) {
+	a {
+		color: @a;
+		text-decoration: none;
+		display: inline-block;
+
+		&:hover {
+			color: lighten(@a, 16%);
+			background-color: fade($color, 9%);
+		}
+
+		&:active,
+		&:active:hover {
+			color: darken(@a, 16%);
+			background-color: fade($color, 9%);
+		}
+	}
+}
+
+.mix-abso(@w, @d, @s, @a) {
+	position: absolute;
+	top: @w; right: @d; bottom: @s; left: @a;
+}
+
+/*
+|-------------------------------------------------------------------------------
 |   font size
 |-------------------------------------------------------------------------------
 */
@@ -111,31 +141,6 @@ a.font-color-white,
 
 .font-style-normal	{ font-style: normal; }
 .font-style-italic	{ font-style: italic; }
-
-/*
-|-------------------------------------------------------------------------------
-|   mix
-|-------------------------------------------------------------------------------
-*/
-
-.mix-a(@a) {
-	a {
-		color: @a;
-		text-decoration: none;
-		display: inline-block;
-
-		&:hover {
-			color: lighten(@a, 16%);
-			background-color: fade($color, 9%);
-		}
-
-		&:active,
-		&:active:hover {
-			color: darken(@a, 16%);
-			background-color: fade($color, 9%);
-		}
-	}
-}
 
 /*
 |-------------------------------------------------------------------------------
