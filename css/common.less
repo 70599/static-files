@@ -4,7 +4,7 @@
 |-------------------------------------------------------------------------------
 */
 
-body	{ font-size: 16px; }
+body	{ font-size: @font-size; }
 
 .font-size-x0-4			{ font-size: .4em }
 .font-size-x0-45		{ font-size: .45em }
@@ -136,7 +136,7 @@ html    { -webkit-text-size-adjust: 100%; }
 }
 
 body {
-	line-height: 1.618;
+	line-height: 1.6;
 }
 
 a {
@@ -146,34 +146,34 @@ a {
 
 abbr {
 	position: relative;
-}
 
-abbr::before,
-abbr::after {
-	content: '';
-	position: absolute;
-	bottom: 100%;
-	left: 50%;
-	-webkit-transform-origin: bottom;
-	        transform-origin: bottom;
-	-webkit-transform: translate(-50%,.618em) scale(.85);
-	        transform: translate(-50%,.618em) scale(.85);
-	opacity: 0;
-}
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		-webkit-transform-origin: bottom;
+		        transform-origin: bottom;
+		-webkit-transform: translate(-50%,.618em) scale(.85);
+		        transform: translate(-50%,.618em) scale(.85);
+		opacity: 0;
+	}
 
-abbr::before {
-	content: attr(data-title);
-	bottom: calc(~"100% + .5"em);
-	padding: .35em .7em;
-	white-space: nowrap;
-	border-radius: .35em;
-}
+	&::before {
+		content: attr(data-title);
+		bottom: calc(~"100% + .5"em);
+		padding: .35em .7em;
+		white-space: nowrap;
+		border-radius: .35em;
+	}
 
-abbr::after {
-	border-width: .5em;
-	border-bottom-width: 0;
-	border-style: solid;
-	border-color: transparent;
+	&::after {
+		border-width: .5em;
+		border-bottom-width: 0;
+		border-style: solid;
+		border-color: transparent;
+	}
 }
 
 abbr:hover::before,
@@ -234,11 +234,11 @@ hr {
 img {
 	width: 100%;
 	height: auto;
-}
 
-img.portrait {
-	width: auto;
-	height: 100%;
+	&.portrait {
+		width: auto;
+		height: 100%;
+	}
 }
 
 ol, ul {
@@ -251,10 +251,20 @@ ol, ul {
 
 ol {
 	counter-reset: section;
-}
 
-ol ol			{ padding-left: 3em; }
-ol ol	ol	{ padding-left: 3.8em; }
+	ol {
+		padding-left: 3em;
+
+		ol {
+			padding-left: 3.8em;
+		}
+	}
+
+	& > li::before {
+		counter-increment: section;
+		content: counters(section, '-') '.';
+	}
+}
 
 ul.menu {
 	padding-left: 0;
@@ -262,16 +272,11 @@ ul.menu {
 
 li {
 	position: relative;
-}
 
-li::before {
-	position: absolute;
-	right: calc(~"100% + .4"em);
-}
-
-ol > li::before {
-	counter-increment: section;
-	content: counters(section, '-') '.';
+	&::before {
+		position: absolute;
+		right: calc(~"100% + .4"em);
+	}
 }
 
 ul:not(.menu) > li::before		{ content: '\2022'; opacity: .25; }
@@ -280,28 +285,28 @@ ul:not(.menu) ul > li::before	{ content: '\25aa'; }
 p {
 	margin: 0;
 	margin-bottom: 1.7em;
-}
 
-p:last-of-type {
-	margin-bottom: 0;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 blockquote {
 	position: relative;
 	margin: 0;
 	padding-left: 2em;
-}
 
-blockquote::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom:0;
-	width: .2em;
-	height: 100%;
-	background-color: currentColor;
-	opacity: .25;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom:0;
+		width: .2em;
+		height: 100%;
+		background-color: currentColor;
+		opacity: .25;
+	}
 }
 
 table {
@@ -316,33 +321,33 @@ table {
 
 svg {
 	width: 100%;
-}
 
-svg.icon {
-	fill: currentColor;
-	position: relative;
-	width: 1.25em;
-	height: 1.25em;
-	vertical-align: text-top;
-	-webkit-transform-origin: center;
-	        transform-origin: center;
-}
+	&.icon {
+		fill: currentColor;
+		position: relative;
+		width: 1.25em;
+		height: 1.25em;
+		vertical-align: text-top;
+		-webkit-transform-origin: center;
+		        transform-origin: center;
 
-svg.icon.stroke {
-	stroke: currentColor;
-}
+		&.stroke {
+			stroke: currentColor;
+		}
 
-svg.icon.prefix {
-	margin-right: .25em;
-}
+		&.prefix {
+			margin-right: .25em;
+		}
 
-svg.icon.middle {
-	margin-left: .25em;
-	margin-right: .25em;
-}
+		&.middle {
+			margin-left: .25em;
+			margin-right: .25em;
+		}
 
-svg.icon.suffix {
-	margin-left: .25em;
+		&.suffix {
+			margin-left: .25em;
+		}
+	}
 }
 
 /*
@@ -352,13 +357,15 @@ svg.icon.suffix {
 */
 
 /*	firefox	*/
-body.firefox select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-}
+body.firefox {
+	select:-moz-focusring {
+		color: transparent;
+		text-shadow: 0 0 0 #000;
+	}
 
-body.firefox option:not(:checked) {
-    color: black;
+	option:not(:checked) {
+	    color: black;
+	}
 }
 
 html.backdropfilter .backdropfilter-blur-20 {
@@ -388,27 +395,27 @@ nav li::before	{ display: none; }
 	display: inline-block;
 	vertical-align: text-bottom;
 	border-radius: .15em;
-}
 
-.badge.outline {
-	background-color: transparent;
-	border: .125em solid;
-	border-radius: .275em;
+	&.outline {
+		background-color: transparent;
+		border: .125em solid;
+		border-radius: .275em;
+	}
 }
 
 .button {
 	padding: .5em 1em;
 	white-space: nowrap;
-}
 
-.button.width-1 {
-	padding-left: 1em;
-	padding-right: 1em;
-}
+	&.width-1 {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
 
-.button.width-2 {
-	padding-left: 2em;
-	padding-right: 2em;
+	&.width-2 {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 }
 
 .bg-color-white				{ background-color: #fff; }
