@@ -62,14 +62,6 @@
 
 body	{ font-size: @font-size; }
 
-.font-size-x0-4			{ font-size: .4em }
-.font-size-x0-45		{ font-size: .45em }
-.font-size-x0-5			{ font-size: .5em }
-.font-size-x0-75		{ font-size: .75em }		/*	12px	*/
-.badge,
-.font-size-x0-8125	{ font-size: .8125em }	/*	13px	*/
-.font-size-x0-875		{ font-size: .875em }		/*	14px	*/
-.font-size-x0-9375	{ font-size: .9375em }	/*	15px	*/
 *,
 h1, h2, h3, h4, h4, h5,
 .font-size-x1				{ font-size: 1em; }
@@ -194,7 +186,8 @@ html    { -webkit-text-size-adjust: 100%; }
 }
 
 *::before,
-*::after {
+*::after,
+.click-through {
 	pointer-events: none;
 }
 
@@ -275,7 +268,7 @@ button, input, select {
 	cursor: pointer;
 }
 
-h1, h2, h3, h4, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
@@ -463,6 +456,7 @@ nav li::before	{ display: none; }
 */
 
 .badge {
+	font-size: ~"@{font-size-13}em"
 	margin: 0 .6em;
 	padding: 0 .5em;
 	display: inline-block;
@@ -551,10 +545,6 @@ nav li::before	{ display: none; }
 .bg-color-white				{ background-color: #fff; }
 .bg-color-black				{ background-color: #000; }
 .bg-color-241-241-241	{ background-color: rgb(241,241,241); }
-
-.click-through {
-	pointer-events: none;
-}
 
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
 
