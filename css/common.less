@@ -413,9 +413,13 @@ nav li::before	{ display: none; }
 	}
 }
 
-.button {
+.button:not(.menu-item) {
 	padding: .5em 1em;
 	white-space: nowrap;
+
+	&.small {
+		padding: .25em .5em;
+	}
 
 	&.width-1 {
 		padding-left: 1em;
@@ -425,6 +429,35 @@ nav li::before	{ display: none; }
 	&.width-2 {
 		padding-left: 2em;
 		padding-right: 2em;
+	}
+}
+
+.menu-item {
+	&.button {
+		& > a {
+			padding: .5em 1em;
+			white-space: nowrap;
+		}
+
+		&.small {
+			& > a	{
+				padding: .25em .5em;
+			}
+		}
+
+		&.width-1 {
+			& > a {
+				padding-left: 1em;
+				padding-right: 1em;
+			}
+		}
+
+		&.width-2 {
+			& > a {
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+		}
 	}
 }
 
