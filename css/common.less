@@ -545,7 +545,8 @@ nav li::before	{ display: none; }
 
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
 
-.flex-box {
+.flex-box,
+.flex-box-inline {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -679,6 +680,11 @@ nav li::before	{ display: none; }
 			order: 2;
 		}
 	}
+}
+
+.flex-box-inline {
+	display: -webkit-inline-box;
+	display: inline-flex;
 }
 
 .flex-1 {
