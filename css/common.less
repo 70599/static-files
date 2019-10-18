@@ -36,43 +36,54 @@
 }
 
 .mix-btn(@a) {
-	color: contrast(@a, @text-color, @bg-color, 50%);
-	padding: .5em 1em;
-	white-space: nowrap;
-	background-color: @a;
-	border-radius: @border-radius;
+	&,
+	& > a {
+		color: contrast(@a, @text-color, @bg-color, 50%);
+		padding: .5em 1em;
+		white-space: nowrap;
+		background-color: @a;
+		border-radius: @border-radius;
 
-	&:hover {
-		background-color: lighten(@a, 8%);
-	}
+		&:hover,
+		&:hover > a {
+			background-color: lighten(@a, 8%);
+		}
 
-	&:active,
-	&:active:hover {
-		background-color: darken(@a, 8%);
-	}
+		&:active,
+		&:active:hover,
+		&:active > a,
+		&:active:hover > a {
+			background-color: darken(@a, 8%);
+		}
 
-	&.outline {
-		color: @a;
-		background-color: transparent;
-		border: .125em solid;
-	}
+		&.outline,
+		&.outline > a {
+			color: @a;
+			background-color: transparent;
+			border: .125em solid;
+		}
 
-	&.small {
-		padding: .25em .5em;
-	}
+		&.small,
+		&.small > a {
+			padding: .25em .5em;
+		}
 
-	&.width-1 {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
+		&.width-1,
+		&.width-1 > a {
+			padding-left: 1em;
+			padding-right: 1em;
+		}
 
-	&.width-2 {
-		padding-left: 2em;
-		padding-right: 2em;
-	}
+		&.width-2,
+		&.width-2 > a {
+			padding-left: 2em;
+			padding-right: 2em;
+		}
 
-	&.pill {
-		border-radius: 10em;
+		&.pill,
+		&.pill > a {
+			border-radius: 10em;
+		}
 	}
 }
 
@@ -506,49 +517,6 @@ nav li::before	{ display: none; }
 
 .button:not(.menu-item) {
 	.mix-btn(@text-color);
-}
-
-.menu-item {
-	&.button {
-		& > a {
-			padding: .5em 1em;
-			white-space: nowrap;
-		}
-
-		&.small {
-			& > a	{
-				padding: .25em .5em;
-			}
-		}
-
-		&.width-1 {
-			& > a {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-		}
-
-		&.width-2 {
-			& > a {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
-		}
-
-		&.outline {
-			& > a {
-				background-color: transparent;
-				border: .125em solid;
-				border-radius: @border-radius;
-			}
-		}
-
-		&.pill {
-			& > a {
-				border-radius: 10em;
-			}
-		}
-	}
 }
 
 .bg-color-white				{ background-color: #fff; }
