@@ -86,12 +86,12 @@
 	padding-left: @a;
 }
 
-.mix-wrap(@a) {
+.mix-wrap(@a, @b: 16) {
 	margin: 0 auto;
-	padding-left: ~"@{line-height}em";
-	padding-right: ~"@{line-height}em";
+	padding-left: calc(~"@{line-height}em" / @b * 16);
+	padding-right: calc(~"@{line-height}em" / @b * 16);
 	width: 100%;
-	max-width: @a;
+	max-width: calc(@a / @b * 16);
 }
 
 /*
