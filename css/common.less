@@ -76,7 +76,7 @@
 	}
 }
 
-.mix-abso(@w, @d, @s, @a) {
+.mix-abso(@w: 0; @d: 0; @s: 0; @a: 0) {
 	position: absolute;
 	top: @w; right: @d; bottom: @s; left: @a;
 }
@@ -86,7 +86,7 @@
 	padding-left: @a;
 }
 
-.mix-wrap(@a, @b) {
+.mix-wrap(@a; @b: 16) {
 	margin: 0 auto;
 	padding-left: calc(~"@{line-height}em" / @b * 16);
 	padding-right: calc(~"@{line-height}em" / @b * 16);
