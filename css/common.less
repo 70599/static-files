@@ -5,6 +5,8 @@
 @link-hover-color:	lighten(@link-color, 16%);
 @link-active-color:	darken(@link-color, 16%);
 
+@border-radius:			.35em;
+
 /*
 |-------------------------------------------------------------------------------
 |   mixin
@@ -215,9 +217,9 @@ abbr {
 	&::before {
 		content: attr(data-title);
 		bottom: calc(~"100% + .5"em);
-		padding: .35em .7em;
+		padding: @border-radius .7em;
 		white-space: nowrap;
-		border-radius: .35em;
+		border-radius: @border-radius;
 	}
 
 	&::after {
