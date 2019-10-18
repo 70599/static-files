@@ -44,6 +44,15 @@
 	background-color: @a;
 	border-radius: @border-radius;
 
+	&:hover {
+		background-color: lighten(@a, 16%);
+	}
+
+	&:active,
+	&:active:hover {
+		background-color: darken(@a, 16%);
+	}
+
 	&.outline {
 		color: @a;
 		background-color: transparent;
