@@ -38,7 +38,35 @@
 }
 
 .mix-btn(@a) {
+	color: contrast(@a, @text-color, @bg-color, 50%);
+	padding: .5em 1em;
+	white-space: nowrap;
 	background-color: @a;
+	border-radius: @border-radius;
+
+	&.outline {
+		color: @a;
+		background-color: transparent;
+		border: .125em solid;
+	}
+
+	&.small {
+		padding: .25em .5em;
+	}
+
+	&.width-1 {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	&.width-2 {
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	&.pill {
+		border-radius: 10em;
+	}
 }
 
 .mix-abso(@w, @d, @s, @a) {
@@ -464,36 +492,13 @@ nav li::before	{ display: none; }
 	padding: 0 .5em;
 	display: inline-block;
 	vertical-align: text-bottom;
-	border-radius: .15em;
+	border-radius: @border-radius;
 
-	&.outline {
-		background-color: transparent;
-		border: .125em solid;
-		border-radius: @border-radius;
-	}
+	.mix-btn(@text-color);
 }
 
 .button:not(.menu-item) {
-	padding: .5em 1em;
-	white-space: nowrap;
-
-	&.small {
-		padding: .25em .5em;
-	}
-
-	&.width-1 {
-		padding-left: 1em;
-		padding-right: 1em;
-	}
-
-	&.width-2 {
-		padding-left: 2em;
-		padding-right: 2em;
-	}
-
-	&.pill {
-		border-radius: 10em;
-	}
+	.mix-btn(@text-color);
 }
 
 .menu-item {
