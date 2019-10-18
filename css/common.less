@@ -16,25 +16,23 @@
 }
 
 .mix-a(@a) {
-	a {
-		color: @a;
-		text-decoration: none;
+	color: @a;
+	text-decoration: none;
 
-		&:not([class*="flex-"]) {
-			display: inline-block;
-		}
+	&:not([class*="flex-"]) {
+		display: inline-block;
+	}
 
-		&:hover,
-		.menu-item-has-children:hover > & {
-			color: lighten(@a, 16%);
-			background-color: fade($color, 9%);
-		}
+	&:hover,
+	.menu-item-has-children:hover > & {
+		color: lighten(@a, 16%);
+		background-color: fade($color, 9%);
+	}
 
-		&:active,
-		&:active:hover {
-			color: darken(@a, 16%);
-			background-color: fade($color, 9%);
-		}
+	&:active,
+	&:active:hover {
+		color: darken(@a, 16%);
+		background-color: fade($color, 9%);
 	}
 }
 
@@ -194,7 +192,9 @@ body {
 	margin: 0;
 	line-height: @line-height;
 
-	.mix-a(@link-color);
+	a {
+		.mix-a(@link-color);
+	}
 }
 
 abbr {
