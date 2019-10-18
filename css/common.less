@@ -36,7 +36,7 @@
 }
 
 .mix-btn(@a) {
-	&,
+	&:not(.menu-item),
 	& > a {
 		color: contrast(@a, @text-color, @bg-color, 50%);
 		padding: .5em 1em;
@@ -44,31 +44,31 @@
 		background-color: @a;
 		border-radius: @border-radius;
 
-		&:hover,
+		&:not(.menu-item):hover,
 		&:hover > a {
 			background-color: lighten(@a, 8%);
 		}
 
-		&:active,
-		&:active:hover,
+		&:not(.menu-item):active,
+		&:not(.menu-item):active:hover,
 		&:active > a,
 		&:active:hover > a {
 			background-color: darken(@a, 8%);
 		}
 
-		&.outline,
+		&.outline:not(.menu-item),
 		&.outline > a {
 			color: @a;
 			background-color: transparent;
 			border: .125em solid;
 		}
 
-		&.small,
+		&.small:not(.menu-item),
 		&.small > a {
 			padding: .25em .5em;
 		}
 
-		&.width-1,
+		&.width-1:not(.menu-item),
 		&.width-1 > a {
 			padding-left: 1em;
 			padding-right: 1em;
@@ -80,7 +80,7 @@
 			padding-right: 2em;
 		}
 
-		&.pill,
+		&.pill:not(.menu-item),
 		&.pill > a {
 			border-radius: 10em;
 		}
