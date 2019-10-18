@@ -508,6 +508,49 @@ nav li::before	{ display: none; }
 	.mix-btn(@text-color);
 }
 
+.menu-item {
+	&.button {
+		& > a {
+			padding: .5em 1em;
+			white-space: nowrap;
+		}
+
+		&.small {
+			& > a	{
+				padding: .25em .5em;
+			}
+		}
+
+		&.width-1 {
+			& > a {
+				padding-left: 1em;
+				padding-right: 1em;
+			}
+		}
+
+		&.width-2 {
+			& > a {
+				padding-left: 2em;
+				padding-right: 2em;
+			}
+		}
+
+		&.outline {
+			& > a {
+				background-color: transparent;
+				border: .125em solid;
+				border-radius: @border-radius;
+			}
+		}
+
+		&.pill {
+			& > a {
+				border-radius: 10em;
+			}
+		}
+	}
+}
+
 .bg-color-white				{ background-color: #fff; }
 .bg-color-black				{ background-color: #000; }
 .bg-color-241-241-241	{ background-color: rgb(241,241,241); }
