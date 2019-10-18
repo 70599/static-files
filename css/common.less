@@ -543,17 +543,17 @@ nav li::before	{ display: none; }
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
 
 .flex-box,
-.flex-box-inline {
-	a& {
-		position: relative;
-		margin-left: auto;
-		margin-right: auto;
-		display: -webkit-box;
-		display: flex;
-		flex-wrap: wrap;
-		-webkit-box-align: center;
-		        align-items: center;
-	}
+.flex-box-inline,
+a.flex-box,
+a.flex-box-inline {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: -webkit-box;
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	        align-items: center;
 
 	&.flex-flow-column {
 		-webkit-box-orient: vertical;
@@ -681,11 +681,10 @@ nav li::before	{ display: none; }
 	}
 }
 
-.flex-box-inline {
-	a& {
-		display: -webkit-inline-box;
-		display: inline-flex;
-	}
+.flex-box-inline,
+a.flex-box-inline {
+	display: -webkit-inline-box;
+	display: inline-flex;
 }
 
 .flex-1 {
