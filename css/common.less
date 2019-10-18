@@ -37,6 +37,10 @@
 	}
 }
 
+.mix-btn(@a) {
+	background-color: @a;
+}
+
 .mix-abso(@w, @d, @s, @a) {
 	position: absolute;
 	top: @w; right: @d; bottom: @s; left: @a;
@@ -465,7 +469,7 @@ nav li::before	{ display: none; }
 	&.outline {
 		background-color: transparent;
 		border: .125em solid;
-		border-radius: .275em;
+		border-radius: @border-radius;
 	}
 }
 
@@ -485,12 +489,6 @@ nav li::before	{ display: none; }
 	&.width-2 {
 		padding-left: 2em;
 		padding-right: 2em;
-	}
-
-	&.outline {
-		background-color: transparent;
-		border: .125em solid;
-		border-radius: .3em;
 	}
 
 	&.pill {
@@ -529,7 +527,7 @@ nav li::before	{ display: none; }
 			& > a {
 				background-color: transparent;
 				border: .125em solid;
-				border-radius: .3em;
+				border-radius: @border-radius;
 			}
 		}
 
