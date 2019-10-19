@@ -40,18 +40,15 @@
 	padding: .5em 1em;
 	white-space: nowrap;
 	background-image: linear-gradient(to bottom right, lighten(@a, 5%), darken(@a, 5%));
-	// background-color: @a;
 	border-radius: @border-radius;
 
 	&:hover {
 		background-image: linear-gradient(to bottom right, lighten(@a, 10%), @a);
-		// background-color: lighten(@a, 8%);
 	}
 
 	&:active,
 	&:active:hover {
 		background-image: linear-gradient(to bottom right, @a, darken(@a, 10%));
-		// background-color: darken(@a, 8%);
 	}
 
 	&.outline {
