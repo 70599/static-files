@@ -35,21 +35,29 @@
 	}
 }
 
+.mix-btn-grad(@a) {
+	.mix-btn(@a) {
+		background-image: linear-gradient(to bottom right, lighten(@a, 5%), darken(@a, 5%));
+		background-repeat: no-repeat;
+		background-size: 300% 300%;
+		background-position: center center;
+		border-radius: @border-radius;
+
+		&:hover {
+			background-position: left top;
+		}
+
+		&:active,
+		&:active:hover {
+			background-position: right bottom;
+		}
+	}
+}
+
 .mix-btn(@a) {
 	color: contrast(@a, @text-color, @bg-color, 50%);
 	padding: .5em 1em;
 	white-space: nowrap;
-	background-image: linear-gradient(to bottom right, lighten(@a, 5%), darken(@a, 5%));
-	border-radius: @border-radius;
-
-	&:hover {
-		background-image: linear-gradient(to bottom right, lighten(@a, 10%), @a);
-	}
-
-	&:active,
-	&:active:hover {
-		background-image: linear-gradient(to bottom right, @a, darken(@a, 10%));
-	}
 
 	&.outline {
 		color: @a;
@@ -188,11 +196,11 @@ a.font-color-white,
 *::before,
 *::after,
 * {
-	-webkit-transition-property: color, background-size, background, background-image, background-color, border-color, width, height, text-shadow, opacity, -webkit-box-shadow, -webkit-filter, -webkit-transform;
-	-webkit-transition-property: color, background-size, background, background-image, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
-	transition-property: color, background-size, background, background-image, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
-	transition-property: color, background-size, background, background-image, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform;
-	transition-property: color, background-size, background, background-image, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform, -webkit-filter, -webkit-transform;
+	-webkit-transition-property: color, background-size, background-image, background-color, border-color, width, height, text-shadow, opacity, -webkit-box-shadow, -webkit-filter, -webkit-transform;
+	-webkit-transition-property: color, background-size, background-image, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
+	transition-property: color, background-size, background-image, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
+	transition-property: color, background-size, background-image, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform;
+	transition-property: color, background-size, background-image, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform, -webkit-filter, -webkit-transform;
 	-webkit-transition-duration: .2s;
 	        transition-duration: .2s;
 	-webkit-transition-timing-function: ease-in-out;
