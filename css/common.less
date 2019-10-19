@@ -41,14 +41,17 @@
 	background-repeat: no-repeat;
 	background-size: 300% 300%;
 	background-position: center center;
+	box-shadow: 0 .5em 1.5em fade(@a, 40%);
 
 	&:hover {
 		background-position: left top;
+		box-shadow: 0 .5em 1.5em fade(@a, 60%);
 	}
 
 	&:active,
 	&:active:hover {
 		background-position: right bottom;
+		box-shadow: 0 .5em 1.5em fade(@a, 20%);
 	}
 }
 
