@@ -133,6 +133,21 @@
 	max-width: calc(@a / @b * 17);
 }
 
+.mix-border(
+	@w: 1px;
+	@d: 1px;
+	@s: 1px;
+	@a: 1px;
+	@style: solid;
+	@wc: @text-color;
+	@dc: @text-color;
+	@sc: @text-color;
+	@ac: @text-color) {
+		border-width: @w @d @s @a;
+		border-style: @style;
+		border-color: @wc @dc @sc @ac;
+	}
+
 .mix-shadow(@a; @b: 11%) {
 	box-shadow:	0 0 0 1px fade(@a, @b),
 							0 1px 1px fade(@a, @b),
