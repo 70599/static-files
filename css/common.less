@@ -106,9 +106,18 @@
 	}
 }
 
+.mix-wdsa(@w: 0; @d: 0; @s: 0; @a: 0) {
+	top: @w; right: @d; bottom: @s; left: @a;
+}
+
 .mix-abso(@w: 0; @d: 0; @s: 0; @a: 0) {
 	position: absolute;
-	top: @w; right: @d; bottom: @s; left: @a;
+	.mix-wdsa(@w, @d, @s, @a)
+}
+
+.mix-fix(@w: 0; @d: 0; @s: auto; @a: 0) {
+	position: fixed;
+	.mix-wdsa(@w, @d, @s, @a)
 }
 
 .mix-T-sp(@a) {
