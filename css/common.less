@@ -134,7 +134,8 @@
 }
 
 .mix-shadow(@a; @b: 11%) {
-	box-shadow:	0 1px 1px fade(@a, @b),
+	box-shadow:	0 0 0 1px fade(@a, @b),
+							0 1px 1px fade(@a, @b),
 							0 2px 2px fade(@a, @b),
 							0 4px 4px fade(@a, @b),
 							0 8px 8px fade(@a, @b),
