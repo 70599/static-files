@@ -17,6 +17,10 @@
 	font-size: calc(1em / 17 * @a);
 }
 
+.mix-font-size-x(@a) {
+	font-size: @a%;
+}
+
 .mix-a(@a) {
 	color: @a;
 	text-decoration: none;
@@ -145,6 +149,8 @@ h1,
 .font-size-60	{ .mix-font-size(60); }
 .font-size-64	{ .mix-font-size(64); }
 .font-size-70	{ .mix-font-size(70); }
+
+.font-size-x60	{ .mix-font-size-x(60); }
 
 /*
 |-------------------------------------------------------------------------------
@@ -501,9 +507,9 @@ body.firefox {
 	}
 }
 
-html.backdropfilter .backdropfilter-blur-20 {
-	-webkit-backdrop-filter: blur(20px);
-	backdrop-filter: blur(20px);
+html.backdropfilter .backdropfilter-blur-14 {
+	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(14px);
 }
 
 /*
