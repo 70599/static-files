@@ -21,7 +21,7 @@
 	font-size: ~"@{a}%";
 }
 
-.mix-a(@a) {
+.mix-a(@a; @b: 17%) {
 	color: @a;
 	text-decoration: none;
 
@@ -32,12 +32,12 @@
 	}
 
 	&:hover {
-		color: lighten(@a, 17%);
+		color: lighten(@a, @b);
 	}
 
 	&:active,
 	&:active:hover {
-		color: darken(@a, 17%);
+		color: darken(@a, @b);
 	}
 }
 
