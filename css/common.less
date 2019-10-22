@@ -637,9 +637,8 @@ nav li::before	{ display: none; }
 
 		&.fade {
 			& > a {
-				background-color: currentColor;
+				background-color: fade(@text-color, 7%);
 				border-radius: @border-radius;
-				backdrop-filter: blur(14px);
 			}
 		}
 
