@@ -75,17 +75,33 @@
 	}
 }
 
+.mix-btn-fade(@a) {
+	.mix-btn(@a);
+	color: @a;
+	background-color: fade(@a, 7%);
+
+	&:hover {
+		background-color: fade(lighten(@a, 8%), 7%);
+	}
+
+	&:active,
+	&:active:hover {
+		background-color: fade(darken(@a, 8%), 7%);
+	}
+}
+
+.mix-btn-outline(@a) {
+	.mix-btn(@a);
+	color: @a;
+	background-color: transparent;
+	border: .125em solid;
+}
+
 .mix-btn(@a) {
 	color: contrast(@a, @text-color, @bg-color, 50%);
 	padding: .5em 1em;
 	white-space: nowrap;
 	border-radius: @border-radius;
-
-	&.outline {
-		color: @a;
-		background-color: transparent;
-		border: .125em solid;
-	}
 
 	&.small {
 		padding: .25em .5em;
