@@ -42,7 +42,6 @@
 }
 
 .mix-btn(@a) {
-	color: contrast(@a, @text-color, @bg-color, 50%);
 	padding: .5em 1em;
 	white-space: nowrap;
 	border-radius: @border-radius;
@@ -68,6 +67,7 @@
 
 .mix-btn-grad(@a) {
 	.mix-btn(@a);
+	color: contrast(@a, @text-color, @bg-color, 50%);
 	background-image: linear-gradient(to bottom right, lighten(@a, 10%), @a, darken(@a, 10%));
 	background-repeat: no-repeat;
 	background-size: 250% 250%;
@@ -88,6 +88,7 @@
 
 .mix-btn-flat(@a) {
 	.mix-btn(@a);
+	color: contrast(@a, @text-color, @bg-color, 50%);
 	background-color: @a;
 
 	&:hover {
