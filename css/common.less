@@ -635,6 +635,13 @@ nav li::before	{ display: none; }
 			}
 		}
 
+		&.fade {
+			& > a {
+				background-color: fade(@text-color, 7%);
+				border-radius: @border-radius;
+			}
+		}
+
 		&.pill {
 			& > a {
 				border-radius: 10em;
