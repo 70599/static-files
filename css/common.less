@@ -103,21 +103,25 @@
 	white-space: nowrap;
 	border-radius: @border-radius;
 
-	&.small {
+	&.small,
+	.small > & {
 		padding: .25em .5em;
 	}
 
-	&.width-1 {
+	&.width-1,
+	.width-1 > & {
 		padding-left: 1em;
 		padding-right: 1em;
 	}
 
-	&.width-2 {
+	&.width-2,
+	.width-2 > & {
 		padding-left: 2em;
 		padding-right: 2em;
 	}
 
-	&.pill {
+	&.pill,
+	.pill > & {
 		border-radius: 10em;
 	}
 }
@@ -220,13 +224,6 @@ html.wf-loading {
 		color: transparent !important;
 	}
 }
-
-.button,
-.bg-color-black,
-a.font-color-white,
-.font-color-white					{ color: #fff; }
-.bg-color-white,
-.font-color-black					{ color: #000; }
 
 [class*="font-color-"] *,
 [class*="font-color-"] a	{ color: inherit; }
@@ -596,58 +593,9 @@ nav li::before	{ display: none; }
 	.mix-btn(@text-color);
 }
 
-.button:not(.menu-item) {
+a.button:not(.menu-item),
+.button > a {
 	.mix-btn-grad(@text-color);
-}
-
-.menu-item {
-	&.button {
-		& > a {
-			padding: .5em 1em;
-			white-space: nowrap;
-		}
-
-		&.small {
-			& > a	{
-				padding: .25em .5em;
-			}
-		}
-
-		&.width-1 {
-			& > a {
-				padding-left: 1em;
-				padding-right: 1em;
-			}
-		}
-
-		&.width-2 {
-			& > a {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
-		}
-
-		&.outline {
-			& > a {
-				background-color: transparent;
-				border: .125em solid;
-				border-radius: @border-radius;
-			}
-		}
-
-		&.fade {
-			& > a {
-				background-color: fade(@text-color, 7%);
-				border-radius: @border-radius;
-			}
-		}
-
-		&.pill {
-			& > a {
-				border-radius: 10em;
-			}
-		}
-	}
 }
 
 .bg-color-white				{ background-color: #fff; }
