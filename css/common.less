@@ -174,6 +174,11 @@
 	max-width: calc(@a / @b * 17);
 }
 
+.mix-rotate(@a) {
+	-webkit-transform: rotate(unit(@a, deg));
+	transform: rotate(unit(@a, deg));
+}
+
 .mix-border(
 	@w: 1px;
 	@d: 1px;
