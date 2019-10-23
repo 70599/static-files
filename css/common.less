@@ -195,11 +195,12 @@
 	}
 
 .mix-shadow(@a; @b: 11%) {
-	box-shadow:	0 1px 1px fade(@a, @b),
-							0 2px 2px fade(@a, @b),
-							0 4px 4px fade(@a, @b),
-							0 8px 8px fade(@a, @b),
-							0 16px 16px fade(@a, @b);
+	box-shadow:	0 calc(1em / unit(@font-size) * 1) calc(1em / unit(@font-size) * 1) fade(@a, @b),
+							0 calc(1em / unit(@font-size) * 2) calc(1em / unit(@font-size) * 2) fade(@a, @b),
+							0 calc(1em / unit(@font-size) * 4) calc(1em / unit(@font-size) * 4) fade(@a, @b),
+							0 calc(1em / unit(@font-size) * 8) calc(1em / unit(@font-size) * 8) fade(@a, @b),
+							0 calc(1em / unit(@font-size) * 16) calc(1em / unit(@font-size) * 16) fade(@a, @b),
+							0 calc(1em / unit(@font-size) * 32) calc(1em / unit(@font-size) * 32) fade(@a, @b);
 }
 
 /*
