@@ -137,6 +137,16 @@
 	border: .125em solid;
 }
 
+.mix-img-size(@a) {
+	width: calc(1em / 17 * @a);
+	height: auto;
+}
+
+.mix-img-size-height(@a) {
+	width: auto;
+	height: calc(1em / 17 * @a);
+}
+
 .mix-wdsa(@w: 0; @d: 0; @s: 0; @a: 0) {
 	top: @w; right: @d; bottom: @s; left: @a;
 }
