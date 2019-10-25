@@ -1,4 +1,5 @@
-@font-size:					17px;
+@font-size:					17;
+@font-size-s:				14;
 
 @line-height:				1.6;
 
@@ -195,12 +196,12 @@
 	}
 
 .mix-shadow(@a; @b: 11%) {
-	box-shadow:	0 calc(1em / unit(@font-size) * 1) calc(1em / unit(@font-size) * 1) fade(@a, @b),
-							0 calc(1em / unit(@font-size) * 2) calc(1em / unit(@font-size) * 2) fade(@a, @b),
-							0 calc(1em / unit(@font-size) * 4) calc(1em / unit(@font-size) * 4) fade(@a, @b),
-							0 calc(1em / unit(@font-size) * 8) calc(1em / unit(@font-size) * 8) fade(@a, @b),
-							0 calc(1em / unit(@font-size) * 16) calc(1em / unit(@font-size) * 16) fade(@a, @b),
-							0 calc(1em / unit(@font-size) * 32) calc(1em / unit(@font-size) * 32) fade(@a, @b);
+	box-shadow:	0 calc(1em / @font-size * 1) calc(1em / @font-size * 1) fade(@a, @b),
+							0 calc(1em / @font-size * 2) calc(1em / @font-size * 2) fade(@a, @b),
+							0 calc(1em / @font-size * 4) calc(1em / @font-size * 4) fade(@a, @b),
+							0 calc(1em / @font-size * 8) calc(1em / @font-size * 8) fade(@a, @b),
+							0 calc(1em / @font-size * 16) calc(1em / @font-size * 16) fade(@a, @b),
+							0 calc(1em / @font-size * 32) calc(1em / @font-size * 32) fade(@a, @b);
 }
 
 /*
@@ -209,7 +210,7 @@
 |-------------------------------------------------------------------------------
 */
 
-body	{ font-size: @font-size; }
+body	{ font-size: unit(@font-size, px); }
 
 h1, h2, h3, h4, h5, h6,
 *							{ font-size: 1em; }
@@ -910,7 +911,7 @@ ol, ul,
 	}
 
 	figcaption {
-		.mix-font-size(14);
+		.mix-font-size(@font-size-s);
 		margin: .7em auto;
 		opacity: .5;
 	}
