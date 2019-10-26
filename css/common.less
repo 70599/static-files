@@ -469,8 +469,8 @@ ol, ul {
 	padding-left: 2.2em;
 }
 
-ol {
-	counter-reset: section;
+.content-area ol {
+	counter-reset: item;
 
 	ol {
 		padding-left: 3em;
@@ -481,8 +481,8 @@ ol {
 	}
 
 	& li::before {
-		counter-increment: section;
-		content: counters(section, '-') '.';
+		counter-increment: item;
+		content: counters(item, '-') '.';
 	}
 }
 
