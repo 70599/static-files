@@ -5,7 +5,7 @@
 */
 
 .font-size(@a) {
-	font-size: calc(1em / 17 * @a);
+	font-size: calc(1em / @font_size * @a);
 }
 
 .font-size-x(@a) {
@@ -129,13 +129,13 @@
 }
 
 .img-size(@a) {
-	width: calc(1em / 17 * @a);
+	width: calc(1em / @font_size * @a);
 	height: auto;
 }
 
 .img-size-height(@a) {
 	width: auto;
-	height: calc(1em / 17 * @a);
+	height: calc(1em / @font_size * @a);
 }
 
 .wdsa(@w: 0; @d: 0; @s: 0; @a: 0) {
@@ -157,12 +157,12 @@
 	padding-left: @a;
 }
 
-.wrap(@a; @b: 17) {
+.wrap(@a; @b: @font_size) {
 	margin: 0 auto;
-	padding-left: calc(~"@{line_height}em" / @b * 17);
-	padding-right: calc(~"@{line_height}em" / @b * 17);
+	padding-left: calc(~"@{line_height}em" / @b * @font_size);
+	padding-right: calc(~"@{line_height}em" / @b * @font_size);
 	width: 100%;
-	max-width: calc(@a / @b * 17);
+	max-width: calc(@a / @b * @font_size);
 }
 
 .rotate(@a) {
