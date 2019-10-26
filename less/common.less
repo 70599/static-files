@@ -141,10 +141,10 @@ html    { -webkit-text-size-adjust: 100%; }
 
 body {
 	margin: 0;
-	line-height: @line-height;
+	line-height: @line_height;
 
 	a {
-		.a(@link-color);
+		.a(@link_color);
 	}
 }
 
@@ -167,9 +167,9 @@ abbr {
 	&::before {
 		content: attr(data-title);
 		bottom: calc(~"100% + .5"em);
-		padding: @border-radius .7em;
+		padding: @border_radius .7em;
 		white-space: nowrap;
-		border-radius: @border-radius;
+		border-radius: @border_radius;
 	}
 
 	&::after {
@@ -418,7 +418,7 @@ nav li::before	{ display: none; }
 	padding: 0 .5em;
 	display: inline-block;
 	vertical-align: text-bottom;
-	border-radius: @border-radius;
+	border-radius: @border_radius;
 
 	.btn(@text-color);
 }
