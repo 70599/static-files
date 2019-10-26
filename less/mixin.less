@@ -63,7 +63,7 @@
 
 .btn-grad(@a) {
 	.btn(@a);
-	color: contrast(@a, @text-color, @bg-color, 50%);
+	color: contrast(@a, @text_color, @bg-color, 50%);
 	background-image: linear-gradient(to bottom right, lighten(@a, 10%), @a, darken(@a, 10%));
 	background-repeat: no-repeat;
 	background-size: 250% 250%;
@@ -84,7 +84,7 @@
 
 .btn-flat(@a) {
 	.btn(@a);
-	color: contrast(@a, @text-color, @bg-color, 50%);
+	color: contrast(@a, @text_color, @bg-color, 50%);
 	background-color: @a;
 
 	&:hover {
@@ -159,8 +159,8 @@
 
 .wrap(@a; @b: 17) {
 	margin: 0 auto;
-	padding-left: calc(~"@{line-height}em" / @b * 17);
-	padding-right: calc(~"@{line-height}em" / @b * 17);
+	padding-left: calc(~"@{line_height}em" / @b * 17);
+	padding-right: calc(~"@{line_height}em" / @b * 17);
 	width: 100%;
 	max-width: calc(@a / @b * 17);
 }
@@ -176,22 +176,22 @@
 	@s: 1px;
 	@a: 1px;
 	@style: solid;
-	@wc: @text-color;
-	@dc: @text-color;
-	@sc: @text-color;
-	@ac: @text-color) {
+	@wc: @text_color;
+	@dc: @text_color;
+	@sc: @text_color;
+	@ac: @text_color) {
 		border-width: @w @d @s @a;
 		border-style: @style;
 		border-color: @wc @dc @sc @ac;
 	}
 
 .shadow(@a; @b: 11%) {
-	box-shadow:	0 calc(1em / @font-size * 1) calc(1em / @font-size * 1) fade(@a, @b),
-							0 calc(1em / @font-size * 2) calc(1em / @font-size * 2) fade(@a, @b),
-							0 calc(1em / @font-size * 4) calc(1em / @font-size * 4) fade(@a, @b),
-							0 calc(1em / @font-size * 8) calc(1em / @font-size * 8) fade(@a, @b),
-							0 calc(1em / @font-size * 16) calc(1em / @font-size * 16) fade(@a, @b),
-							0 calc(1em / @font-size * 32) calc(1em / @font-size * 32) fade(@a, @b);
+	box-shadow:	0 calc(1em / @font_size * 1) calc(1em / @font_size * 1) fade(@a, @b),
+							0 calc(1em / @font_size * 2) calc(1em / @font_size * 2) fade(@a, @b),
+							0 calc(1em / @font_size * 4) calc(1em / @font_size * 4) fade(@a, @b),
+							0 calc(1em / @font_size * 8) calc(1em / @font_size * 8) fade(@a, @b),
+							0 calc(1em / @font_size * 16) calc(1em / @font_size * 16) fade(@a, @b),
+							0 calc(1em / @font_size * 32) calc(1em / @font_size * 32) fade(@a, @b);
 }
 
 /*
