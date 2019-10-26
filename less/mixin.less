@@ -63,7 +63,7 @@
 
 .btn-grad(@a) {
 	.btn(@a);
-	color: contrast(@a, @text_color, @bg-color, 50%);
+	color: contrast(@a, @text_color, @bg_color, 50%);
 	background-image: linear-gradient(to bottom right, lighten(@a, 10%), @a, darken(@a, 10%));
 	background-repeat: no-repeat;
 	background-size: 250% 250%;
@@ -84,7 +84,7 @@
 
 .btn-flat(@a) {
 	.btn(@a);
-	color: contrast(@a, @text_color, @bg-color, 50%);
+	color: contrast(@a, @text_color, @bg_color, 50%);
 	background-color: @a;
 
 	&:hover {
