@@ -480,14 +480,9 @@ ol {
 		}
 	}
 
-	& > li::before {
+	& li::before {
 		counter-increment: section;
-		content: counters(section) '.';
-
-		li::before {
-			counter-increment: section;
-			content: counters(section, '-') '.';
-		}
+		content: counters(section, '-') '.';
 	}
 }
 
