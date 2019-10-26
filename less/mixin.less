@@ -1,0 +1,28 @@
+/*
+|-------------------------------------------------------------------------------
+|   svg icon in background-image
+|-------------------------------------------------------------------------------
+*/
+
+.icon-bg-adjust {
+	width: 1.2em;
+	height: 1.2em;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100% 100%;
+}
+
+.icon-ios-arrow-forward(@a) {
+	@color: escape('@{a}');
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='@{color}' d='M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9z'/%3E%3C/svg%3E");
+	.icon-bg-adjust();
+}
+
+.icon-sli-home(@a) {
+	margin-right: .6em;
+	position: relative;
+	top: -.1em;
+	@color: escape('@{a}');
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1056 1024'%3E%3Cpath fill='@{color}' d='M1033 513L552 10q-4-5-10-7.5T529 0q-13 0-23 10L23 513q-6 7-8 15t.5 16.5T24 559q5 4 11 6.5t12 2 12-3 10-6.5l44-45v479q0 13 9 22.5t23 9.5h223q4 0 7.5-1t6.5-2.5 6-4 5-5 3.5-5.5 2.5-7 1-7l1-320h255v320q0 13 9.5 22.5t22.5 9.5h224q13 0 22.5-9.5T944 992V513l43 45q9 10 23 10 13 0 22-9 9-10 9.5-23t-8.5-23zm-153-58v505H720V640q0-13-9.5-22.5T688 608H369q-13 0-22.5 9.5T337 640l-1 320H177V455q0-4-1-8L529 79l352 368q-1 4-1 8z'/%3E%3C/svg%3E");
+	.icon-bg-adjust();
+}
