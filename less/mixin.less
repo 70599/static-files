@@ -20,6 +20,7 @@
 		display: inline-flex;
 		flex-wrap: wrap;
 		align-items: center;
+		width: auto;
 	}
 
 	&:hover {
@@ -144,7 +145,7 @@
 
 .abso(@w: 0; @d: 0; @s: 0; @a: 0) {
 	position: absolute;
-	.wdsa(@w, @d, @s, @a)
+	.wdsa(@w, @d, @s, @a);
 }
 
 .fix(@w: 0; @d: 0; @s: auto; @a: 0) {
