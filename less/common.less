@@ -565,18 +565,6 @@ a.flex-box-inline {
 	&.flex-align-content-space-around {
 		align-content: space-around;
 	}
-
-	&.flex-space-before-last {
-		&::before {
-			content: '';
-			flex: 1;
-			order: 1;
-		}
-
-		> :last-child {
-			order: 2;
-		}
-	}
 }
 
 .flex-box-inline,
