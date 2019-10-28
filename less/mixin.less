@@ -187,12 +187,13 @@
 	}
 
 .shadow(@a; @b: 11%) {
-	box-shadow:	0 calc(1em / @font_size * 1) calc(1em / @font_size * 1) fade(@a, @b),
-							0 calc(1em / @font_size * 2) calc(1em / @font_size * 2) fade(@a, @b),
-							0 calc(1em / @font_size * 4) calc(1em / @font_size * 4) fade(@a, @b),
-							0 calc(1em / @font_size * 8) calc(1em / @font_size * 8) fade(@a, @b),
-							0 calc(1em / @font_size * 16) calc(1em / @font_size * 16) fade(@a, @b),
-							0 calc(1em / @font_size * 32) calc(1em / @font_size * 32) fade(@a, @b);
+	box-shadow+:
+		0 calc(1em / @font_size * 1) calc(1em / @font_size * 1) fade(@a, @b),
+		0 calc(1em / @font_size * 2) calc(1em / @font_size * 2) fade(@a, @b),
+		0 calc(1em / @font_size * 4) calc(1em / @font_size * 4) fade(@a, @b),
+		0 calc(1em / @font_size * 8) calc(1em / @font_size * 8) fade(@a, @b),
+		0 calc(1em / @font_size * 16) calc(1em / @font_size * 16) fade(@a, @b),
+		0 calc(1em / @font_size * 32) calc(1em / @font_size * 32) fade(@a, @b);
 }
 
 /*
