@@ -308,6 +308,17 @@ li {
 ul:not(.menu) > li::before		{ content: '\2022'; opacity: .25; }
 ul:not(.menu) ul > li::before	{ content: '\25aa'; }
 
+.entry-content {
+	& > ul > li,
+	& > ol > li {
+		margin-bottom: .6em;
+
+		li {
+			margin-bottom: 0;
+		}
+	}
+}
+
 p {
 	margin: 0;
 	margin-bottom: ~"@{line_height}em";
