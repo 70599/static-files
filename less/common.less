@@ -270,7 +270,26 @@ ol, ul {
 	margin: 0;
 	margin-bottom: ~"@{line_height}em";
 	padding: 0;
+}
+
+li {
 	padding-left: 2.2em;
+	display: flex;
+	align-items: baseline;
+
+	&::before {
+		margin-right: .4em;
+		width: 1.8em;
+		text-align: right;
+	}
+
+	li {
+		padding-left: 2.6em;
+
+		li {
+			padding-left: 3em;
+		}
+	}
 }
 
 .content-area ol {
@@ -294,15 +313,6 @@ ul {
 	&.menu,
 	&.sub-menu {
 		padding-left: 0;
-	}
-}
-
-li {
-	position: relative;
-
-	&::before {
-		position: absolute;
-		right: calc(~"100% + .4em");
 	}
 }
 
