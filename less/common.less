@@ -297,14 +297,6 @@ li {
 .content-area ol {
 	counter-reset: item;
 
-	ol {
-		padding-left: 3em;
-
-		ol {
-			padding-left: 3.8em;
-		}
-	}
-
 	& li::before {
 		counter-increment: item;
 		content: counters(item, '-') '.';
