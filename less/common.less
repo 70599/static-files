@@ -270,33 +270,19 @@ ol, ul {
 	margin: 0;
 	margin-bottom: ~"@{line_height}em";
 	padding: 0;
-}
-
-li {
-	position: relative;
 	padding-left: 2.2em;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
-
-	&::before {
-		margin-left: -2.2em;
-		margin-right: .4em;
-		width: 1.8em;
-		text-align: right;
-	}
-
-	li {
-		padding-left: 2.6em;
-
-		li {
-			padding-left: 3em;
-		}
-	}
 }
 
 .content-area ol {
 	counter-reset: item;
+
+	ol {
+		padding-left: 3em;
+
+		ol {
+			padding-left: 3.8em;
+		}
+	}
 
 	& li::before {
 		counter-increment: item;
@@ -308,6 +294,15 @@ ul {
 	&.menu,
 	&.sub-menu {
 		padding-left: 0;
+	}
+}
+
+li {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		right: calc(~"100% + .4em");
 	}
 }
 
