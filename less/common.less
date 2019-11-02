@@ -151,7 +151,7 @@ body {
 	line-height: @line_height;
 
 	a {
-		.a(@link_color);
+		.a(@color_link);
 	}
 }
 
@@ -310,6 +310,10 @@ li {
 ul:not(.menu) > li::before		{ content: '\2022'; }
 ul:not(.menu) ul > li::before	{ content: '\25aa'; }
 
+ul.check > li::before {
+	.icon-md-checkmark(@color_safe)
+}
+
 .entry-content {
 	& > ul > li,
 	& > ol > li {
@@ -439,15 +443,15 @@ nav li::before	{ display: none; }
 	vertical-align: text-bottom;
 	border-radius: @border_radius;
 
-	.btn(@text_color);
+	.btn(@color_text);
 }
 
 .button {
-	.btn-grad(@text_color);
+	.btn-grad(@color_text);
 }
 
 .button.fade {
-	.btn-fade(@text_color);
+	.btn-fade(@color_text);
 }
 
 .bg-color-white				{ background-color: #fff; }
