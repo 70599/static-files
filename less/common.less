@@ -705,6 +705,21 @@ ol, ul,
 	height: auto;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+	color: @color_accent;
+}
+
+.swiper-pagination-bullet {
+	width: .6em;
+	height: $width;
+
+	&.swiper-pagination-bullet-active {
+		width: unit(@line_height, em);
+		background-color: @color_accent;
+	}
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   margins
