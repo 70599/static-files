@@ -312,7 +312,9 @@ ul:not(.menu) ul > li::before	{ content: '\25aa'; }
 
 ul.check > li::before {
 	content: '';
-	.icon-ios-circle-outline(@color_safe);
+	.icon-ios-checkmark-circle(@color_safe);
+	width: @icon_size;
+	height: unit(@line_height, em);
 }
 
 .entry-content {
