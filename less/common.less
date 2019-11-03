@@ -761,6 +761,24 @@ ol, ul,
 	}
 }
 
+.wp-block-table-wrap.sticky {
+	table {
+		width: 100%;
+		
+		& > *:nth-child(1) > tr:nth-child(1) > *, {
+			position: -webkit-sticky;
+			position: sticky;
+			top: 0;
+		}
+
+		& tr > *:nth-child(1) {
+			position: -webkit-sticky;
+			position: sticky;
+			left: 0;
+		}
+	}
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   margins
@@ -782,6 +800,11 @@ ol, ul,
 	}
 }
 
+.wp-block-table-wrap,
 .wp-block-table {
 	margin-bottom: unit(@line_height, em);
+}
+
+.wp-block-table-wrap > .wp-block-table {
+	margin-bottom: 0;
 }
