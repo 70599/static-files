@@ -787,6 +787,12 @@ ol, ul,
 	}
 }
 
+table.stripe {
+	tbody tr:nth-child(2n-1) > * {
+		background-color: darken(@color_bg, 2.5%);
+	}
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   margins
