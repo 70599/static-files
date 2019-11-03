@@ -788,7 +788,7 @@ ol, ul,
 }
 
 table.stripe {
-	tbody tr:nth-child(2n-1) > * {
+	tbody tr:nth-child(2n-1) > *:not([rowspan]) {
 		background-color: darken(@color_bg, 2.5%);
 	}
 }
