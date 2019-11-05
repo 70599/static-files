@@ -160,8 +160,8 @@
 
 .wrap(@a; @b: @font_size) {
 	margin: 0 auto;
-	padding-left: calc(~"@{line_height}em" / @b * @font_size);
-	padding-right: calc(~"@{line_height}em" / @b * @font_size);
+	padding-left: calc(@line_height / @b * @font_size);
+	padding-right: calc(@line_height / @b * @font_size);
 	width: 100%;
 	max-width: calc(@a / @b * @font_size);
 }
