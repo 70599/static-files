@@ -9,7 +9,7 @@
 }
 
 .font-size(@a) {
-	font-size: .px2em(@a);
+	font-size: calc(1em / @font_size * @a);
 }
 
 .font-size-x(@a) {
@@ -184,12 +184,12 @@
 
 .shadow(@a; @b: 11%) {
 	box-shadow+:
-		0 calc(1em / @font_size * 1) calc(1em / @font_size * 1) fade(@a, @b),
-		0 calc(1em / @font_size * 2) calc(1em / @font_size * 2) fade(@a, @b),
-		0 calc(1em / @font_size * 4) calc(1em / @font_size * 4) fade(@a, @b),
-		0 calc(1em / @font_size * 8) calc(1em / @font_size * 8) fade(@a, @b),
-		0 calc(1em / @font_size * 16) calc(1em / @font_size * 16) fade(@a, @b),
-		0 calc(1em / @font_size * 32) calc(1em / @font_size * 32) fade(@a, @b);
+		0 .px2em(1) .px2em(1) fade(@a, @b),
+		0 .px2em(2) .px2em(2) fade(@a, @b),
+		0 .px2em(4) .px2em(4) fade(@a, @b),
+		0 .px2em(8) .px2em(8) fade(@a, @b),
+		0 .px2em(16) .px2em(16) fade(@a, @b),
+		0 .px2em(32) .px2em(32) fade(@a, @b);
 }
 
 /*
