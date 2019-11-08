@@ -15,12 +15,8 @@
 .a(@a; @b: 17%) {
 	color: @a;
 	text-decoration: none;
-
-	&:not([class*="flex-"]) {
-		display: inline-flex;
-		align-items: center;
-		width: auto;
-	}
+	display: inline-flex;
+	align-items: center;
 
 	&:hover {
 		color: lighten(@a, @b);
@@ -128,12 +124,12 @@
 	border: .125em solid;
 }
 
-.img-size(@a) {
+.img-width(@a) {
 	width: calc(1em / @font_size * @a);
 	height: auto;
 }
 
-.img-size-height(@a) {
+.img-height(@a) {
 	width: auto;
 	height: calc(1em / @font_size * @a);
 }
