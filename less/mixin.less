@@ -4,8 +4,12 @@
 |-------------------------------------------------------------------------------
 */
 
+.px2em(@a) {
+	calc(1em / @font_size * @a);
+}
+
 .font-size(@a) {
-	font-size: calc(1em / @font_size * @a);
+	font-size: .px2em(@a);
 }
 
 .font-size-x(@a) {
