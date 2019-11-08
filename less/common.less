@@ -312,6 +312,7 @@ ol, ul {
 	& li::before {
 		counter-increment: item;
 		content: counters(item, '-') '.';
+		white-space: nowrap;
 	}
 }
 
