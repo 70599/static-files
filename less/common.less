@@ -847,6 +847,17 @@ table.no-border {
 	margin-bottom: @line_height;
 }
 
-.wp-block-table-wrap > .wp-block-table {
-	margin-bottom: 0;
+.wp-block-table-wrap {
+	max-width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+
+	& > .wp-block-table {
+		margin-bottom: 0;
+		width: 100%;
+
+		th, td {
+			white-space: nowrap;
+		}
+	}
 }
