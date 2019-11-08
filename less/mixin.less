@@ -9,7 +9,7 @@
 }
 
 .font-size(@a) {
-	font-size: .px2em(@a);
+	font-size: calc(1em / @font_size * @a);
 }
 
 .font-size-x(@a) {
