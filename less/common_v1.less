@@ -6,15 +6,15 @@
 
 .vendor(@property, @value) {
 
-	when (@property == 'position') and (@value == 'sticky') {
+	if ((@property == 'position') and (@value == 'sticky') {
 		@{property}: -webkit-@value;
 		@{property}: @value;
-	}
+	});
 
-	when (@property == 'backdrop-filter') {
+	if ((@property == 'backdrop-filter') {
 		-webkit-@{property}: @value;
 		@{property}: @value;
-	}
+	});
 }
 
 @color_link_hover:	lighten(@color_link, 17%);
