@@ -9,14 +9,13 @@
 	@{p}: @v;
 }
 
-.vendor(@p, @v) when (@p = transform) {
-	-webkit-@{p}+_: @v;
-	@{p}+_: @v;
+.vendor(@p, @v) when (@p = display) and (@v = flex) {
+	@{p}: -webkit-box;
+	@{p}: @v;
 }
 
-.vendor(@p, @v) when (@p = box-shadow) {
+.vendor(@p, @v) when (@p = transform) {
 	-webkit-@{p}+_: @v;
-	-moz-@{p}+_: @v;
 	@{p}+_: @v;
 }
 
@@ -830,8 +829,7 @@ a.flex-box-inline {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	display: -webkit-box;
-	display: flex;
+	.vendor(display, flex);
 	flex-wrap: wrap;
 	-webkit-box-align: center;
 	        align-items: center;
