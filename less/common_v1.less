@@ -200,8 +200,7 @@
 }
 
 .rotate(@a) {
-	-webkit-transform: rotate(unit(@a, deg));
-	transform: rotate(unit(@a, deg));
+	.vendor(transform, rotate(unit(@a, deg));
 }
 
 .border(
