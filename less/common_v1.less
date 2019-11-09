@@ -5,8 +5,8 @@
 */
 
 .vendor(@p, @v) when (@p = 'position') and (@v = 'sticky') {
-	e(@p): e('-webkit-')e(@v);
-	e(@p): e(@v);
+	@{p}: -webkit-@{v};
+	@{p}: @{v};
 }
 
 @color_link_hover:	lighten(@color_link, 17%);
