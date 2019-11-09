@@ -4,17 +4,9 @@
 |-------------------------------------------------------------------------------
 */
 
-.vendor(@property, @value) {
-
-	if ((@property == 'position') and (@value == 'sticky') {
-		@{property}: -webkit-@value;
-		@{property}: @value;
-	});
-
-	if ((@property == 'backdrop-filter') {
-		-webkit-@{property}: @value;
-		@{property}: @value;
-	});
+.vendor(@p, @v) when (@p = 'position') and (@v = 'sticky') {
+	@{p}: -webkit-@v;
+	@{p}: @v;
 }
 
 @color_link_hover:	lighten(@color_link, 17%);
