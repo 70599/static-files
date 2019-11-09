@@ -6,12 +6,12 @@
 
 .vendor(@property, @value) {
 
-	if (@property == 'position') and (@value == 'sticky') {
+	when (@property == 'position') and (@value == 'sticky') {
 		@{property}: -webkit-@value;
 		@{property}: @value;
 	}
 
-	if (@property == 'backdrop-filter') {
+	when (@property == 'backdrop-filter') {
 		-webkit-@{property}: @value;
 		@{property}: @value;
 	}
