@@ -5,7 +5,7 @@
 */
 
 .vendor(@p, @v) when (@p = position) and (@v = sticky) {
-	@{p}: "-webkit-@{v}";
+	@{p}: e("-webkit-@{v}");
 	@{p}: @v;
 }
 
