@@ -14,6 +14,12 @@
 	@{p}+_: @v;
 }
 
+.vendor(@p, @v) when (@p = box-shadow) {
+	-webkit-@{p}+_: @v;
+	-moz-@{p}+_: @v;
+	@{p}+_: @v;
+}
+
 .vendor(@p, @v) {
 	-webkit-@{p}: @v;
 	@{p}: @v;
