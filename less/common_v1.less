@@ -24,6 +24,17 @@
 	@{p}: @v;
 }
 
+.vendor(@p, @v) when (@p = flex-direction) and (@v = column) {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	@{p}: @v;
+}
+
+.vendor(@p, @v) when (@p = order) {
+	-webkit-box-ordinal-group: @v+1;
+	@{p}: @v;
+}
+
 .vendor(@p, @v) when (@p = transform) {
 	-webkit-@{p}+_: @v;
 	@{p}+_: @v;
@@ -837,13 +848,10 @@ a.flex-box-inline {
 	margin-right: auto;
 	.vendor(display, flex);
 	flex-wrap: wrap;
-	-webkit-box-align: center;
-	        align-items: center;
+	.vendor(align-items, center);
 
 	&.flex-flow-column {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		        flex-flow: column;
+		.vendor(flex-direction, column);
 	}
 
 	&.flex-flow-column > * {
