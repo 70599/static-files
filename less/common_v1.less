@@ -29,11 +29,6 @@
 	@{p}+_: @v;
 }
 
-.vendor(@p, @v) when (@p != display) and (@p != align-items) {
-	-webkit-@{p}: @v;
-	@{p}: @v;
-}
-
 @color_link_hover:	lighten(@color_link, 17%);
 @color_link_active:	darken(@color_link, 17%);
 @color_safe:				#1abc9c;
