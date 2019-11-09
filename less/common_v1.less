@@ -71,6 +71,11 @@
 	@{p}: @v;
 }
 
+.vendor(@p, @v) when (@p = backdrop-filter) {
+	-webkit-@{p}: @v;
+	@{p}: @v;
+}
+
 .px2em(@a) {
 	calc(1em / @font_size * @a);
 }
@@ -791,8 +796,7 @@ body.firefox {
 }
 
 html.backdropfilter .backdropfilter-blur-14 {
-	-webkit-backdrop-filter: blur(14px);
-	backdrop-filter: blur(14px);
+	.vendor(backdrop-filter, blur(14px));
 }
 
 /*
