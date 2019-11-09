@@ -9,14 +9,6 @@
 	@{p}: @v;
 }
 
-.vendor(@p, @v) when (@p = transform) {
-	-webkit-@{p}: @v;
-	-moz-@{p}: @v;
-	-ms-@{p}: @v;
-	-o-@{p}: @v;
-	@{p}: @v;
-}
-
 .vendor(@p, @v) {
 	-webkit-@{p}: @v;
 	@{p}: @v;
