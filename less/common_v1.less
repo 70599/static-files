@@ -14,12 +14,22 @@
 	@{p}: @v;
 }
 
+.vendor(@p, @v) when (@p = display) and (@v = inline-flex) {
+	@{p}: -webkit-inline-box;
+	@{p}: @v;
+}
+
+.vendor(@p, @v) when (@p = align-items) {
+	-webkit-box-align: @v;
+	@{p}: @v;
+}
+
 .vendor(@p, @v) when (@p = transform) {
 	-webkit-@{p}+_: @v;
 	@{p}+_: @v;
 }
 
-.vendor(@p, @v) {
+.vendor(@p, @v) when (@p != display) and (@p != align-items) {
 	-webkit-@{p}: @v;
 	@{p}: @v;
 }
@@ -55,8 +65,9 @@
 .a(@a; @b: 17%) {
 	color: @a;
 	text-decoration: none;
+	display: -webkit-inline-box;
 	display: inline-flex;
-	align-items: center;
+	.vendor(align-items, center);
 
 	&:hover {
 		color: lighten(@a, @b);
