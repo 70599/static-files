@@ -20,52 +20,52 @@
 |-------------------------------------------------------------------------------
 */
 
-.pre(@p, @v) when (@p = position) and (@v = sticky) {
+.pre(@p, @v) when(@p = position) and (@v = sticky) {
 	@{p}: e('-webkit-@{v}');
 }
 
-.pre(@p, @v) when (@p = backdrop-filter) {
+.pre(@p, @v) when(@p = backdrop-filter) {
 	-webkit-@{p}: @v;
 }
 
-.pre(@p, @v) when (@p = display) and (@v = flex) {
+.pre(@p, @v) when(@p = display) and (@v = flex) {
 	@{p}: -webkit-box;
 }
 
-.pre(@p, @v) when (@p = display) and (@v = inline-flex) {
+.pre(@p, @v) when(@p = display) and (@v = inline-flex) {
 	@{p}: -webkit-inline-box;
 }
 
-.pre(@p, @v) when (@p = align-items) {
+.pre(@p, @v) when(@p = align-items) {
 	-webkit-box-align: @v;
 }
 
-.pre(@p, @v) when (@p = flex) {
+.pre(@p, @v) when(@p = flex) {
 	-webkit-box-@{p}: @v;
 }
 
-.pre(@p, @v) when (@p = flex-direction) and (@v = column) {
+.pre(@p, @v) when(@p = flex-direction) and (@v = column) {
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 }
 
-.pre(@p, @v) when (@p = order) {
+.pre(@p, @v) when(@p = order) {
 	-webkit-box-ordinal-group: @v+1;
 }
 
-.pre(@p, @v) when (@p = transform) {
+.pre(@p, @v) when(@p = transform) {
 	-webkit-@{p}: @v;
 }
 
-.pre(@p, @v) when (@p = transform-origin) {
+.pre(@p, @v) when(@p = transform-origin) {
 	-webkit-@{p}: @v;
 }
 
-.pre(@p, @v) when (@p = justify-content) {
+.pre(@p, @v) when(@p = justify-content) {
 	-webkit-box-pack: @v;
 }
 
-.pre(@p, @v) when (@p = justify-content) and (@v = space-between) {
+.pre(@p, @v) when(@p = justify-content) and (@v = space-between) {
 	-webkit-box-pack: justify;
 }
 
