@@ -255,12 +255,12 @@
 
 .shadow(@a; @b: 11%) {
 	box-shadow+:
-		0 .px2em(1) .px2em(1) fade(@a, @b),
-		0 .px2em(2) .px2em(2) fade(@a, @b),
-		0 .px2em(4) .px2em(4) fade(@a, @b),
-		0 .px2em(8) .px2em(8) fade(@a, @b),
-		0 .px2em(16) .px2em(16) fade(@a, @b),
-		0 .px2em(32) .px2em(32) fade(@a, @b);
+		0 .cal(1)[px2em] .cal(1)[px2em] fade(@a, @b),
+		0 .cal(2)[px2em] .cal(2)[px2em] fade(@a, @b),
+		0 .cal(4)[px2em] .cal(4)[px2em] fade(@a, @b),
+		0 .cal(8)[px2em] .cal(8)[px2em] fade(@a, @b),
+		0 .cal(16)[px2em] .cal(16)[px2em] fade(@a, @b),
+		0 .cal(32)[px2em] .cal(32)[px2em] fade(@a, @b);
 }
 
 /*
