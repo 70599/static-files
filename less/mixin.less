@@ -170,8 +170,7 @@
 }
 
 .rotate(@a) {
-	-webkit-transform+_: rotate(unit(@a, deg));
-	transform+_: rotate(unit(@a, deg));
+	.pre(transform, rotate(unit(@a, deg)));
 }
 
 .border(
@@ -186,7 +185,7 @@
 		border-color: @wc @dc @sc @ac;
 	}
 
-.shadow(@a; @b: 11%) {
+.shadow(@a: @color_text; @b: 11%) {
 	box-shadow+:
 		0 .px2em(1) .px2em(1) fade(@a, @b),
 		0 .px2em(2) .px2em(2) fade(@a, @b),
@@ -196,19 +195,19 @@
 		0 .px2em(32) .px2em(32) fade(@a, @b);
 }
 
+@plugin '../js/less-plugins';
+
 /*
 |-------------------------------------------------------------------------------
 |   svg icon in background-image
 |-------------------------------------------------------------------------------
 */
 
-@icon_size: 1.2em;
-
 .icon-bg-adjust(@x: 50%; @y: 50%; @w: @icon_size; @h: @icon_size; @w: @icon_size; @h: @icon_size; @r: 0) {
 	background-repeat: no-repeat;
 	background-position: @x @y;
 	background-size: @w @h;
-	transform: rotate(unit(@r, deg));
+	.rotate(@r);
 }
 
 // Ionicons

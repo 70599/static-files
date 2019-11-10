@@ -25,6 +25,11 @@
 	@{p}: @v;
 }
 
+.pre(@p, @v) when (@p = backdrop-filter) {
+	-webkit-@{p}: @v;
+	@{p}: @v;
+}
+
 .pre(@p, @v) when (@p = display) and (@v = flex) {
 	@{p}: -webkit-box;
 	@{p}: @v;
@@ -71,17 +76,12 @@
 	@{p}: @v;
 }
 
-.pre(@p, @v) when (@p = backdrop-filter) {
-	-webkit-@{p}: @v;
-	@{p}: @v;
+.cal(@px) {
+	px2em: calc(1em / @font_size * @px);
 }
 
-.px2em(@a) {
-	calc(1em / @font_size * @a);
-}
-
-.font-size(@a) {
-	font-size: calc(1em / @font_size * @a);
+.font-size(@px) {
+	font-size: .cal(@px)[px2em];
 }
 
 .font-size-x(@a) {

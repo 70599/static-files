@@ -7,10 +7,11 @@
 |-------------------------------------------------------------------------------
 */
 
-body	{ font-size: unit(@font_size, px); }
+html	{ font-size: unit(@font_size, px); }
 
 .screen-reader-text	{ font-size: 0; }
 
+body,
 h1, h2, h3, h4, h5, h6,
 *								{ font-size: 1em; }
 .badge,
@@ -448,13 +449,12 @@ body.firefox {
 	}
 
 	option:not(:checked) {
-	    color: black;
+	    color: #000;
 	}
 }
 
 html.backdropfilter .backdropfilter-blur-14 {
-	-webkit-backdrop-filter: blur(14px);
-	backdrop-filter: blur(14px);
+	.pre(backdrop-filter, blur(14px));
 }
 
 /*
@@ -504,11 +504,10 @@ nav li::before	{ display: none; }
 	-moz-column-gap: @line_height;
 	column-gap: @line_height;
 
+
 	& > * {
 		//	https://stackoverflow.com/questions/7785374/how-to-prevent-column-break-within-an-element
-		-webkit-column-break-inside: avoid;
-		page-break-inside: avoid;
-		break-inside: avoid-column;
+		.pre(break-inside, avoid);
 		display: table;
 	}
 }
@@ -783,8 +782,7 @@ ol, ul,
 		width: 100%;
 
 		& > *:nth-child(1) > tr:nth-child(1) > *, {
-			position: -webkit-sticky;
-			position: sticky;
+			.pre(position, sticky);
 			top: 0;
 		}
 
@@ -828,12 +826,6 @@ table.list-style {
 		text-align: right;
 	}
 }
-
-/*
-|-------------------------------------------------------------------------------
-|   margins
-|-------------------------------------------------------------------------------
-*/
 
 .wp-block-image {
 	margin: 0;
