@@ -1,24 +1,10 @@
 /*
 |-------------------------------------------------------------------------------
-|   font family
-|-------------------------------------------------------------------------------
-*/
-
-html {
-	font-family: var(--font-family);
-}
-
-html.windows {
-	font-family: var(--font-family-windows);
-}
-
-/*
-|-------------------------------------------------------------------------------
 |   font size
 |-------------------------------------------------------------------------------
 */
 
-html	{ font-size: var(--html-font-size)px; }
+html	{ font-size: 17px; }
 body	{ font-size: 1rem; }
 
 .font-size-x0-4			{ font-size: .4em }
@@ -54,10 +40,17 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
-body							{ color: rgb(var(--color)); }
-*									{ color: inherit; }
+.button,
+.bg-color-black,
+a.font-color-white,
+.font-color-white					{ color: #fff; }
+.bg-color-white,
+.font-color-black					{ color: #000; }
 
-.font-colot-unset	{ color: unset; }
+[class*="font-color-"] *,
+[class*="font-color-"] a	{ color: inherit; }
+
+.font-colot-unset					{ color: unset; }
 
 /*
 |-------------------------------------------------------------------------------
@@ -143,7 +136,7 @@ html    { -webkit-text-size-adjust: 100%; }
 }
 
 body {
-	line-height: var(--line-height);
+	line-height: 1.618;
 }
 
 a {
