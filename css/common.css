@@ -18,7 +18,7 @@ html.windows {
 |-------------------------------------------------------------------------------
 */
 
-html	{ font-size: var(--html-font-size)px; }
+html	{ font-size: calc(1px * var(--html-font-size)); }
 body	{ font-size: 1rem; }
 
 .font-size-x0-4			{ font-size: .4em }
