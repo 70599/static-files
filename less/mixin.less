@@ -177,12 +177,12 @@
 	@dc: @color_text;
 	@sc: @color_text;
 	@ac: @color_text) {
-		border-width: @w @d @s @a;
-		border-style: @style;
-		border-color: @wc @dc @sc @ac;
-	}
+	border-width: @w @d @s @a;
+	border-style: @style;
+	border-color: @wc @dc @sc @ac;
+}
 
-	.shadow(@a; @b: 11%) {
+.shadow(@a; @b: 11%) {
 	box-shadow+:
 		0 .cal(1)[px2em] .cal(1)[px2em] fade(@a, @b),
 		0 .cal(2)[px2em] .cal(2)[px2em] fade(@a, @b),

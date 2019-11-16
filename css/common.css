@@ -4,7 +4,8 @@
 |-------------------------------------------------------------------------------
 */
 
-body	{ font-size: 16px; }
+html	{ font-size: 17px; }
+body	{ font-size: 1rem; }
 
 .font-size-x0-4			{ font-size: .4em }
 .font-size-x0-45		{ font-size: .45em }
@@ -623,11 +624,13 @@ a .image-body::before,
 .opacity-0-6	{ opacity: .6; }
 
 .object-fit.contain {
+	-o-object-fit: contain;
 	object-fit: contain;
 	font-family: 'object-fit: contain;';
 }
 
 .object-fit.cover {
+	-o-object-fit: cover;
 	object-fit: cover;
 	font-family: 'object-fit: cover;';
 }
