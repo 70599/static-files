@@ -403,7 +403,7 @@ nav li::before	{ display: none; }
 
 .badge.outline {
 	background-color: transparent;
-	border: .125em;
+	border-width: .125em;
 	border-radius: .275em;
 }
 
@@ -661,7 +661,8 @@ a .image-body::before,
 	right: 0;
 	bottom: 0;
 	left: 0;
-	border: 1px rgba(0,0,0,.17);
+	border-width: 1px;
+	border-color: rgba(0,0,0,.17);
 }
 
 ol, ul,
