@@ -216,6 +216,10 @@ abbr.bottom::after {
 	border-top-width: 0;
 }
 
+b {
+	vertical-align: baseline;
+}
+
 button, input, optgroup, select, textarea {
 	padding: 0;
 	line-height: inherit;
