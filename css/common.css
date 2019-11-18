@@ -29,7 +29,7 @@ body	{ font-size: 1rem; }
 .font-size-x0-8125	{ font-size: .8125em }	/*	13px	*/
 .font-size-x0-875		{ font-size: .875em }		/*	14px	*/
 .font-size-x0-9375	{ font-size: .9375em }	/*	15px	*/
-*,
+*:not(svg),
 h1, h2, h3, h4, h4, h5,
 .font-size-x1				{ font-size: 1em; }
 .font-size-x1-1			{ font-size: 1.1em; }
