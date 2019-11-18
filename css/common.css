@@ -100,11 +100,11 @@ b,
 *::before,
 *::after,
 * {
-	-webkit-transition-property: color, font-size, background-size, background-color, border-color, width, height, text-shadow, opacity, -webkit-box-shadow, -webkit-filter, -webkit-transform;
-	-webkit-transition-property: color, font-size, background-size, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
-	transition-property: color, font-size, background-size, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
-	transition-property: color, font-size, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform;
-	transition-property: color, font-size, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform, -webkit-filter, -webkit-transform;
+	-webkit-transition-property: color, background-size, background-color, border-color, width, height, text-shadow, opacity, -webkit-box-shadow, -webkit-filter, -webkit-transform;
+	-webkit-transition-property: color, background-size, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
+	transition-property: color, background-size, background-color, border-color, width, height, box-shadow, text-shadow, opacity, -webkit-filter, -webkit-transform;
+	transition-property: color, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform;
+	transition-property: color, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform, -webkit-filter, -webkit-transform;
 	-webkit-transition-duration: .2s;
 	        transition-duration: .2s;
 	-webkit-transition-timing-function: ease-in-out;
