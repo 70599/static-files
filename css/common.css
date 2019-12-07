@@ -656,6 +656,11 @@ ol, ul,
 .text-align-just		{ text-align: justify; }
 .text-align-right		{ text-align: right; }
 
+.vertical-rl {
+	-webkit-writing-mode: vertical-rl;
+	writing-mode: vertical-rl;
+}
+
 .underline	{ border-bottom: 1px; }
 
 .upper-case	{ text-transform: uppercase; }
