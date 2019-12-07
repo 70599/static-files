@@ -594,6 +594,11 @@ nav li::before	{ display: none; }
 	transform: translate(-50%,-50%);
 }
 
+[class*="aspect-"]::before {
+	position: relative;
+	display: block;
+}
+
 .aspect-1-1::before		{ padding-bottom: calc(100% / 1 * 1); }
 .aspect-1-2::before		{ padding-bottom: calc(100% / 1 * 2); }
 .aspect-2-1::before		{ padding-bottom: calc(100% / 2 * 1); }
