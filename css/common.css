@@ -178,7 +178,7 @@ ul:not(.menu) ul > li:not([class*="aspect-"])::before	{ content: '\25aa'; }
 
 p {
 	margin: 0;
-	margin-bottom: 1.7em;
+	margin-bottom: var(--line-height-em, 1.7em);
 }
 
 p:last-of-type {
@@ -659,7 +659,7 @@ nav li::before	{ display: none; }
 	border-color: rgba(0,0,0,.17);
 }
 
-ol, ul,
+p, ol, ul,
 .text-align-left		{ text-align: left; }
 .wp-block-image,
 .text-align-center	{ text-align: center; }
