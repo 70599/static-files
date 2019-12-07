@@ -445,12 +445,15 @@ nav li::before	{ display: none; }
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
-	display: flex;
-	flex-wrap: wrap;
+	display: flex;	
 }
 
 .flex-box.inline {
 	display: inline-flex;
+}
+
+.flex-box.wrap {
+	flex-wrap: wrap;
 }
 
 .flex-box.flex-flow-column {
