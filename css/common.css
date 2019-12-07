@@ -242,6 +242,7 @@ body	{ font-size: 1rem; }
 .font-size-x0-45		{ font-size: .45em }
 .font-size-x0-5			{ font-size: .5em }
 ruby > rt,
+.font-size-x0-6			{ font-size: .6em }
 small,
 .font-size-x0-75		{ font-size: .75em }
 .badge,
