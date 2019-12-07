@@ -148,7 +148,7 @@ ol, ul {
 }
 
 ol {
-	counter-reset: section;
+	counter-reset: number;
 }
 
 ol ol			{ padding-left: 3em; }
@@ -168,8 +168,8 @@ li::before {
 }
 
 ol > li::before {
-	counter-increment: section;
-	content: counters(section, '-') '.';
+	counter-increment: number;
+	content: counters(number, '-') '.';
 	white-space: nowrap;
 }
 
