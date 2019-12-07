@@ -173,8 +173,8 @@ ol > li::before {
 	white-space: nowrap;
 }
 
-ul:not(.menu) > li::before		{ content: '\2022'; }
-ul:not(.menu) ul > li::before	{ content: '\25aa'; }
+ul:not(.menu) > li:not([class*="aspect-"])::before		{ content: '\2022'; }
+ul:not(.menu) ul > li:not([class*="aspect-"])::before	{ content: '\25aa'; }
 
 p {
 	margin: 0;
