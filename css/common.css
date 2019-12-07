@@ -243,27 +243,28 @@ body	{ font-size: 1rem; }
 .font-size-x0-5			{ font-size: .5em }
 ruby > rt,
 small,
-.font-size-x0-75		{ font-size: .75em }		/*	12px	*/
+.font-size-x0-75		{ font-size: .75em }
 .badge,
-.font-size-x0-8125	{ font-size: .8125em }	/*	13px	*/
-.font-size-x0-875		{ font-size: .875em }		/*	14px	*/
-.font-size-x0-9375	{ font-size: .9375em }	/*	15px	*/
+.font-size-x0-8125	{ font-size: .8125em }
+.font-size-x0-875		{ font-size: .875em }
+.font-size-x0-9375	{ font-size: .9375em }
 .font-size-x1-1			{ font-size: 1.1em; }
 .font-size-x1-2			{ font-size: 1.2em; }
 h3,
-.font-size-x1-25		{ font-size: 1.25em; }	/*	20px	*/
+.font-size-x1-25		{ font-size: 1.25em; }
 .font-size-x1-3			{ font-size: 1.3em; }
 h2,
 .font-size-x1-5			{ font-size: 1.5em; }
 .font-size-x1-6			{ font-size: 1.6em; }
 .font-size-x1-75		{ font-size: 1.75em; }
 h1,
-.font-size-x2				{ font-size: 2em; }			/*	32px	*/
-.font-size-x2-2			{ font-size: 2.2em; }		/*	40px	*/
-.font-size-x2-5			{ font-size: 2.5em; }		/*	40px	*/
+.font-size-x2				{ font-size: 2em; }
+.font-size-x2-1			{ font-size: 2.1em; }
+.font-size-x2-2			{ font-size: 2.2em; }
+.font-size-x2-5			{ font-size: 2.5em; }
 .font-size-x3-75		{ font-size: 3.75em; }
-.font-size-x4				{ font-size: 4em; }			/*	64px	*/
-.font-size-x4-375		{ font-size: 4.375em; }	/*	70px	*/
+.font-size-x4				{ font-size: 4em; }
+.font-size-x4-375		{ font-size: 4.375em; }
 .font-size-x8				{ font-size: 8em; }
 
 /*
