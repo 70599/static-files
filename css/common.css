@@ -203,6 +203,10 @@ height: 100%;
 	opacity: .25;
 }
 
+ruby {
+	vertical-align: baseline;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -237,6 +241,7 @@ body	{ font-size: 1rem; }
 .font-size-x0-4			{ font-size: .4em }
 .font-size-x0-45		{ font-size: .45em }
 .font-size-x0-5			{ font-size: .5em }
+ruby > rt,
 small,
 .font-size-x0-75		{ font-size: .75em }		/*	12px	*/
 .badge,
