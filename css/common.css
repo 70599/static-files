@@ -32,7 +32,8 @@ html {
 }
 
 *::before,
-*::after {
+*::after,
+[disabled] {
 	pointer-events: none;
 }
 
