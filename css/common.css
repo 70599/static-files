@@ -659,6 +659,8 @@ nav li::before	{ display: none; }
 
 p, ol, ul,
 .text-align-left		{ text-align: left; }
+.badge,
+.button,
 .wp-block-image,
 .text-align-center	{ text-align: center; }
 .text-align-just		{ text-align: justify; }
