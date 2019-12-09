@@ -19,7 +19,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	-webkit-tap-highlight-color: hsla(var(--color-hs, 0,0%), var(--color-l, 0%),0);
+	-webkit-tap-highlight-color: rgba(var(--color-text, rgba(0,0,0,0)) ,0);
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
@@ -289,10 +289,15 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
-body							{ color: hsl(var(--color-hs, 0,0%), var(--color-l, 0%)); }
+body							{ color: rgb(var(--color-text, #000)); }
 *									{ color: inherit; }
 
 .font-colot-unset	{ color: unset; }
+
+::-webkit-input-placeholder	{ color: rgba(var(--color-text,rgba(0,0,0,.4)),.4); }
+::-moz-placeholder					{ color: rgba(var(--color-text,rgba(0,0,0,.4)),.4); }
+:-ms-input-placeholder			{ color: rgba(var(--color-text,rgba(0,0,0,.4)),.4); }
+:-moz-placeholder						{ color: rgba(var(--color-text,rgba(0,0,0,.4)),.4); }
 
 /*
 |-------------------------------------------------------------------------------
