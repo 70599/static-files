@@ -296,10 +296,10 @@ body							{ color: rgb(var(--color-text, #000)); }
 
 .font-colot-unset	{ color: unset; }
 
-::-webkit-input-placeholder	{ opacity: .25; }
-::-moz-placeholder					{ opacity: .25; }
-:-ms-input-placeholder			{ opacity: .25; }
-:-moz-placeholder						{ opacity: .25; }
+::-webkit-input-placeholder	{ opacity: .4; }
+::-moz-placeholder					{ opacity: .4; }
+:-ms-input-placeholder			{ opacity: .4; }
+:-moz-placeholder						{ opacity: .4; }
 
 /*
 |-------------------------------------------------------------------------------
