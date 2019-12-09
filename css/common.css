@@ -121,6 +121,10 @@ button, input[type="button"], input[type="radio"], select, label {
 	box-shadow: none;
 }
 
+input[type="radio"] {
+	display: none;
+}
+
 input:not([type="radio"]), select, textarea {
 	width: 100%;
 }
