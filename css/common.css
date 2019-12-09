@@ -111,8 +111,13 @@ button, input, optgroup, select, textarea {
 	line-height: inherit;
 }
 
-button, input, select, label {
+button, input[type="button"][type="radio"], select, label {
 	cursor: pointer;
+}
+
+input[type="email"][type="tel"][type="text"][type="url"],
+textarea {
+	cursor: text;
 }
 
 input:not([type="radio"]), select, textarea {
