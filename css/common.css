@@ -296,7 +296,7 @@ body							{ color: rgb(var(--color-text, #000)); }
 
 .font-colot-unset	{ color: unset; }
 
-::-webkit-input-placeholder	{ opacity: .4; }
+::-webkit-input-placeholder	{ opacity: .8; }
 ::-moz-placeholder					{ opacity: .25; }
 :-ms-input-placeholder			{ opacity: .4; }
 :-moz-placeholder						{ opacity: .25; }
