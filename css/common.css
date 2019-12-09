@@ -115,7 +115,7 @@ button, input, select, label {
 	cursor: pointer;
 }
 
-input, select, textarea {
+input:not([type="radio"]), select, textarea {
 	width: 100%;
 }
 
