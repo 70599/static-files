@@ -208,6 +208,14 @@ ruby {
 	vertical-align: baseline;
 }
 
+small {
+	display: inline-block;
+}
+
+p > small {
+	display: inline;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
