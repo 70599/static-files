@@ -346,7 +346,7 @@ i, .italic,
 *::before,
 *::after,
 * {
-	transition-property: var(--tran-prop, color, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform);
+	transition-property: var(--tran-prop, color, background-position, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform);
   transition-duration: var(--tran-dura, .2s);
   transition-timing-function: var(--tran-timi, ease-in-out);
 }
