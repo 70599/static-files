@@ -255,9 +255,6 @@ html.windows {
 |-------------------------------------------------------------------------------
 */
 
-*:not(text):not(tspan),
-.font-size-x1				{ font-size: 1em; }
-
 html	{ font-size: calc(1px * var(--html-font-size, 17)); }
 body	{ font-size: 1rem; }
 
@@ -271,6 +268,7 @@ small,
 .badge,
 .font-size-x0-8			{ font-size: .8em }
 .font-size-x0-9			{ font-size: .9em }
+.font-size-x1				{ font-size: 1em; }
 .font-size-x1-1			{ font-size: 1.1em; }
 .font-size-x1-2			{ font-size: 1.2em; }
 h3,
