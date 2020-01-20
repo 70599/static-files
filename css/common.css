@@ -255,8 +255,7 @@ html.windows {
 |-------------------------------------------------------------------------------
 */
 
-*:not(text),
-*:not(tspan),
+*:not(text):not(tspan),
 .font-size-x1				{ font-size: 1em; }
 
 html	{ font-size: calc(1px * var(--html-font-size, 17)); }
