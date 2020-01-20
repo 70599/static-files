@@ -298,7 +298,7 @@ h1,
 body							{ color: rgb(var(--color-text, #000)); }
 *									{ color: inherit; }
 
-.font-colot-unset	{ color: unset; }
+.font-color-unset	{ color: unset; }
 
 ::-webkit-input-placeholder	{ opacity: .8; }
 ::-moz-placeholder					{ opacity: .25; }
