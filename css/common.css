@@ -14,7 +14,7 @@ html {
 * {
 	margin: 0;
 	padding: 0;
-	font: inherit;
+	font-family: inherit;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -255,6 +255,8 @@ html.windows {
 |-------------------------------------------------------------------------------
 */
 
+*:not(text),
+*:not(tspan),
 .font-size-x1				{ font-size: 1em; }
 
 html	{ font-size: calc(1px * var(--html-font-size, 17)); }
