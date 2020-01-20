@@ -218,7 +218,8 @@ blockquote::before {
 	opacity: .25;
 }
 
-ruby {
+ruby,
+small {
 	vertical-align: baseline;
 }
 
