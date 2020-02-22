@@ -19,7 +19,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	-webkit-tap-highlight-color: rgba(var(--color-text, rgba(0,0,0,0)) ,0);
+	-webkit-tap-highlight-color: rgba(var(--color-text, rgb(0,0,0)) ,0);
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
@@ -625,7 +625,8 @@ nav li::before	{ display: none; }
 	transform: translate(-50%,-50%);
 }
 
-[class*="aspect-"]::before {
+[class*="aspect-"]::before,
+[class*="aspect-"] > .frame {
 	position: relative;
 	display: block;
 }
