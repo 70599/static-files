@@ -627,8 +627,10 @@ nav li::before	{ display: none; }
 
 [class*="aspect-"]::before,
 [class*="aspect-"] > .frame {
+	pointer-events: none;
 	position: relative;
 	display: block;
+	z-index: 1;
 }
 
 .aspect-1-1::before		{ padding-bottom: calc(100% / 1 * 1); }
