@@ -38,7 +38,7 @@ html {
 }
 
 body {
-	line-height: var(--line-height);
+	line-height: var(--line-height, 1.618);
 }
 
 a {
@@ -193,7 +193,7 @@ ul:not(.menu) ul > li:not([class*="aspect-"])::before	{ content: '\25aa'; }
 
 p {
 	margin: 0;
-	margin-bottom: var(--line-height-em, 1.7em);
+	margin-bottom: var(--line-height-em, 1.6em);
 }
 
 p:last-of-type {
@@ -650,11 +650,11 @@ nav li::before	{ display: none; }
 	display: inline-block;
 }
 
-.line-height-1		{ line-height: 1; }
-.line-height-1-2	{ line-height: 1.2; }
-.line-height-1-4	{ line-height: 1.4; }
-.line-height-1-5	{ line-height: 1.5; }
-.line-height-2		{ line-height: 2; }
+.line-height-1		{ line-height: calc(1 / 1.6 * var(--line-height, 1.6)); }
+.line-height-1-2	{ line-height: calc(1.2 / 1.6 * var(--line-height, 1.6)); }
+.line-height-1-4	{ line-height: calc(1.4 / 1.6 * var(--line-height, 1.6)); }
+.line-height-1-5	{ line-height: calc(1.5 / 1.6 * var(--line-height, 1.6)); }
+.line-height-2		{ line-height: calc(2 / 1.6 * var(--line-height, 1.6)); }
 
 .opacity-0-4	{ opacity: .4; }
 .opacity-0-6	{ opacity: .6; }
