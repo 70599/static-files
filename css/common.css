@@ -366,7 +366,8 @@ svg {
 	width: 100%;
 }
 
-svg.icon {
+svg.icon,
+ion-icon {
 	fill: currentColor;
 	position: relative;
 	width: 1.25em;
@@ -379,16 +380,19 @@ svg.icon.stroke {
 	stroke: currentColor;
 }
 
-svg.icon.prefix {
+svg.icon.prefix,
+ion-icon.prefix {
 	margin-right: .25em;
 }
 
-svg.icon.middle {
+svg.icon.middle,
+ion-icon.middle {
 	margin-left: .25em;
 	margin-right: .25em;
 }
 
-svg.icon.suffix {
+svg.icon.suffix,
+ion-icon.suffix {
 	margin-left: .25em;
 }
 
