@@ -1,5 +1,28 @@
 /*
 |-------------------------------------------------------------------------------
+|   css vars
+|-------------------------------------------------------------------------------
+*/
+
+:root {
+	--pi: 3.1415926535898;
+
+	--color-text: var(--color-text-h),var(--color-text-s),var(--color-text-l);
+	--color-text-lighten: var(--color-text-h),var(--color-text-s),calc(var(--color-text-l) + var(--lightness));
+	--color-text-darken: var(--color-text-h),var(--color-text-s),calc(var(--color-text-l) - var(--lightness));
+	--color-link: var(--color-link-h),var(--color-link-s),var(--color-link-l);
+	--color-link-lighten: var(--color-link-h),var(--color-link-s),calc(var(--color-link-l) + var(--lightness));
+	--color-link-darken: var(--color-link-h),var(--color-link-s),calc(var(--color-link-l) - var(--lightness));
+	--color-accent: var(--color-accent-h),var(--color-accent-s),var(--color-accent-l);
+	--color-accent-lighten: var(--color-accent-h),var(--color-accent-s),calc(var(--color-accent-l) + var(--lightness));
+	--color-accent-darken: var(--color-accent-h),var(--color-accent-s),calc(var(--color-accent-l) - var(--lightness));
+	--color-bg: var(--color-bg-h),var(--color-bg-s),var(--color-bg-l);
+	--color-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
+	--color-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
+}
+
+/*
+|-------------------------------------------------------------------------------
 |   reset
 |-------------------------------------------------------------------------------
 */
@@ -7,7 +30,7 @@
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	background-color: rgb(var(--bg-color, 255,255,255));
+	background-color: hsl(var(--color-bg));
 }
 
 *::before,
@@ -20,7 +43,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	-webkit-tap-highlight-color: rgba(var(--color-text, rgb(0,0,0)) ,0);
+	-webkit-tap-highlight-color: hsla(var(--color-text) ,0);
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
@@ -296,7 +319,7 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
-body							{ color: rgb(var(--color-text, #000)); }
+body							{ color: hsl(var(--color-text)); }
 *									{ color: inherit; }
 
 .font-color-unset	{ color: unset; }
@@ -645,7 +668,7 @@ nav li::before	{ display: none; }
 .aspect-21-9::before	{ padding-bottom: calc(100% / 21 * 9); }
 .aspect-32-9::before	{ padding-bottom: calc(100% / 32 * 9); }
 
-.image-body.overlay-black-0-5::before	{ background-color: rgba(0,0,0,.5); }
+.image-body.overlay-black-0-5::before	{ background-color: hsla(0,0,0,.5); }
 
 .inline-block-box > * {
 	display: inline-block;
@@ -671,7 +694,7 @@ nav li::before	{ display: none; }
 }
 
 .shadow-border {
-	box-shadow: inset 0 0 0 1px rgba(0,0,0,.17);
+	box-shadow: inset 0 0 0 1px hsla(0,0,0,.17);
 }
 
 .border-by-pseudo-class {
@@ -686,7 +709,7 @@ nav li::before	{ display: none; }
 	bottom: 0;
 	left: 0;
 	border-width: 1px;
-	border-color: rgba(0,0,0,.17);
+	border-color: hsla(0,0,0,.17);
 }
 
 p, ol, ul,
