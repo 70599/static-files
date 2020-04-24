@@ -766,7 +766,7 @@ p, ol, ul,
 
 .inner {
 	width: 100%;
-	max-width: calc(1em / var(--html-font-size) * var(--content-max-width));
+	max-width: calc(1rem / var(--html-font-size) * var(--content-max-width));
 }
 
 .wp-block-image img {
