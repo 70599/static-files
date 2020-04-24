@@ -23,6 +23,10 @@
 	--line-height-em: calc(1em * var(--line-height, 1.6));
 }
 
+body.admin-bar {
+	--admin-bar-height: 32px
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   reset
