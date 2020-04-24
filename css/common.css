@@ -24,7 +24,19 @@
 }
 
 body.admin-bar {
-	--admin-bar-height: 32px
+	--admin-bar-height: 32px;
+}
+
+@media (max-width: 782px) {
+	body.admin-bar {
+		--admin-bar-height: 46px;
+	}
+}
+
+@media (max-width: 600px) {
+	body.admin-bar {
+		--admin-bar-height: 0px;
+	}
 }
 
 /*
