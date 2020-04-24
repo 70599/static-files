@@ -19,6 +19,8 @@
 	--color-bg: var(--color-bg-h),var(--color-bg-s),var(--color-bg-l);
 	--color-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
 	--color-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
+
+	--line-height-em: calc(1em * var(--line-height, 1.6));
 }
 
 /*
