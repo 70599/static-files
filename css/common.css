@@ -760,9 +760,14 @@ p, ol, ul,
 
 /*
 |-------------------------------------------------------------------------------
-|   margins
+|   layout
 |-------------------------------------------------------------------------------
 */
+
+.inner {
+	width: 100%;
+	max-width: calc(1em / var(--html-font-size) * var(--content-max-width));
+}
 
 .wp-block-image img {
 	margin-left: auto;
