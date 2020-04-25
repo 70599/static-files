@@ -775,3 +775,31 @@ p, ol, ul,
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/*
+|-------------------------------------------------------------------------------
+|   header
+|-------------------------------------------------------------------------------
+*/
+
+.site-header ul.menu.columns-3::before,
+.site-header ul.menu.columns-3::after {
+	content: '';
+	flex: 1;
+}
+
+.site-header ul.menu.columns-3::before {
+	order: 10;
+}
+
+.site-header ul.menu.columns-3 > li.menu-item.align-center {
+	order: 20;
+}
+
+.site-header ul.menu.columns-3::after {
+	order: 30;
+}
+
+.site-header ul.menu.columns-3 > li.menu-item.align-right {
+	order: 40;
+}
