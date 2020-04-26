@@ -198,6 +198,10 @@ img.portrait {
 	height: 100%;
 }
 
+label {
+	display: inline-block;
+}
+
 ol, ul {
 	list-style: none;
 	list-style-type: none;
