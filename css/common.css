@@ -704,6 +704,7 @@ nav li::before	{ display: none; }
 .line-height-1-5	{ line-height: calc(1.5 / 1.6 * var(--line-height, 1.6)); }
 .line-height-2		{ line-height: calc(2 / 1.6 * var(--line-height, 1.6)); }
 
+.opacity-0-25	{ opacity: .25; }
 .opacity-0-4	{ opacity: .4; }
 .opacity-0-6	{ opacity: .6; }
 
