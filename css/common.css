@@ -394,6 +394,7 @@ i, .italic,
 *::before,
 *::after,
 * {
+	transform-origin: var(--tran-orig, center);
 	transition-property: var(--tran-prop, color, background-position, background-size, background-color, border-color, width, height, box-shadow, filter, text-shadow, opacity, transform);
   transition-duration: var(--tran-dura, .2s);
   transition-timing-function: var(--tran-timi, ease-in-out);
