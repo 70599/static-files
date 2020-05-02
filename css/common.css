@@ -20,7 +20,7 @@
 	--color-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
 	--color-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
 
-	--color-border: hsla(var(--color-text),var(--opacity,.15));
+	--color-border: hsla(var(--color-text-darken),var(--opacity,.15));
 
 	--line-height-em: calc(1em * var(--line-height,1.6));
 }
