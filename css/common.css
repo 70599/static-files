@@ -20,7 +20,9 @@
 	--color-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
 	--color-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
 
-	--line-height-em: calc(1em * var(--line-height, 1.6));
+	--color-border: hsla(var(--color-text),var(--opacity,.15));
+
+	--line-height-em: calc(1em * var(--line-height,1.6));
 }
 
 body.admin-bar {
@@ -61,12 +63,13 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	-webkit-tap-highlight-color: hsla(var(--color-text) ,0);
+	-webkit-tap-highlight-color: hsla(var(--color-text),0);
 
 	background-clip: padding-box;
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
+	border-color: var(--color-border);
 }
 
 * {
@@ -82,7 +85,7 @@ html {
 }
 
 body {
-	line-height: var(--line-height, 1.6);
+	line-height: var(--line-height,1.6);
 }
 
 a {
