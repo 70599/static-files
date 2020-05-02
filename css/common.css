@@ -62,6 +62,8 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 
 	-webkit-tap-highlight-color: hsla(var(--color-text) ,0);
+
+	background-clip: padding-box;
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
