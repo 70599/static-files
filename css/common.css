@@ -70,6 +70,8 @@ html {
 	border-width: 0;
 	border-style: solid;
 	border-color: var(--color-border);
+
+	animation-fill-mode: var(--ani-fill-mode,forwards);
 }
 
 * {
