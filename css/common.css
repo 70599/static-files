@@ -71,6 +71,7 @@ html {
 	border-style: solid;
 	border-color: var(--color-border);
 
+	animation-timing-function: var(--ani-timing-function,linear);
 	animation-fill-mode: var(--ani-fill-mode,forwards);
 }
 
