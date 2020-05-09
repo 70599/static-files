@@ -60,6 +60,7 @@ body.admin-bar {
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
+	background-color: hsla(var(--h-bg),var(--s-bg),var(--l-bg),var(--a-bg));
 }
 
 *::before,
@@ -67,7 +68,6 @@ html {
 * {
 
 	color: hsla(var(--h),var(--s),var(--l),var(--a));
-	background-color: hsla(var(--h-bg),var(--s-bg),var(--l-bg),var(--a-bg));
 	border-color: hsla(var(--h-bd),var(--s-bd),var(--l-bd),var(--a-bd));
 
 	margin: 0;
