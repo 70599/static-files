@@ -20,6 +20,8 @@
 	--hsl-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
 	--hsl-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
 
+	--color-border: hsla(var(--hsl-text-darken),var(--a-bd,.15));
+
 	--line-height-em: calc(1em * var(--line-height,1.6));
 }
 
@@ -71,7 +73,7 @@ html {
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
-	border-color: hsla(var(--hsl-text-darken),var(--a-bd,.15));
+	border-color: var(--color-border);
 
 	/* animation-name: var(--ani-name,none); */
 	animation-duration: var(--ani-dura,var(--tran-dura));
