@@ -26,23 +26,27 @@
 }
 
 body:not(.admin-bar) {
-	--height-admin-bar: 0px;
+	--height-admin-bar: 0;
 }
 
 body.admin-bar {
-	--height-admin-bar: 32px;
+	--height-admin-bar: 32;
 }
 
 @media (max-width: 782px) {
 	body.admin-bar {
-		--height-admin-bar: 46px;
+		--height-admin-bar: 46;
 	}
 }
 
 @media (max-width: 600px) {
 	body.admin-bar {
-		--height-admin-bar: 0px;
+		--height-admin-bar: 0;
 	}
+}
+
+body {
+	--height-admin-bar-px: calc(1px * var(--height-admin-bar));
 }
 
 /*
