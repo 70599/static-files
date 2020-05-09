@@ -7,26 +7,20 @@
 :root {
 	--pi: 3.1415926535898;
 
-	--h: var(--color-text-h);
-	--s: var(--color-text-s);
-	--l: var(--color-text-l);
-	--a: 1;
+	--color-text: var(--color-text-h),var(--color-text-s),var(--color-text-l);
+	--color-text-lighten: var(--color-text-h),var(--color-text-s),calc(var(--color-text-l) + var(--lightness));
+	--color-text-darken: var(--color-text-h),var(--color-text-s),calc(var(--color-text-l) - var(--lightness));
+	--color-link: var(--color-link-h),var(--color-link-s),var(--color-link-l);
+	--color-link-lighten: var(--color-link-h),var(--color-link-s),calc(var(--color-link-l) + var(--lightness));
+	--color-link-darken: var(--color-link-h),var(--color-link-s),calc(var(--color-link-l) - var(--lightness));
+	--color-accent: var(--color-accent-h),var(--color-accent-s),var(--color-accent-l);
+	--color-accent-lighten: var(--color-accent-h),var(--color-accent-s),calc(var(--color-accent-l) + var(--lightness));
+	--color-accent-darken: var(--color-accent-h),var(--color-accent-s),calc(var(--color-accent-l) - var(--lightness));
+	--color-bg: var(--color-bg-h),var(--color-bg-s),var(--color-bg-l);
+	--color-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
+	--color-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
 
-	--color: hsla(var(--h),var(--s),var(--l),var(--a));
-
-	--h-bg: var(--color-bg-h);
-	--s-bg: var(--color-bg-s);
-	--l-bg: var(--color-bg-l);
-	--a-bg: 1;
-
-	--color-bg: hsla(var(--h-bg),var(--s-bg),var(--l-bg),var(--a-bg));
-
-	--h-bd: var(--h);
-	--s-bd: var(--s);
-	--l-bd: calc(var(--l) - var(--lightness));
-	--a-bd: .15;
-
-	--color-bd: hsla(var(--h-bd),var(--s-bd),var(--l-bd),var(--a-bd));
+	--color-border: hsla(var(--color-text-darken),var(--opacity,.15));
 
 	--line-height-em: calc(1em * var(--line-height,1.6));
 }
@@ -60,16 +54,12 @@ body.admin-bar {
 html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
-	background-color: hsla(var(--h-bg),var(--s-bg),var(--l-bg),var(--a-bg));
+	background-color: hsl(var(--color-bg));
 }
 
 *::before,
 *::after,
 * {
-
-	color: hsla(var(--h),var(--s),var(--l),var(--a));
-	border-color: hsla(var(--h-bd),var(--s-bd),var(--l-bd),var(--a-bd));
-
 	margin: 0;
 	padding: 0;
 	font-family: inherit;
@@ -77,12 +67,13 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	-webkit-tap-highlight-color: hsla(var(--h),var(--s),var(--l),0);
+	-webkit-tap-highlight-color: hsla(var(--color-text),0);
 
 	background-clip: padding-box;
 	box-sizing: border-box;
 	border-width: 0;
 	border-style: solid;
+	border-color: var(--color-border);
 
 	/* animation-name: var(--ani-name,none); */
 	animation-duration: var(--ani-dura,var(--tran-dura));
@@ -367,7 +358,10 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
-.font-color-unset						{ color: unset; }
+body							{ color: hsl(var(--color-text)); }
+*									{ color: inherit; }
+
+.font-color-unset	{ color: unset; }
 
 ::-webkit-input-placeholder	{ opacity: .8; }
 ::-moz-placeholder					{ opacity: .25; }
