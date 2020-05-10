@@ -7,21 +7,25 @@
 :root {
 	--pi: 3.1415926535898;
 
-	--hsl-text: var(--h-text),var(--s-text),var(--l-text);
-	--hsl-text-lighten: var(--h-text),var(--s-text),calc(var(--l-text) + var(--lightness));
-	--hsl-text-darken: var(--h-text),var(--s-text),calc(var(--l-text) - var(--lightness));
+	--hs-text: var(--h-text),var(--s-text);
+	--hsl-text: var(--hs-text),var(--l-text);
+	--hsl-text-lighten: var(--hs-text),calc(var(--l-text) + var(--lightness));
+	--hsl-text-darken: var(--hs-text),calc(var(--l-text) - var(--lightness));
 
-	--hsl-link: var(--h-link),var(--s-link),var(--l-link);
-	--hsl-link-lighten: var(--h-link),var(--s-link),calc(var(--l-link) + var(--lightness));
-	--hsl-link-darken: var(--h-link),var(--s-link),calc(var(--l-link) - var(--lightness));
+	--hs-link: var(--h-link),var(--s-link);
+	--hsl-link: var(--hs-link),var(--l-link);
+	--hsl-link-lighten: var(--hs-link),calc(var(--l-link) + var(--lightness));
+	--hsl-link-darken: var(--hs-link),calc(var(--l-link) - var(--lightness));
 
-	--hsl-accent: var(--h-accent),var(--s-accent),var(--l-accent);
-	--hsl-accent-lighten: var(--h-accent),var(--s-accent),calc(var(--l-accent) + var(--lightness));
-	--hsl-accent-darken: var(--h-accent),var(--s-accent),calc(var(--l-accent) - var(--lightness));
+	--hs-accent: var(--h-accent),var(--s-accent);
+	--hsl-accent: var(--hs-accent),var(--l-accent);
+	--hsl-accent-lighten: var(--hs-accent),calc(var(--l-accent) + var(--lightness));
+	--hsl-accent-darken: var(--hs-accent),calc(var(--l-accent) - var(--lightness));
 
-	--hsl-bg: var(--h-bg),var(--s-bg),var(--l-bg);
-	--hsl-bg-lighten: var(--h-bg),var(--s-bg),calc(var(--l-bg) + var(--lightness));
-	--hsl-bg-darken: var(--h-bg),var(--s-bg),calc(var(--l-bg) - var(--lightness));
+	--hs-bg: var(--h-bg),var(--s-bg);
+	--hsl-bg: var(--hs-bg),var(--l-bg);
+	--hsl-bg-lighten: var(--hs-bg),calc(var(--l-bg) + var(--lightness));
+	--hsl-bg-darken: var(--hs-bg),calc(var(--l-bg) - var(--lightness));
 
 	--color-border: hsla(var(--hsl-text-darken),var(--a-bd,.15));
 
