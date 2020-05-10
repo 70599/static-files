@@ -7,18 +7,21 @@
 :root {
 	--pi: 3.1415926535898;
 
-	--hsl-text: var(--color-text-h),var(--color-text-s),var(--color-text-l);
-	--hsl-text-lighten: var(--color-text-h),var(--color-text-s),calc(var(--color-text-l) + var(--lightness));
-	--hsl-text-darken: var(--color-text-h),var(--color-text-s),calc(var(--color-text-l) - var(--lightness));
-	--hsl-link: var(--color-link-h),var(--color-link-s),var(--color-link-l);
-	--hsl-link-lighten: var(--color-link-h),var(--color-link-s),calc(var(--color-link-l) + var(--lightness));
-	--hsl-link-darken: var(--color-link-h),var(--color-link-s),calc(var(--color-link-l) - var(--lightness));
-	--hsl-accent: var(--color-accent-h),var(--color-accent-s),var(--color-accent-l);
-	--hsl-accent-lighten: var(--color-accent-h),var(--color-accent-s),calc(var(--color-accent-l) + var(--lightness));
-	--hsl-accent-darken: var(--color-accent-h),var(--color-accent-s),calc(var(--color-accent-l) - var(--lightness));
-	--hsl-bg: var(--color-bg-h),var(--color-bg-s),var(--color-bg-l);
-	--hsl-bg-lighten: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) + var(--lightness));
-	--hsl-bg-darken: var(--color-bg-h),var(--color-bg-s),calc(var(--color-bg-l) - var(--lightness));
+	--hsl-text: var(--h-text),var(--s-text),var(--l-text);
+	--hsl-text-lighten: var(--h-text),var(--s-text),calc(var(--l-text) + var(--lightness));
+	--hsl-text-darken: var(--h-text),var(--s-text),calc(var(--l-text) - var(--lightness));
+
+	--hsl-link: var(--h-link),var(--s-link),var(--l-link);
+	--hsl-link-lighten: var(--h-link),var(--s-link),calc(var(--l-link) + var(--lightness));
+	--hsl-link-darken: var(--h-link),var(--s-link),calc(var(--l-link) - var(--lightness));
+
+	--hsl-accent: var(--h-accent),var(--s-accent),var(--l-accent);
+	--hsl-accent-lighten: var(--h-accent),var(--s-accent),calc(var(--l-accent) + var(--lightness));
+	--hsl-accent-darken: var(--h-accent),var(--s-accent),calc(var(--l-accent) - var(--lightness));
+
+	--hsl-bg: var(--h-bg),var(--s-bg),var(--l-bg);
+	--hsl-bg-lighten: var(--h-bg),var(--s-bg),calc(var(--l-bg) + var(--lightness));
+	--hsl-bg-darken: var(--h-bg),var(--s-bg),calc(var(--l-bg) - var(--lightness));
 
 	--color-border: hsla(var(--hsl-text-darken),var(--a-bd,.15));
 
