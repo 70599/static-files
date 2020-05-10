@@ -82,6 +82,7 @@ html {
 
 	-webkit-tap-highlight-color: hsla(var(--hsl-text),0);
 
+	background-repeat: no-repeat;
 	background-clip: padding-box;
 	box-sizing: border-box;
 	border-width: 0;
