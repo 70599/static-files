@@ -330,7 +330,7 @@ html.windows {
 |-------------------------------------------------------------------------------
 */
 
-html	{ font-size: calc(1px * var(--html-font-size, 17)); }
+html	{ font-size: calc(1px * var(--font-size-html, 17)); }
 body	{ font-size: 1rem; }
 
 .font-size-x0-4			{ font-size: .4em }
@@ -802,7 +802,7 @@ p, ol, ul,
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-	max-width: calc(1rem / var(--html-font-size) * var(--content-max-width));
+	max-width: calc(1rem / var(--font-size-html) * var(--max-width-content));
 }
 
 .wp-block-image img {
