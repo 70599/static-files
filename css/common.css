@@ -7,6 +7,8 @@
 :root {
 	--pi: 3.1415926535898;
 
+	--font-size-html: 16;
+
 	--hs-text: var(--h-text),var(--s-text);
 	--hsl-text: var(--hs-text),var(--l-text);
 	--hsl-text-lighten: var(--hs-text),calc(var(--l-text) + var(--lightness));
@@ -330,7 +332,7 @@ html.windows {
 |-------------------------------------------------------------------------------
 */
 
-html	{ font-size: calc(1px * var(--font-size-html, 17)); }
+html	{ font-size: calc(1px * var(--font-size-html)); }
 body	{ font-size: 1rem; }
 
 .font-size-x0-4			{ font-size: .4em }
