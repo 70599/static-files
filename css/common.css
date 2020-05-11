@@ -390,9 +390,9 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
+*									{ color: inherit; }
 *|*:link,
 body							{ color: var(--color-txt); }
-*									{ color: inherit; }
 
 .font-color-unset	{ color: unset; }
 
