@@ -108,7 +108,6 @@ body {
 }
 
 * {
-	color: inherit;
 	font-weight: inherit;
 	vertical-align: top;
 }
@@ -391,6 +390,7 @@ h1,
 |-------------------------------------------------------------------------------
 */
 
+*|*:link,
 body							{ color: var(--color-txt); }
 *									{ color: inherit; }
 
