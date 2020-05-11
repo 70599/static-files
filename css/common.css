@@ -526,7 +526,7 @@ nav li::before	{ display: none; }
 */
 
 .skip-link,
-.screen-reader-txt {
+.screen-reader-text {
 	position: absolute;
   margin: -1px;
   width: 1px;
