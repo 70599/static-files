@@ -49,7 +49,7 @@ body {
 	--hsl-txt: var(--hs-txt),var(--l-txt);
 	--color-txt: hsla(
 		var(--hs-txt),
-		calc(var(--l-txt) + var(--l-txt-,0)),
+		calc(var(--l-txt) + var(--l-txt-,0%)),
 		var(--a-txt,1)
 	);
 
@@ -57,7 +57,7 @@ body {
 	--hsl-link: var(--hs-link),var(--l-link);
 	--color-link: hsla(
 		var(--hs-link),
-		calc(var(--l-link) + var(--l-link-,0)),
+		calc(var(--l-link) + var(--l-link-,0%)),
 		var(--a-link,1)
 	);
 
@@ -65,7 +65,7 @@ body {
 	--hsl-accent: var(--hs-accent),var(--l-accent);
 	--color-accent: hsla(
 		var(--hs-accent),
-		calc(var(--l-accent) + var(--l-accent-,0)),
+		calc(var(--l-accent) + var(--l-accent-,0%)),
 		var(--a-accent,1)
 	);
 
@@ -73,7 +73,7 @@ body {
 	--hsl-bg: var(--hs-bg),var(--l-bg);
 	--color-bg: hsla(
 		var(--hs-bg),
-		calc(var(--l-bg) + var(--l-bg-,0)),
+		calc(var(--l-bg) + var(--l-bg-,0%)),
 		var(--a-bg,1)
 	);
 
