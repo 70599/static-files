@@ -517,8 +517,6 @@ svg.icon.suffix {
 |-------------------------------------------------------------------------------
 */
 
-#page > .skip-link	{ position: absolute; }
-
 nav li::before	{ display: none; }
 
 /*
@@ -527,6 +525,7 @@ nav li::before	{ display: none; }
 |-------------------------------------------------------------------------------
 */
 
+.skip-link,
 .screen-reader-txt {
 	position: absolute;
   margin: -1px;
