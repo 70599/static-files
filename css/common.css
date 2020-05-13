@@ -504,9 +504,11 @@ svg.icon.suffix {
     color: black;
 }
 
-html.backdropfilter .backdropfilter-blur-20 {
-	-webkit-backdrop-filter: blur(20px);
-	backdrop-filter: blur(20px);
+@supports ((backdrop-filter: initial) or (-webkit-backdrop-filter: initial)) {
+	.backdropfilter-blur-20 {
+		-webkit-backdrop-filter: blur(20px);
+		backdrop-filter: blur(20px);
+	}
 }
 
 /*
