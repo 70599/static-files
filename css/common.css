@@ -506,7 +506,7 @@ svg.icon.suffix {
 }
 
 @supports ((backdrop-filter: initial) or (-webkit-backdrop-filter: initial)) {
-	.backdropfilter-blur-20 {
+	.backdropfilter-blur {
 		-webkit-backdrop-filter: saturate(180%) blur(calc(1px * var(--font-size-html)));
 		backdrop-filter: saturate(180%) blur(calc(1px * var(--font-size-html)));
 	}
@@ -837,24 +837,24 @@ p, ol, ul,
 |-------------------------------------------------------------------------------
 */
 
-.site-header ul.menu.columns-3::before,
-.site-header ul.menu.columns-3::after {
+ul.menu.columns-3::before,
+ul.menu.columns-3::after {
 	content: '';
 	flex: 1;
 }
 
-.site-header ul.menu.columns-3::before {
+ul.menu.columns-3::before {
 	order: 10;
 }
 
-.site-header ul.menu.columns-3 > li.menu-item.align-center {
+ul.menu.columns-3 > li.menu-item.align-center {
 	order: 20;
 }
 
-.site-header ul.menu.columns-3::after {
+ul.menu.columns-3::after {
 	order: 30;
 }
 
-.site-header ul.menu.columns-3 > li.menu-item.align-right {
+ul.menu.columns-3 > li.menu-item.align-right {
 	order: 40;
 }
