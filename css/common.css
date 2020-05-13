@@ -146,7 +146,7 @@ abbr::after {
 	bottom: 100%;
 	left: 50%;
   transform-origin: bottom;
-  transform: translate3d(-50%,.618em,0) scale(.85);
+  transform: translate(-50%,.618em) scale(.85);
 	opacity: 0;
 }
 
@@ -168,7 +168,7 @@ abbr:hover::before,
 abbr:hover::after,
 abbr.bottom:hover::before,
 abbr.bottom:hover::after {
-  transform: translate3d(-50%,0,0);
+  transform: translate(-50%,0);
 	opacity: 1;
 }
 
@@ -177,7 +177,7 @@ abbr.bottom::after {
 	top: 100%;
 	bottom: auto;
 	transform-origin: top;
-	transform: translate3d(-50%,-.618em,0) scale(.5);
+	transform: translate(-50%,-.618em) scale(.5);
 }
 
 abbr.bottom::before {
@@ -470,7 +470,7 @@ svg.icon {
 	height: var(--width-icon,1.25em);
 	vertical-align: text-top;
 	transform-origin: center;
-	transform: translate3d(0,0,0);
+	transform: translateZ(0);
 }
 
 svg.icon.stroke {
@@ -719,7 +719,7 @@ nav li::before	{ display: none; }
 	left: 50%;
 	min-width: 100%;
 	min-height: 100%;
-	transform: translate3d(-50%,-50%,0);
+	transform: translate(-50%,-50%);
 }
 
 [class*="aspect-"]::before,
