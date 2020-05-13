@@ -443,7 +443,7 @@ i, .italic,
 *::after,
 * {
 	transform-origin: var(--tran-orig, center);
-	transition-property: var(--tran-prop, color, background-position, background-size, background-color, border-color, fill, width, height, box-shadow, filter, text-shadow, opacity, transform, stroke-dashoffset);
+	transition-property: var(--tran-prop, color, background-position, background-size, background-color, border-color, fill, width, height, box-shadow, filter, text-shadow, opacity, transform, backdrop-filter, -webkit-backdrop-filter, stroke-dashoffset);
   transition-duration: var(--tran-dura, .2s);
   transition-timing-function: var(--tran-timi, ease-in-out);
 }
