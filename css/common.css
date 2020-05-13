@@ -507,8 +507,18 @@ svg.icon.suffix {
 
 @supports ((backdrop-filter: initial) or (-webkit-backdrop-filter: initial)) {
 	.backdropfilter-blur {
+		position: relative;
+	}
+
+	.backdropfilter-blur > .bg {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
 		-webkit-backdrop-filter: saturate(180%) blur(calc(1px * var(--font-size-html)));
 		backdrop-filter: saturate(180%) blur(calc(1px * var(--font-size-html)));
+		box-shadow: none;
 	}
 }
 
