@@ -722,16 +722,12 @@ nav li::before	{ display: none; }
 	transform: translate3d(-50%,-50%,0);
 }
 
-[style*="--aspect-ratio"]::before,
-[style*="--aspect-ratio"] > .frame {
+[style*="--aspect-ratio"]::before {
 	pointer-events: none;
 	position: relative;
+	padding-bottom: calc(100% / (var(--aspect-ratio,4/3)));
 	display: block;
 	z-index: 1;
-}
-
-[style*="--aspect-ratio"]::before {
-	padding-bottom: calc(100% / (var(--aspect-ratio)));
 }
 
 .image-body.overlay-black-0-5::before	{ background-color: hsla(0,0%,0%,.5); }
