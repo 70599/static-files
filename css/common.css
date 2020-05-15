@@ -282,8 +282,8 @@ ol > li::before {
 	white-space: nowrap;
 }
 
-ul:not(.menu) > li:not([class*="aspect-"])::before		{ content: '\2022'; }
-ul:not(.menu) ul > li:not([class*="aspect-"])::before	{ content: '\25aa'; }
+ul:not(.menu) > li:not([style*="--aspect-ratio"])::before		{ content: '\2022'; }
+ul:not(.menu) ul > li:not([style*="--aspect-ratio"])::before	{ content: '\25aa'; }
 
 p {
 	margin: 0;
@@ -693,15 +693,15 @@ nav li::before	{ display: none; }
 }
 
 .has-overlay,
-[class*="aspect-"] {
+[style*="--aspect-ratio"] {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
 }
 
 .has-overlay::before,
-[class*="aspect-"]::before,
-[class*="aspect-"] > iframe {
+[style*="--aspect-ratio"]::before,
+[style*="--aspect-ratio"] > iframe {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -713,7 +713,7 @@ nav li::before	{ display: none; }
 	z-index: 1;
 }
 
-[class*="aspect-"] > img {
+[style*="--aspect-ratio"] > img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -722,24 +722,17 @@ nav li::before	{ display: none; }
 	transform: translate3d(-50%,-50%,0);
 }
 
-[class*="aspect-"]::before,
-[class*="aspect-"] > .frame {
+[style*="--aspect-ratio"]::before,
+[style*="--aspect-ratio"] > .frame {
 	pointer-events: none;
 	position: relative;
 	display: block;
 	z-index: 1;
 }
 
-.aspect-1-1::before		{ padding-bottom: calc(100% / 1 * 1); }
-.aspect-1-2::before		{ padding-bottom: calc(100% / 1 * 2); }
-.aspect-2-1::before		{ padding-bottom: calc(100% / 2 * 1); }
-.aspect-3-2::before		{ padding-bottom: calc(100% / 3 * 2); }
-.aspect-4-3::before		{ padding-bottom: calc(100% / 4 * 3); }
-.aspect-5-8::before		{ padding-bottom: calc(100% / 5 * 8); }
-.aspect-8-5::before		{ padding-bottom: calc(100% / 8 * 5); }
-.aspect-16-9::before	{ padding-bottom: calc(100% / 16 * 9); }
-.aspect-21-9::before	{ padding-bottom: calc(100% / 21 * 9); }
-.aspect-32-9::before	{ padding-bottom: calc(100% / 32 * 9); }
+[style*="--aspect-ratio"]::before {
+	padding-bottom: calc(100% / (var(--aspect-ratio)));
+}
 
 .image-body.overlay-black-0-5::before	{ background-color: hsla(0,0%,0%,.5); }
 
