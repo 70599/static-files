@@ -79,11 +79,7 @@ body {
 
 	--hs-bd: var(--h-bd,var(--h-txt)),var(--s-bd,var(--s-txt));
 	--hsl-bd: var(--hs-bd,var(--hs-txt)),var(--l-bd,var(--l-txt));
-	--color-bd: hsla(
-		var(--hs-bd,var(--hs-txt)),
-		calc(var(--l-bd,var(--l-txt)) + var(--l-bd-,-8%)),
-		var(--a-bd,.15)
-	);
+	--color-bd: hsla(0,0%,0%,var(--a-bd,.15));
 
 	margin: 0;
 	padding: 0;
