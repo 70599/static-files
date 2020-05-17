@@ -333,11 +333,11 @@ table {
 |-------------------------------------------------------------------------------
 */
 
-html {
+body {
 	font-family: var(--font-family);
 }
 
-html.windows {
+body.windows {
 	font-family: var(--font-family-windows, --font-family);
 }
 
