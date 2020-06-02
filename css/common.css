@@ -389,7 +389,7 @@ h1,
 
 *									{ color: inherit; }
 *|*:link,
-body							{ color: var(--color-txt); }
+html							{ color: var(--color-txt); }
 
 .font-color-unset	{ color: unset; }
 
