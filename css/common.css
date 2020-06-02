@@ -388,8 +388,7 @@ h1,
 */
 
 *									{ color: inherit; }
-*:link,
-body							{ color: var(--color-txt); }
+body, *:link			{ color: var(--color-txt); }
 
 .font-color-unset	{ color: unset; }
 
