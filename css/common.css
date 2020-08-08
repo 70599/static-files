@@ -11,6 +11,8 @@
 	--font-size-html: 16;
 
 	--line-height-em: calc(1em * var(--line-height,1.6));
+
+	--padding-input: .6em;
 }
 
 body:not(.admin-bar) {
@@ -198,7 +200,7 @@ button, input, optgroup, select, textarea {
 }
 
 input, textarea {
-	padding: .6em 1.6em;
+	padding: var(--padding-input) calc(var(--padding-input) * 2);
 	cursor: text;
 }
 
