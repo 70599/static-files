@@ -198,6 +198,7 @@ button, input, optgroup, select, textarea {
 }
 
 input, textarea {
+	padding: .6em 1.6em;
 	cursor: text;
 }
 
