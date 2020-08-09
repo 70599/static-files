@@ -13,6 +13,10 @@
 	--line-height-em: calc(1em * var(--line-height,1.6));
 
 	--padding-input: .6em;
+
+	--color-line: #00b900;
+	--color-twitter: #1da1f2;
+	--color-github: #24292e;
 }
 
 body:not(.admin-bar) {
