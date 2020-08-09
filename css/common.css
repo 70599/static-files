@@ -10,42 +10,6 @@
 
 	--font-size-html: 16;
 
-	--hs-txt: var(--h-txt),var(--s-txt);
-	--hsl-txt: var(--hs-txt),var(--l-txt);
-	--color-txt: hsla(
-		var(--hs-txt),
-		calc(var(--l-txt) + var(--l-txt-,0%)),
-		var(--a-txt,1)
-	);
-
-	--hs-link: var(--h-link),var(--s-link);
-	--hsl-link: var(--hs-link),var(--l-link);
-	--color-link: hsla(
-		var(--hs-link),
-		calc(var(--l-link) + var(--l-link-,0%)),
-		var(--a-link,1)
-	);
-
-	--hs-accent: var(--h-accent),var(--s-accent);
-	--hsl-accent: var(--hs-accent),var(--l-accent);
-	--color-accent: hsla(
-		var(--hs-accent),
-		calc(var(--l-accent) + var(--l-accent-,0%)),
-		var(--a-accent,1)
-	);
-
-	--hs-bg: var(--h-bg),var(--s-bg);
-	--hsl-bg: var(--hs-bg),var(--l-bg);
-	--color-bg: hsla(
-		var(--hs-bg),
-		calc(var(--l-bg) + var(--l-bg-,0%)),
-		var(--a-bg,1)
-	);
-
-	--hs-bd: var(--h-bd,var(--h-txt)),var(--s-bd,var(--s-txt));
-	--hsl-bd: var(--hs-bd,var(--hs-txt)),var(--l-bd,var(--l-txt));
-	--color-bd: hsla(0,0%,0%,var(--a-bd,.15));
-
 	--line-height-em: calc(1em * var(--line-height,1.6));
 
 	--padding-input: .6em;
@@ -88,6 +52,42 @@ body {
 *::before,
 *::after,
 * {
+	--hs-txt: var(--h-txt),var(--s-txt);
+	--hsl-txt: var(--hs-txt),var(--l-txt);
+	--color-txt: hsla(
+		var(--hs-txt),
+		calc(var(--l-txt) + var(--l-txt-,0%)),
+		var(--a-txt,1)
+	);
+
+	--hs-link: var(--h-link),var(--s-link);
+	--hsl-link: var(--hs-link),var(--l-link);
+	--color-link: hsla(
+		var(--hs-link),
+		calc(var(--l-link) + var(--l-link-,0%)),
+		var(--a-link,1)
+	);
+
+	--hs-accent: var(--h-accent),var(--s-accent);
+	--hsl-accent: var(--hs-accent),var(--l-accent);
+	--color-accent: hsla(
+		var(--hs-accent),
+		calc(var(--l-accent) + var(--l-accent-,0%)),
+		var(--a-accent,1)
+	);
+
+	--hs-bg: var(--h-bg),var(--s-bg);
+	--hsl-bg: var(--hs-bg),var(--l-bg);
+	--color-bg: hsla(
+		var(--hs-bg),
+		calc(var(--l-bg) + var(--l-bg-,0%)),
+		var(--a-bg,1)
+	);
+
+	--hs-bd: var(--h-bd,var(--h-txt)),var(--s-bd,var(--s-txt));
+	--hsl-bd: var(--hs-bd,var(--hs-txt)),var(--l-bd,var(--l-txt));
+	--color-bd: hsla(0,0%,0%,var(--a-bd,.15));
+	
 	margin: 0;
 	padding: 0;
 	font-family: inherit;
