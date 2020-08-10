@@ -572,7 +572,7 @@ nav li::before	{ display: none; }
 
 .button:active,
 .button:active:hover {
-	--l-button-active: 5%
+	--l-button-active: 15%
 }
 
 .button.width-1 {
