@@ -558,7 +558,6 @@ nav li::before	{ display: none; }
 	border-radius: .275em;
 }
 
-button,
 .button {
 	position: relative;
 	padding: .5em 1em;
@@ -567,25 +566,20 @@ button,
 	border-radius: var(--radius-button);
 }
 
-button:hover,
 .button:hover {
 	--l-button-hover: 10%;
 }
 
-button:active,
-button:active:hover,
 .button:active,
 .button:active:hover {
 	--l-button-active: 15%
 }
 
-button.width-1,
 .button.width-1 {
 	padding-left: 1em;
 	padding-right: 1em;
 }
 
-button.width-2,
 .button.width-2 {
 	padding-left: 2em;
 	padding-right: 2em;
@@ -617,7 +611,6 @@ button.width-2,
 	flex-direction: column;
 }
 
-.flex-box.flex-flow-column > button,
 .flex-box.flex-flow-column > .button {
 	width: auto;
 }
@@ -788,7 +781,6 @@ button.width-2,
 p, ol, ul,
 .text-align-left		{ text-align: left; }
 .badge,
-button,
 .button,
 .wp-block-image,
 .text-align-center	{ text-align: center; }
@@ -849,6 +841,17 @@ ul.menu.columns-3::before {
 }
 
 ul.menu.columns-3 > li.menu-item.align-center {
+	order: 20;
+}
+
+ul.menu.columns-3::after {
+	order: 30;
+}
+
+ul.menu.columns-3 > li.menu-item.align-right {
+	order: 40;
+}
+m.align-center {
 	order: 20;
 }
 
