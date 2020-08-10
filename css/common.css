@@ -562,7 +562,17 @@ nav li::before	{ display: none; }
 	position: relative;
 	padding: .5em 1em;
 	white-space: nowrap;
+	background-color: hsla(var(--hs-link),calc(var(--l-button,var(--l-link)) + var(--l-button-,0%) + var(--l-button-hover,0%) - var(--l-button-active,0%)),var(--a-button,1));
 	border-radius: var(--radius-button);
+}
+
+.button:hover {
+	--l-button-hover: 10%;
+}
+
+.button:active,
+.button:active:hover {
+	--l-button-active: 5%
 }
 
 .button.width-1 {
