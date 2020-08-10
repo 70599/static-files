@@ -87,7 +87,7 @@ body {
 	--hs-bd: var(--h-bd,var(--h-txt)),var(--s-bd,var(--s-txt));
 	--hsl-bd: var(--hs-bd,var(--hs-txt)),var(--l-bd,var(--l-txt));
 	--color-bd: hsla(0,0%,0%,var(--a-bd,.15));
-	
+
 	margin: 0;
 	padding: 0;
 	font-family: inherit;
@@ -562,6 +562,7 @@ nav li::before	{ display: none; }
 	position: relative;
 	padding: .5em 1em;
 	white-space: nowrap;
+	border-radius: var(--radius-button);
 }
 
 .button.width-1 {
