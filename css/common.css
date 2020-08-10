@@ -559,7 +559,7 @@ nav li::before	{ display: none; }
 }
 
 .button {
-	color: var(--color-txt-buttton,#fff);
+	color: var(--color-txt-button,#fff);
 	position: relative;
 	padding: .5em 1em;
 	white-space: nowrap;
@@ -866,3 +866,4 @@ ul.menu.columns-3::after {
 ul.menu.columns-3 > li.menu-item.align-right {
 	order: 40;
 }
+
