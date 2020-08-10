@@ -779,12 +779,15 @@ nav li::before	{ display: none; }
 }
 
 p, ol, ul,
+.has-text-align-left,
 .text-align-left		{ text-align: left; }
 .badge,
 .button,
 .wp-block-image,
+.has-text-align-center,
 .text-align-center	{ text-align: center; }
 .text-align-just		{ text-align: justify; }
+.has-text-align-right,
 .text-align-right		{ text-align: right; }
 
 .vertical-rl {
