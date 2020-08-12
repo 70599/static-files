@@ -284,6 +284,7 @@ li::before {
 ol > li::before {
 	counter-increment: number;
 	content: counters(number, '-') '.';
+	font-feature-settings: 'tnum';
 	white-space: nowrap;
 }
 
@@ -334,10 +335,6 @@ sup { vertical-align: super; };
 sub	{ vertical-align: sub; }
 sup,
 sub	{ margin: 0 .2em;}
-sup:last-child,
-sub:last-child	{ margin-right: 0; }
-sup:first-child,
-sub:first-child	{ margin-left: 0; }
 
 table {
 	border-collapse: collapse;
@@ -869,6 +866,15 @@ ul.menu.columns-3 > li.menu-item.align-right {
 m.align-center {
 	order: 20;
 }
+
+ul.menu.columns-3::after {
+	order: 30;
+}
+
+ul.menu.columns-3 > li.menu-item.align-right {
+	order: 40;
+}
+
 
 ul.menu.columns-3::after {
 	order: 30;
