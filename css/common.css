@@ -330,10 +330,14 @@ p > small {
 	display: inline;
 }
 
-sup,
-sub	{ margin: 0 .2em;}
 sup { vertical-align: super; };
 sub	{ vertical-align: sub; }
+sup,
+sub	{ margin: 0 .2em;}
+sup:last-child,
+sub:last-child	{ margin-right: 0; }
+sup:first-child,
+sub:first-child	{ margin-left: 0; }
 
 table {
 	border-collapse: collapse;
@@ -873,4 +877,3 @@ ul.menu.columns-3::after {
 ul.menu.columns-3 > li.menu-item.align-right {
 	order: 40;
 }
-
