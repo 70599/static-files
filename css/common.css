@@ -330,7 +330,9 @@ p > small {
 	display: inline;
 }
 
-sup	{ vertical-align: super; };
+sup,
+sub	{ margin: 0 .2em;}
+sup { vertical-align: super; };
 sub	{ vertical-align: sub; }
 
 table {
@@ -871,3 +873,4 @@ ul.menu.columns-3::after {
 ul.menu.columns-3 > li.menu-item.align-right {
 	order: 40;
 }
+
