@@ -117,7 +117,10 @@ body {
 
 *::before,
 *::after,
-[disabled] {
+[disabled],
+svg.icon,
+.click-through,
+.current_page_item {
 	pointer-events: none;
 }
 
@@ -476,7 +479,6 @@ svg {
 
 svg.icon {
 	fill: currentColor;
-	pointer-events: none;
 	position: relative;
 	width: var(--width-icon,1.25em);
 	height: var(--width-icon,1.25em);
@@ -592,10 +594,6 @@ nav li::before	{ display: none; }
 .button.width-2 {
 	padding-left: 2em;
 	padding-right: 2em;
-}
-
-.click-through {
-	pointer-events: none;
 }
 
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
@@ -745,7 +743,6 @@ nav li::before	{ display: none; }
 }
 
 [style*="--aspect-ratio"]::before {
-	pointer-events: none;
 	position: relative;
 	padding-bottom: calc(100% / (var(--aspect-ratio,4/3)));
 	display: block;
@@ -882,4 +879,11 @@ ul.menu.columns-3::after {
 
 ul.menu.columns-3 > li.menu-item.align-right {
 	order: 40;
+}
+> li.menu-item.align-right {
+	order: 40;
+}
+
+.current_page_item {
+	pointer-events: none;
 }
