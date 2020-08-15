@@ -84,8 +84,8 @@ body {
 		var(--a-bg,1)
 	);
 
-	--hs-bd: var(--h-bd,var(--h-txt)),var(--s-bd,var(--s-txt));
-	--hsl-bd: var(--hs-bd,var(--hs-txt)),var(--l-bd,var(--l-txt));
+	--hs-bd: var(--h-bd,0),var(--s-bd,0%);
+	--hsl-bd: var(--hs-bd),var(--l-bd,0);
 	--color-bd: hsla(var(--hsl-bd),var(--a-bd,.15));
 
 	margin: 0;
@@ -884,6 +884,9 @@ ul.menu.columns-3 > li.menu-item.align-right {
 	order: 40;
 }
 
+.current_page_item {
+	pointer-events: none;
+}
 .current_page_item {
 	pointer-events: none;
 }
