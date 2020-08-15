@@ -119,8 +119,7 @@ body {
 *::after,
 [disabled],
 svg.icon,
-.click-through,
-.current_page_item:not(.site-logo) {
+.click-through {
 	pointer-events: none;
 }
 
