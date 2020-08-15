@@ -120,9 +120,7 @@ body {
 [disabled],
 svg.icon,
 .click-through,
-.current_page_item:not(.site-logo),
-.current_page_parent:not(.site-logo),
-.current-page-ancestor:not(.site-logo) {
+.current_page_item:not(.site-logo) {
 	pointer-events: none;
 }
 
@@ -880,8 +878,5 @@ ul.menu.columns-3::after {
 }
 
 ul.menu.columns-3 > li.menu-item.align-right {
-	order: 40;
-}
-> li.menu-item.align-right {
 	order: 40;
 }
