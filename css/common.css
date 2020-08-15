@@ -736,9 +736,10 @@ nav li::before	{ display: none; }
 
 [style*="--aspect-ratio"] > img {
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: 50%;
+	left: 50%;
 	object-fit: cover;
+	transform: translate(-50%,-50%) var(--tran-add);
 }
 
 [style*="--aspect-ratio"]::before {
