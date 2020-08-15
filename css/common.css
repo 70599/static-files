@@ -120,7 +120,9 @@ body {
 [disabled],
 svg.icon,
 .click-through,
-.current_page_item:not(.site-logo) {
+.current_page_item:not(.site-logo),
+.current_page_parent:not(.site-logo),
+.current-page-ancestor:not(.site-logo) {
 	pointer-events: none;
 }
 
