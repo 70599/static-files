@@ -120,7 +120,7 @@ body {
 [disabled],
 svg.icon,
 .click-through,
-.current_page_item {
+.current_page_item:not(.site-logo) {
 	pointer-events: none;
 }
 
@@ -883,8 +883,7 @@ ul.menu.columns-3 > li.menu-item.align-right {
 > li.menu-item.align-right {
 	order: 40;
 }
-
-.current_page_item {
+tem {
 	pointer-events: none;
 }
 .current_page_item {
