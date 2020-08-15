@@ -85,7 +85,7 @@ body {
 	);
 
 	--hs-bd: var(--h-bd,0),var(--s-bd,0%);
-	--hsl-bd: var(--hs-bd),var(--l-bd,0);
+	--hsl-bd: var(--hs-bd),var(--l-bd,0%);
 	--color-bd: hsla(var(--hsl-bd),var(--a-bd,.15));
 
 	margin: 0;
