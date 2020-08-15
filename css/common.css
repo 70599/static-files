@@ -883,9 +883,3 @@ ul.menu.columns-3 > li.menu-item.align-right {
 > li.menu-item.align-right {
 	order: 40;
 }
-tem {
-	pointer-events: none;
-}
-.current_page_item {
-	pointer-events: none;
-}
