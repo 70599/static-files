@@ -77,36 +77,28 @@ hr[class*="has-"] {
 */
 
 .entry-content a {
-	--tran-prop: color;
 	color: var(--color-link);
 }
 
-.entry-content a.button {
-	--tran-prop: inherit;
-	color: inherit;
-}
-
-.entry-content a:hover,
 .entry-content a:focus {
-	background-image: linear-gradient(to top, hsla(var(--hsl-link),.1) 30%, transparent 30%);
-}
-
-.entry-content a.button:hover,
-.entry-content a.button:focus {
-	background-image: inherit;
+	outline: 2px solid;
 }
 
 .entry-content a:hover {
 	--l-link-: 12%;
 }
 
-.entry-content a.button:hover {
-	--l-link-: inherit;
-}
-
 .entry-content a:active,
 .entry-content a:active:hover {
 	--l-link-: -12%;
+}
+
+.entry-content a.button {
+	color: inherit;
+}
+
+.entry-content a.button:hover {
+	--l-link-: inherit;
 }
 
 .entry-content a.button:active,
