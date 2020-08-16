@@ -78,7 +78,7 @@ hr[class*="has-"] {
 
 .entry-content a:not(.button) {
 	color: var(--color-link);
-	transition: background-color var(--tran-dura) var(--tran-timi);
+	transition: color var(--tran-dura) var(--tran-timi);
 }
 
 .entry-content a:not(.button):hover,
