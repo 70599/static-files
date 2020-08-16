@@ -91,11 +91,11 @@ hr[class*="has-"] {
 	border-radius: var(--radius-btn);
 }
 
-.entry-content :link:hover {
+.entry-content a:not(.button):hover {
 	--l-link-: 12%;
 }
 
-.entry-content :link:active,
-.entry-content :link:active:hover {
+.entry-content a:not(.button):active,
+.entry-content a:not(.button):active:hover {
 	--l-link-: -12%;
 }
