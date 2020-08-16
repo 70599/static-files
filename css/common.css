@@ -569,8 +569,8 @@ nav li::before	{ display: none; }
 
 .button {
 	--hs-btn-bg: var(--hs-link);
-	--l-btn-bg: var(--l-link);
-	--l-btn-bg-: 10%;
+	--l-btn-bg: 52%;
+	--l-btn-bg-: 12%;
 	--color-btn-bg: hsl(var(--hs-btn-bg),var(--l-btn-bg));
 	--color-btn-txt: #fff;
 	--bg-pos-x: left;
