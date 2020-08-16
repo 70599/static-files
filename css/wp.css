@@ -75,3 +75,12 @@ hr[class*="has-"] {
 .entry-content :link {
 	color: var(--color-link);
 }
+
+.entry-content :link:hover {
+	--l-link-: 12%;
+}
+
+.entry-content :link:active,
+.entry-content :link:active:hover {
+	--l-link-: -12%;
+}
