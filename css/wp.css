@@ -76,26 +76,40 @@ hr[class*="has-"] {
 |-------------------------------------------------------------------------------
 */
 
-.entry-content a:not(.button) {
+.entry-content a {
 	--tran-prop: color;
 	color: var(--color-link);
 }
 
-.entry-content a:not(.button):hover,
-.entry-content a:not(.button):focus {
-	--pad-y: .2em;
-	--pad-x: .5em;
-	margin: calc(0em - var(--pad-y)) calc(0em - var(--pad-x));
-	padding: var(--pad-y) var(--pad-x);
-	background-color: hsla(var(--hsl-link),.07);
-	border-radius: var(--radius-btn);
+.entry-content a.button {
+	--tran-prop: inherit;
+	color: inherit;
 }
 
-.entry-content a:not(.button):hover {
+.entry-content a:hover,
+.entry-content a:focus {
+	background-image: linear-gradient(to top, hsla(var(--hsl-link),.1) 30%, transparent 30%);
+}
+
+.entry-content a.button:hover,
+.entry-content a.button:focus {
+	background-image: inherit;
+}
+
+.entry-content a:hover {
 	--l-link-: 12%;
 }
 
-.entry-content a:not(.button):active,
-.entry-content a:not(.button):active:hover {
+.entry-content a.button:hover {
+	--l-link-: inherit;
+}
+
+.entry-content a:active,
+.entry-content a:active:hover {
 	--l-link-: -12%;
+}
+
+.entry-content a.button:active,
+.entry-content a.button:active:hover {
+	--l-link-: inherit;
 }
