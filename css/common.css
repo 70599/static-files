@@ -237,7 +237,7 @@ h1, h2, h3 {
 hr {
 	--height-hr: 1px;
 	--margin-y: var(--line-height-em);
-	--margin-x: 0
+	--margin-x: 0;
 	border: 0;
 	margin: var(--margin-y) var(--margin-x);
 	width: calc(100% - var(--margin-x) * 2);
