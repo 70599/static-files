@@ -567,6 +567,7 @@ nav li::before	{ display: none; }
 	border-radius: .275em;
 }
 
+.wpcf7-form .submit-wrap::before,
 .button {
 	--hs-btn-bg: var(--hs-link);
 	--l-btn-bg: 52%;
@@ -588,10 +589,13 @@ nav li::before	{ display: none; }
 	border-radius: var(--radius-btn);
 }
 
+.wpcf7-form .submit-wrap:hover::before,
 .button:hover {
 	--bg-pos-y: top;
 }
 
+.wpcf7-form .submit-wrap:active::before,
+.wpcf7-form .submit-wrap:active:hover::before
 .button:active,
 .button:active:hover {
 	--bg-pos-y: bottom;
