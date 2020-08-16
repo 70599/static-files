@@ -222,7 +222,7 @@ input[type="radio"] {
 
 input:not([type="radio"]), select, textarea {
 	width: 100%;
-	border-radius: var(--radius-button, 0);
+	border-radius: var(--radius-btn, 0);
 }
 
 textarea {
@@ -568,21 +568,33 @@ nav li::before	{ display: none; }
 }
 
 .button {
-	color: var(--color-txt-button,#fff);
+	--hs-btn-bg: var(--hs-link);
+	--l-btn-bg: var(--l-link);
+	--l-btn-bg-: 10%;
+	--color-btn-bg: hsl(var(--hs-btn-bg),var(--l-btn-bg));
+	--color-btn-txt: #fff;
+	--bg-pos-x: left;
+	--bg-pos-y: center;
+	color: var(--color-btn-txt);
 	position: relative;
 	padding: .5em 1em;
 	white-space: nowrap;
-	background-color: hsla(var(--hs-button,var(--hs-link)),calc(var(--l-button,var(--l-link)) + var(--l-button-,0%) + var(--l-button-hover,0%) - var(--l-button-active,0%)),var(--a-button,1));
-	border-radius: var(--radius-button);
+	background-image: linear-gradient(to bottom right,
+		hsl(var(--hs-btn-bg),calc(var(--l-btn-bg) + var(--l-btn-bg-))),
+		hsl(var(--hs-btn-bg),calc(var(--l-btn-bg) - var(--l-btn-bg-)))
+	);
+	background-size: 100% 300%;
+	background-position: var(--bg-pos-x) var(--bg-pos-y);
+	border-radius: var(--radius-btn);
 }
 
 .button:hover {
-	--l-button-hover: 7%;
+	--bg-pos-y: top;
 }
 
 .button:active,
 .button:active:hover {
-	--l-button-active: 15%
+	--bg-pos-y: bottom;
 }
 
 .button.width-1 {
