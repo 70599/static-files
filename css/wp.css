@@ -82,9 +82,9 @@ hr[class*="has-"] {
 
 .entry-content a:not(.button):hover,
 .entry-content a:not(.button):focus {
-	--pad-x: .2em;
-	--pad-y: .5em;
-	margin: calc(0em - var(--pad-y)) calc(0em - var(--pad-y));
+	--pad-y: .2em;
+	--pad-x: .5em;
+	margin: calc(0em - var(--pad-y)) calc(0em - var(--pad-x));
 	padding: var(--pad-y) var(--pad-x);
 	background-color: hsla(var(--hsl-link),.07);
 	border-radius: var(--radius-btn);
