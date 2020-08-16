@@ -53,3 +53,7 @@ hr[class*="has-"] {
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.wp-block-group {
+	margin-bottom: var(--line-height-em);
+}
