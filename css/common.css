@@ -574,6 +574,8 @@ nav li::before	{ display: none; }
 	--l-btn-bg-: 12%;
 	--color-btn-bg: hsl(var(--hs-btn-bg),var(--l-btn-bg));
 	--color-btn-txt: #fff;
+	--bg-width: 100%;
+	--bg-height: 300%;
 	--bg-pos-x: left;
 	--bg-pos-y: center;
 	color: var(--color-btn-txt);
@@ -584,18 +586,18 @@ nav li::before	{ display: none; }
 		hsl(var(--hs-btn-bg),calc(var(--l-btn-bg) + var(--l-btn-bg-))),
 		hsl(var(--hs-btn-bg),calc(var(--l-btn-bg) - var(--l-btn-bg-)))
 	);
-	background-size: 100% 300%;
+	background-size: var(--bg-width) var(--bg-height);
 	background-position: var(--bg-pos-x) var(--bg-pos-y);
 	border-radius: var(--radius-btn);
 }
 
-.wpcf7-form .submit-wrap:hover::before,
+.wpcf7-form.ready .submit-wrap:hover::before,
 .button:hover {
 	--bg-pos-y: top;
 }
 
-.wpcf7-form .submit-wrap:active::before,
-.wpcf7-form .submit-wrap:active:hover::before
+.wpcf7-form.ready .submit-wrap:active::before,
+.wpcf7-form.ready .submit-wrap:active:hover::before,
 .button:active,
 .button:active:hover {
 	--bg-pos-y: bottom;
