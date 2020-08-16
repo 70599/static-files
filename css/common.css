@@ -140,6 +140,11 @@ a {
 	display: inline-block;
 }
 
+a[target="_blank"]::after {
+	content: '\2187';	/*↗*/
+	margin-left: .25em;
+}
+
 abbr {
 	position: relative;
 }
