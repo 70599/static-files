@@ -141,6 +141,10 @@ a {
 	outline-style: dashed;
 }
 
+a:focus {
+	outline-width: 1px;
+}
+
 a[target="_blank"]::after {
 	content: '\2197';	/*↗*/
 }
