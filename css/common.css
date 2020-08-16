@@ -137,7 +137,7 @@ body {
 a {
 	position: relative;
 	text-decoration: none;
-	display: inline-block;
+	outline-style: dashed;
 }
 
 a[target="_blank"]::after {
