@@ -839,13 +839,11 @@ p, ol, ul,
 |-------------------------------------------------------------------------------
 */
 
-ul.menu.columns-3::before,
-ul.menu.columns-3::after {
-	content: '';
-	flex: 1;
+ul.menu[class*="columns-"] > .placeholder {
+	flex: auto;
 }
 
-ul.menu.columns-3::before {
+ul.menu.columns-3 > .placeholder:nth-of-type(1) {
 	order: 10;
 }
 
@@ -853,27 +851,7 @@ ul.menu.columns-3 > li.menu-item.align-center {
 	order: 20;
 }
 
-ul.menu.columns-3::after {
-	order: 30;
-}
-
-ul.menu.columns-3 > li.menu-item.align-right {
-	order: 40;
-}
-m.align-center {
-	order: 20;
-}
-
-ul.menu.columns-3::after {
-	order: 30;
-}
-
-ul.menu.columns-3 > li.menu-item.align-right {
-	order: 40;
-}
-
-
-ul.menu.columns-3::after {
+ul.menu.columns-3 > .placeholder:nth-of-type(2) {
 	order: 30;
 }
 
