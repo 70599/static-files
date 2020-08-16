@@ -141,7 +141,7 @@ a {
 }
 
 a[target="_blank"]::after {
-	content: '\2187';	/*↗*/
+	content: '\2197';	/*↗*/
 	margin-left: .25em;
 }
 
