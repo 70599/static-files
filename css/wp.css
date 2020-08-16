@@ -58,3 +58,10 @@ hr[class*="has-"] {
 .entry-content ul {
 	margin-bottom: var(--line-height-em, 1.6em);
 }
+
+.entry-content ul ul,
+.entry-content ol ul,
+.entry-content ul ol,
+.entry-content ol ol {
+	margin-bottom: 0;
+}
