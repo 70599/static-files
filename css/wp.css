@@ -54,6 +54,7 @@ hr[class*="has-"] {
 	margin-right: auto;
 }
 
-.wp-block-group {
-	margin-bottom: var(--line-height-em);
+.wp-block-group,
+.entry-content ul {
+	margin-bottom: var(--line-height-em, 1.6em);
 }
