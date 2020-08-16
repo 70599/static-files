@@ -1,3 +1,32 @@
+
+
+/*
+|-------------------------------------------------------------------------------
+|   official classes
+|-------------------------------------------------------------------------------
+*/
+
+[class*="has-"] {
+	color: var(--color-);
+}
+
+hr[class*="has-"] {
+	background-color: var(--color-);
+}
+
+hr.has-black-color									{ --color-: #000; }
+hr.has-cyan-bluish-gray-color				{ --color-: #abb8c3; }
+hr.has-white-color									{ --color-: #fff; }
+hr.has-pale-pink-color							{ --color-: #f78da7; }
+hr.has-vivid-red-color							{ --color-: #cf2e2e; }
+hr.has-luminous-vivid-orange-color	{ --color-: #ff6900; }
+hr.has-luminous-vivid-amber-color		{ --color-: #fcb900; }
+hr.has-light-green-cyan-color				{ --color-: #7bdcb5; }
+hr.has-vivid-green-cyan-color				{ --color-: #00d084; }
+hr.has-pale-cyan-blue-color					{ --color-: #8ed1fc; }
+hr.has-vivid-cyan-blue-color				{ --color-: #0693e3; }
+hr.has-vivid-purple-color						{ --color-: #9b51e0; }
+
 /*
 |-------------------------------------------------------------------------------
 |   custom classes
