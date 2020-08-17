@@ -58,9 +58,12 @@ hr[class*="has-"] {
 	margin-right: auto;
 }
 
-.wp-block-group,
 .entry-content ul {
 	margin-bottom: var(--line-height-em, 1.6em);
+}
+
+.wp-block-group .wp-block-group .wp-block-group__inner-container {
+	padding-bottom: var(--line-height-em, 1.6em);
 }
 
 .entry-content ul ul,
