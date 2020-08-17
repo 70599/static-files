@@ -243,11 +243,13 @@ h1, h2, h3 {
 
 hr {
 	--height-hr: 1px;
-	--margin-y: var(--line-height-em);
-	--margin-x: 0;
+	--top: var(--line-height-em);
+	--right: 0;
+	--bottom: var(--line-height-em);
+	--left: 0
 	border: 0;
-	margin: var(--margin-y) var(--margin-x);
-	width: calc(100% - var(--margin-x) * 2);
+	margin: var(--top) var(--right) var(--bottom) var(--left);
+	width: calc(100% - var(--right) var(--left));
 	height: var(--height-hr);
 	background-color: hsla(var(--hsl-txt),.25);
 }
