@@ -39,3 +39,27 @@ const setProperties = (el, props) => {
 		el.style.setProperty(key, props[key]);
 	}
 }
+
+/*
+|-------------------------------------------------------------------------------
+|	Action(s)
+|-------------------------------------------------------------------------------
+*/
+
+//	Insert favicon before link
+const addFavicon = (e) => {
+	document.querySelectorAll(e).forEach(a => {
+		var	url	= a.getAttribute('href'),
+				src	= 'https://www.google.com/s2/favicons?domain='+url,
+				img	= document.createElement('img');
+
+		setAttributes(img, {
+			'class': 'favicon lazy',
+			'data-src': src,
+			'loading': 'lazy',
+			'alt': 'favicon'
+		});
+
+		a.prepend(img);
+	});
+}
