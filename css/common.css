@@ -120,7 +120,8 @@ body {
 [disabled],
 svg.icon,
 .click-through,
-.out-going-arrow {
+.out-going-arrow,
+a .favicon {
 	pointer-events: none;
 	user-select: none;
 }
