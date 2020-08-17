@@ -86,6 +86,7 @@ hr[class*="has-"] {
 
 .entry-content a:hover {
 	--l-link-: 12%;
+	text-decoration: underline;
 }
 
 .entry-content a:active,
@@ -99,6 +100,7 @@ hr[class*="has-"] {
 
 .entry-content a.button:hover {
 	--l-link-: inherit;
+	text-decoration: none;
 }
 
 .entry-content a.button:active,
