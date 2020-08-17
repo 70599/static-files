@@ -76,8 +76,12 @@ hr[class*="has-"] {
 |-------------------------------------------------------------------------------
 */
 
-.entry-content h3 ~ p {
+.entry-content h3 ~ * {
 	margin-left: 1.6rem;
+}
+
+.entry-content h3 ~ hr {
+	--left: 1.6rem;
 }
 
 .entry-content a {
