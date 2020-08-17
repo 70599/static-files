@@ -635,7 +635,7 @@ nav li::before	{ display: none; }
 }
 
 a .favicon {
-	margin-right: .25em;
+	margin-right: .1em;
 	width: 1.25em;
 	height: auto;
 	vertical-align: text-top;
