@@ -97,6 +97,10 @@ hr[class*="has-"] {
 	--l-link-: -12%;
 }
 
+.entry-content .qr > a {
+	color: var(--color-txt);
+}
+
 .entry-content a.button {
 	color: var(--color-btn-txt);
 }
