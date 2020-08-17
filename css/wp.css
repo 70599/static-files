@@ -76,6 +76,10 @@ hr[class*="has-"] {
 |-------------------------------------------------------------------------------
 */
 
+.entry-content h3 ~ p {
+	margin-left: 1.6rem;
+}
+
 .entry-content a {
 	color: var(--color-link);
 }
