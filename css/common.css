@@ -119,8 +119,10 @@ body {
 *::after,
 [disabled],
 svg.icon,
-.click-through {
+.click-through,
+.out-going-arrow {
 	pointer-events: none;
+	user-select: none;
 }
 
 html {
