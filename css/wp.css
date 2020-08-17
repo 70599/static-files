@@ -105,6 +105,7 @@ hr[class*="has-"] {
 	color: var(--color-btn-txt);
 }
 
+.entry-content .qr > a:hover,
 .entry-content a.button:hover {
 	--l-link-: inherit;
 	text-decoration: none;
