@@ -634,6 +634,13 @@ nav li::before	{ display: none; }
 	padding-right: 2em;
 }
 
+a .favicon {
+	margin-right: .25em;
+	width: 1.25em;
+	height: auto;
+	vertical-align: text-top;
+}
+
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
 
 .flex-box {
