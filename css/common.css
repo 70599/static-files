@@ -17,6 +17,8 @@
 	--color-line: #00b900;
 	--color-twitter: #1da1f2;
 	--color-github: #24292e;
+
+	--width-icon: 1.25em;
 }
 
 body:not(.admin-bar) {
@@ -501,8 +503,8 @@ svg {
 svg.icon {
 	fill: currentColor;
 	position: relative;
-	width: var(--width-icon,1.25em);
-	height: var(--width-icon,1.25em);
+	width: var(--width-icon);
+	height: var(--width-icon);
 	vertical-align: text-top;
 	transform-origin: center;
 	transform: translate3d(0,0,0);
@@ -637,8 +639,8 @@ nav li::before	{ display: none; }
 
 a .favicon {
 	margin-right: .1em;
-	width: 1.25em;
-	height: auto;
+	width: var(--width-icon);
+	height: var(--width-icon);
 	vertical-align: text-top;
 }
 
