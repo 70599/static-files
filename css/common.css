@@ -425,7 +425,6 @@ h1,
 */
 
 *									{ color: inherit; }
-h1, h2, h3, h4, h5, h6,
 body, *:link			{ color: var(--color-txt); }
 
 .font-color-unset	{ color: unset; }
