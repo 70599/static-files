@@ -98,7 +98,7 @@ hr[class*="has-"] {
 }
 
 .entry-content a.button {
-	color: inherit;
+	color: var(--color-btn-txt);
 }
 
 .entry-content a.button:hover {
