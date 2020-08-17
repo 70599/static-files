@@ -47,10 +47,10 @@ const setProperties = (el, props) => {
 */
 
 //	Insert favicon before link
-const addFavicon = (e) => {
+const addFavicon = (e, sz = 32) => {
 	document.querySelectorAll(e).forEach(a => {
 		var	url	= a.getAttribute('href'),
-				src	= 'https://www.google.com/s2/favicons?domain='+url,
+				src	= 'https://www.google.com/s2/favicons?sz='+sz+'&domain='+url,
 				img	= document.createElement('img');
 
 		setAttributes(img, {
