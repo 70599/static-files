@@ -11,6 +11,7 @@
 }
 
 [class*="has-"] {
+	--color-: var(--color-txt);
 	color: var(--color-);
 }
 
