@@ -369,7 +369,7 @@ table {
 */
 
 body {
-	font-family: var(--font-ascii), var(--font-cjk), var(--font-fallback,sans-serif);
+	font-family: var(--font-ascii), var(--font-cjk,''), var(--font-fallback,sans-serif);
 }
 
 code,
@@ -643,9 +643,13 @@ nav li::before	{ display: none; }
 
 a .favicon {
 	margin-right: .1em;
+	display: inline-block;
 	width: var(--width-icon);
 	height: var(--width-icon);
+	overflow: hidden;
 	vertical-align: text-top;
+	text-align: center;
+	line-height: var(--width-icon);
 }
 
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/

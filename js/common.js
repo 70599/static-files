@@ -57,7 +57,7 @@ const addFavicon = (e, sz = 48) => {
 			'class': 'favicon lazy',
 			'data-src': src,
 			'loading': 'lazy',
-			'alt': 'favicon'
+			'alt': '⬒'
 		});
 
 		a.prepend(img);
