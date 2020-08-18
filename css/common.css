@@ -409,8 +409,9 @@ body.windows {
 code,
 kbd,
 pre,
-samp {
-	font-weight: var(--font-mono, 'JetBrains Mono');
+samp,
+.mono {
+	font-family: var(--font-mono, 'JetBrains Mono');
 }
 
 /*
