@@ -1,3 +1,33 @@
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/eot/JetBrainsMono-Light.eot') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/woff2/JetBrainsMono-Light.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/woff/JetBrainsMono-Light.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/ttf/JetBrainsMono-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/eot/JetBrainsMono-Bold.eot') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/web/woff/JetBrainsMono-Bold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono@v1.0.6/ttf/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   css vars
@@ -373,7 +403,14 @@ body {
 }
 
 body.windows {
-	font-family: var(--font-family-windows, --font-family);
+	font-family: var(--font-family-windows, var(--font-family));
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-weight: var(--font-mono, 'JetBrains Mono');
 }
 
 /*
@@ -477,7 +514,7 @@ i, .italic,
 *::after,
 * {
 	--tran-orig: center;
-	--tran-prop: color, background-position, background-size, background-color, border-color, fill, width, height, box-shadow, filter, text-shadow, opacity, transform, backdrop-filter, -webkit-backdrop-filter, stroke-dashoffset;
+	--tran-prop: color, background-position, background-size, background-color, border-color, fill, width, height, box-shadow, filter, text-shadow, opacity, transform, border-radius, backdrop-filter, -webkit-backdrop-filter, stroke-dashoffset;
 	--tran-dura: .2s;
 	--tran-timi: ease-in-out;
 	transform-origin: var(--tran-orig);
