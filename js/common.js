@@ -53,6 +53,22 @@ const ioThresholdList = (steps) => {
 	return thresholds;
 }
 
+// Generate svg QR code
+const qrcodeSvg = (el) => {
+	let	url	= el.getAttribute('href'),
+			qr	= new QRCode({
+				content: url,
+				container: 'svg-viewbox',
+				join: true,
+				color: 'var(--color-qr,currentColor)',
+				background: 'var(--color-qr-bg,transparent)'
+			}),
+			svg	= qr.svg(),
+			div	= el.querySelector('.qr-wrap');
+
+	div.innerHTML = svg;
+}
+
 /*
 |-------------------------------------------------------------------------------
 |	Action(s)
