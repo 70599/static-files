@@ -273,9 +273,14 @@ hr.height-2px {
 
 img {
 	--tran-orig: center;
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+}
+
+.image-wrap > img {
 	min-width: 100%;
 	min-height: 100%;
-	background-color: transparent;
 }
 
 img.portrait {
