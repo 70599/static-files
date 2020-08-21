@@ -823,7 +823,7 @@ a .favicon {
 }
 
 .image-wrap[style*="--bg-color"]::before {
-	background-color: var(--bg-color);
+	background-color: var(--bg-color,rgb(235,235,235));
 }
 
 .image-wrap.loaded[style*="--bg-color"]::before {
