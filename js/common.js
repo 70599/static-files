@@ -40,6 +40,19 @@ const setProperties = (el, props) => {
 	}
 }
 
+// Build Intersection Observer Threshold List
+const ioThresholdList = (steps) => {
+	var	thresholds	= [];
+
+	for (var i = 1; i <= steps; i++) {
+		var	ratio	= i / steps;
+		thresholds.push(ratio);
+	}
+
+	thresholds.push(0);
+	return thresholds;
+}
+
 /*
 |-------------------------------------------------------------------------------
 |	Action(s)

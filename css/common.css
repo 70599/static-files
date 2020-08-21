@@ -21,7 +21,7 @@
 	--width-icon: 1.25em;
 }
 
-body:not(.admin-bar) {
+body {
 	--height-admin-bar: 0;
 }
 
@@ -251,10 +251,20 @@ hr {
 	--bottom: var(--line-height-em);
 	--left: 0
 	border: 0;
+	position: relative;
 	margin: var(--top) var(--right) var(--bottom) var(--left);
 	width: calc(100% - var(--right) var(--left));
 	height: var(--height-hr);
 	background-color: hsla(var(--hsl-txt),.25);
+}
+
+hr::before,
+hr::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* transform: () */
 }
 
 hr.height-2px {
