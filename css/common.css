@@ -827,7 +827,7 @@ a .favicon {
 }
 
 .image-wrap.loaded[style*="--bg-color"]::before {
-	--bg-color-a: 0;
+	background-color: transparent;
 }
 
 .image-body.overlay-black-0-5::before	{ background-color: hsla(0,0%,0%,.5); }
