@@ -273,8 +273,8 @@ hr.height-2px {
 
 img {
 	--tran-orig: center;
-	width: 100%;
-	height: auto;
+	min-width: 100%;
+	min-height: 100%;
 	background-color: transparent;
 }
 
