@@ -658,6 +658,7 @@ nav li::before	{ display: none; }
 }
 
 a .favicon {
+	color: transparent;
 	margin-right: .1em;
 	display: inline-block;
 	width: var(--width-icon);
@@ -823,7 +824,7 @@ a .favicon {
 }
 
 .image-wrap[style*="--bg-color"]::before {
-	background-color: var(--bg-color,hsla(var(--hsl-txt),.1));
+	background-color: var(--bg-color,hsla(var(--hsl-txt),.07));
 }
 
 .image-wrap.loaded[style*="--bg-color"]::before {
