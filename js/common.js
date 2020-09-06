@@ -57,7 +57,7 @@ const ioThresholdList = (steps) => {
 const qrcodeSvg = (el) => {
 	let	url			= el.getAttribute('href'),
 			qr			= new QRCode(url),
-			mods		= hello.qrcode.modules;
+			mods		= qr.qrcode.modules;
 			ascii		= '',
 			length	= mods.length,
 			svg			= qr.svg(),
