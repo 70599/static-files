@@ -55,18 +55,23 @@ const ioThresholdList = (steps) => {
 
 // Generate svg QR code
 const qrcodeSvg = (el) => {
-	let	url	= el.getAttribute('href'),
-			qr	= new QRCode({
-				content: url,
-				container: 'svg-viewbox',
-				join: true,
-				color: 'var(--color-qr,currentColor)',
-				background: 'var(--color-qr-bg,transparent)'
-			}),
-			svg	= qr.svg(),
-			div	= el.querySelector('.qr-wrap');
+	let	url			= el.getAttribute('href'),
+			qr			= new QRCode(url),
+			mods		= hello.qrcode.modules;
+			ascii		= '',
+			length	= mods.length,
+			svg			= qr.svg(),
+			div			= el.querySelector('.qr-wrap');
 
-	div.innerHTML = svg;
+	for (var y = 0; y < length; y++) {
+		for (var x = 0; x < length; x++) {
+			var module = modules[x][y];
+			ascii += (module ? '⬛︎' : '　');
+		}
+		ascii += '\r\n';
+	}
+
+	div.innerHTML = ascii;
 }
 
 /*
