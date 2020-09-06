@@ -58,10 +58,11 @@ const qrcodeSvg = (el) => {
 	let	url	= el.getAttribute('href'),
 			qr	= new QRCode({
 				content: url,
-				container: 'svg-viewbox',
+				container: 'g',
 				join: true,
 				color: 'var(--color-qr,currentColor)',
-				background: 'var(--color-qr-bg,transparent)'
+				background: 'var(--color-qr-bg,transparent)',
+				xmlDeclaration: false
 			}),
 			svg	= qr.svg(),
 			div	= el.querySelector('.qr-wrap');
