@@ -59,6 +59,7 @@ const qrcodeSvg = (el) => {
 			qr	= new QRCode({
 				content: url,
 				container: 'svg-viewbox',
+				join: true,
 				color: 'var(--color-qr,currentColor)',
 				background: 'var(--color-qr-bg,transparent)'
 			}),
