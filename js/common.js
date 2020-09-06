@@ -65,7 +65,7 @@ const qrcodeSvg = (el) => {
 				xmlDeclaration: false
 			}),
 			svg	= qr.svg(),
-			div	= el.querySelector('.qr-wrap');
+			div	= el.querySelector('.qr-wrap > svg');
 
 	div.innerHTML = svg;
 }
