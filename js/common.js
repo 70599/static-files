@@ -65,8 +65,8 @@ const qrcodeSvg = (el) => {
 
 	for (var y = 0; y < length; y++) {
 		for (var x = 0; x < length; x++) {
-			var module = modules[x][y];
-			ascii += (module ? '⬛︎' : '　');
+			var mod = mods[x][y];
+			ascii += (mod ? '⬛︎' : '　');
 		}
 		ascii += '\r\n';
 	}
