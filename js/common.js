@@ -58,7 +58,7 @@ const qrcodeSvg = (el) => {
 	let	url	= el.getAttribute('href'),
 			qr	= new QRCode({
 				content: url,
-				container: 'g',
+				container: 'none',
 				join: true,
 				color: 'var(--color-qr,currentColor)',
 				background: 'var(--color-qr-bg,transparent)',
