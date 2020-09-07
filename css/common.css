@@ -501,9 +501,7 @@ i, .italic,
 	--tran-dura: .2s;
 	--tran-timi: ease-in-out;
 	transform-origin: var(--tran-orig);
-	transition-property: var(--tran-prop);
-  transition-duration: var(--tran-dura);
-  transition-timing-function: var(--tran-timi);
+	transition: var(--tran-prop) var(--tran-dura) var(--tran-timi);
 }
 
 .rellax {
