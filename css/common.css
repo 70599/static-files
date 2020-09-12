@@ -496,11 +496,11 @@ i, .italic,
 *::before,
 *::after,
 * {
-	--tran-orig: center;
+	/* --tran-orig: center; */
 	--tran-prop: color, background-position, background-size, background-color, border-color, fill, width, height, box-shadow, filter, text-shadow, opacity, transform, border-radius, backdrop-filter, -webkit-backdrop-filter, stroke-dashoffset;
 	--tran-dura: .2s;
 	--tran-timi: ease-in-out;
-	transform-origin: var(--tran-orig);
+	/* transform-origin: var(--tran-orig); */
 	transition-property: var(--tran-prop);
   transition-duration: var(--tran-dura);
   transition-timing-function: var(--tran-timi);
