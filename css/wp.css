@@ -59,6 +59,10 @@ hr[class*="has-"] {
 	margin-right: auto;
 }
 
+.entry-content > :last-child {
+	margin-bottom: calc(var(--line-height-em) * 2);
+}
+
 .entry-content ul {
 	margin-bottom: var(--line-height-em, 1.6em);
 }
