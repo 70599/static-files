@@ -445,7 +445,7 @@ h1,
 */
 
 *									{ color: inherit; }
-body, *:link			{ color: var(--color-txt); }
+body, p, *:link		{ color: var(--color-txt); }
 
 .font-color-unset	{ color: unset; }
 
