@@ -684,8 +684,14 @@ a .favicon {
 	--dir-gradi: to bottom right;
 	--color-stop-1: transparent;
 	--color-stop-2: transparent;
+	width: var(--width-shape, var(--width-icon));
+	height: var(--height-shape, var(--width-shape, var(--width-icon)));
 	-webkit-mask-image: var(--shape);
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-size: cover;
 	mask-image: var(--shape);
+	mask-repeat: no-repeat;
+	mask-size: cover;
 	background-color: var(--color-bg);
 	background-image: linear-gradient(var(--dir-gradi), var(--color-stop-1), var(--color-stop-2));
 }
