@@ -680,7 +680,7 @@ a .favicon {
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
 
 .shape {
-	--shape: none;
+	--shape: var(--shape-sub-circle);
 	--dir-gradi: to bottom right;
 	--color-stop-1: transparent;
 	--color-stop-2: transparent;
