@@ -679,6 +679,17 @@ a .favicon {
 
 /*	https://css-tricks.com/snippets/css/a-guide-to-flexbox/	*/
 
+.shape {
+	--shape: none;
+	--dir-gradi: to bottom right;
+	--color-stop-1: transparent;
+	--color-stop-2: transparent;
+	-webkit-mask-image: var(--shape);
+	mask-image: var(--shape);
+	background-color: var(--color-bg);
+	background-image: linear-gradient(var(--dir-gradi), var(--color-stop-1), var(--color-stop-2));
+}
+
 .flex-box {
 	position: relative;
 	margin-left: auto;
