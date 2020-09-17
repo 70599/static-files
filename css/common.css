@@ -698,6 +698,11 @@ a .favicon {
 	background-image: linear-gradient(var(--dir-gradi), var(--color-stop-1), var(--color-stop-2));
 }
 
+.sticky {
+	position: sticky;
+	position: -webkit-sticky;
+}
+
 .flex-box {
 	position: relative;
 	margin-left: auto;
