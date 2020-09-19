@@ -915,9 +915,9 @@ p, ol, ul,
 	writing-mode: vertical-rl;
 }
 
-.underline	{ border-bottom: 1px; }
-
 .upper-case	{ text-transform: uppercase; }
+
+.underline	{ text-decoration: underline; }
 
 /*
 |-------------------------------------------------------------------------------
