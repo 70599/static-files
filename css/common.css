@@ -699,8 +699,12 @@ a .favicon {
 }
 
 .sticky {
+	--offset-top: 0;
 	position: sticky;
 	position: -webkit-sticky;
+	top: -1px;
+	margin-top: calc(0px - var(--offset-top));
+	padding-top: var(--offset-top);
 }
 
 .flex-box {
@@ -916,7 +920,7 @@ p, ol, ul,
 }
 
 .upper-case	{ text-transform: uppercase; }
-
+.delline		{ text-decoration: line-through; }
 .underline	{ text-decoration: underline; }
 
 /*
