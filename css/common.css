@@ -698,7 +698,7 @@ a .favicon {
 	background-image: linear-gradient(var(--dir-gradi), var(--color-stop-1), var(--color-stop-2));
 }
 
-.sticky {
+*.sticky {
 	--offset-top: var(--height-admin-bar-px,0);
 	position: sticky;
 	position: -webkit-sticky;
