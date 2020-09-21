@@ -730,6 +730,11 @@ a .favicon {
 	flex-direction: column;
 }
 
+.flex.column:not(.wp-block-group) > *,
+.flex.column.wp-block-group > .wp-block-group__inner-container > * {
+	width: calc((100% - var(--gap) * (var(--num-col) - 1)) / var(--num-col));
+}
+
 .flex.column:not(.wp-block-group) > .button,
 .flex.column.wp-block-group > .wp-block-group__inner-container > .button {
 	width: auto;
