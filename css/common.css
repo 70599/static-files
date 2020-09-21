@@ -707,44 +707,60 @@ a .favicon {
 	padding-top: var(--offset-top);
 }
 
-.flex-box {
+.flex-box:not(.wp-block-group),
+.flex-box.wp-block-group > .wp-block-group__inner-container {
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
 }
 
-.flex-box.inline {
+.flex-box.inline:not(.wp-block-group),
+.flex-box.inline.wp-block-group > .wp-block-group__inner-container {
 	display: inline-flex;
 }
 
-.flex-box.wrap {
+.flex-box.wrap:not(.wp-block-group),
+.flex-box.wrap.wp-block-group > .wp-block-group__inner-container {
 	flex-wrap: wrap;
 }
 
-.flex-box.flex-flow-column {
+.flex-box.flow-column:not(.wp-block-group),
+.flex-box.flow-column.wp-block-group > .wp-block-group__inner-container {
 	flex-flow: column;
 	flex-direction: column;
 }
 
-.flex-box.flex-flow-column > .button {
+.flex-box.flow-column:not(.wp-block-group) > .button,
+.flex-box.flow-column.wp-block-group > .wp-block-group__inner-container > .button {
 	width: auto;
 }
 
-.flex-1 {
-	flex: auto;
+.flex-1:not(.wp-block-group),
+.flex-1.wp-block-group > .wp-block-group__inner-container {
+	flex: 1;
 }
 
-.flex-box > .order-1	{ order: 1; }
-.flex-box > .order-2	{ order: 2; }
-.flex-box > .order-3	{ order: 3; }
-.flex-box > .order-4	{ order: 4; }
-.flex-box > .order-5	{ order: 5; }
-.flex-box > .order-6	{ order: 6; }
-.flex-box > .order-7	{ order: 7; }
-.flex-box > .order-8	{ order: 8; }
-.flex-box > .order-9	{ order: 9; }
-.flex-box > .order-10	{ order: 10; }
+.flex-box:not(.wp-block-group) > .order-1,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-1	{ order: 1; }
+.flex-box:not(.wp-block-group) > .order-2,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-2	{ order: 2; }
+.flex-box:not(.wp-block-group) > .order-3,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-3	{ order: 3; }
+.flex-box:not(.wp-block-group) > .order-4,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-4	{ order: 4; }
+.flex-box:not(.wp-block-group) > .order-5,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-5	{ order: 5; }
+.flex-box:not(.wp-block-group) > .order-6,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-6	{ order: 6; }
+.flex-box:not(.wp-block-group) > .order-7,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-7	{ order: 7; }
+.flex-box:not(.wp-block-group) > .order-8,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-8	{ order: 8; }
+.flex-box:not(.wp-block-group) > .order-9,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-9	{ order: 9; }
+.flex-box:not(.wp-block-group) > .order-10,
+.flex-box.wp-block-group > .wp-block-group__inner-container > .order-10	{ order: 10; }
 
 .flex-box.swiper-wrapper {
 	display: inline-flex;
@@ -755,71 +771,87 @@ a .favicon {
 
 /*	align horizontal single line	*/
 
-.flex-box.flex-justify-start {
+.flex-box:not(.wp-block-group).flex-justify-start,
+.flex-box.wp-block-group.flex-justify-start > .wp-block-group__inner-container {
 	justify-content: flex-start;
 }
 
-.flex-box.flex-justify-end {
+.flex-box:not(.wp-block-group).flex-justify-end,
+.flex-box.wp-block-group.flex-justify-end > .wp-block-group__inner-container {
 	justify-content: flex-end;
 }
 
-.flex-box.flex-justify-center {
+.flex-box:not(.wp-block-group).flex-justify-center,
+.flex-box.wp-block-group.flex-justify-center > .wp-block-group__inner-container {
 	justify-content: center;
 }
 
-.flex-box.flex-justify-space-between {
+.flex-box:not(.wp-block-group).flex-justify-space-between,
+.flex-box.wp-block-group.flex-justify-space-between > .wp-block-group__inner-container {
 	justify-content: space-between;
 }
 
-.flex-box.flex-justify-space-around {
+.flex-box:not(.wp-block-group).flex-justify-space-around,
+.flex-box.wp-block-group.flex-justify-space-around > .wp-block-group__inner-container {
 	justify-content: space-around;
 }
 
-.flex-box.flex-justify-space-evenly {
+.flex-box:not(.wp-block-group).flex-justify-space-evenly,
+.flex-box.wp-block-group.flex-justify-space-evenly > .wp-block-group__inner-container {
 	justify-content: space-evenly;
 }
 
 /*	align vertical single line	*/
 
-.flex-box.flex-align-items-start {
+.flex-box:not(.wp-block-group).flex-align-items-start,
+.flex-box.wp-block-group.flex-align-items-start > .wp-block-group__inner-container {
 	align-items: flex-start;
 }
 
-.flex-box.flex-align-items-baseline {
+.flex-box:not(.wp-block-group).flex-align-items-baseline,
+.flex-box.wp-block-group.flex-align-items-baseline > .wp-block-group__inner-container {
 	align-items: baseline;
 }
 
-.flex-box.flex-align-items-center {
+.flex-box:not(.wp-block-group).flex-align-items-center,
+.flex-box.wp-block-group.flex-align-items-center > .wp-block-group__inner-container {
 	align-items: center;
 }
 
-.flex-box.flex-align-items-stretch {
+.flex-box:not(.wp-block-group).flex-align-items-stretch,
+.flex-box.wp-block-group.flex-align-items-stretch > .wp-block-group__inner-container {
 	align-items: stretch;
 }
 
-.flex-box.flex-align-items-end {
+.flex-box:not(.wp-block-group).flex-align-items-end,
+.flex-box.wp-block-group.flex-align-items-end > .wp-block-group__inner-container {
 	align-items: flex-end;
 }
 
 /*	align vertical multi line	*/
 
-.flex-box.flex-align-content-start {
+.flex-box:not(.wp-block-group).flex-align-content-start,
+.flex-box.wp-block-group.flex-align-content-start > .wp-block-group__inner-container {
 	align-content: flex-start;
 }
 
-.flex-box.flex-align-content-center {
+.flex-box:not(.wp-block-group).flex-align-content-center,
+.flex-box.wp-block-group.flex-align-content-center > .wp-block-group__inner-container {
 	align-content: center;
 }
 
-.flex-box.flex-align-content-stretch {
+.flex-box:not(.wp-block-group).flex-align-content-stretch,
+.flex-box.wp-block-group.flex-align-content-stretch > .wp-block-group__inner-container {
 	align-content: stretch;
 }
 
-.flex-box.flex-align-content-space-between {
+.flex-box:not(.wp-block-group).flex-align-content-space-between,
+.flex-box.wp-block-group.flex-align-content-space-between > .wp-block-group__inner-container {
 	align-content: space-between;
 }
 
-.flex-box.flex-align-content-space-around {
+.flex-box:not(.wp-block-group).flex-align-content-space-around,
+.flex-box.wp-block-group.flex-align-content-space-around > .wp-block-group__inner-container {
 	align-content: space-around;
 }
 
