@@ -727,7 +727,6 @@ a .favicon {
 
 .flex.column:not(.wp-block-group),
 .flex.column.wp-block-group > .wp-block-group__inner-container {
-	flex-flow: column;
 	flex-direction: column;
 }
 
