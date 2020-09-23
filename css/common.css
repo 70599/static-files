@@ -249,7 +249,8 @@ h1, h2, h3 {
 }
 
 hr {
-	--height-hr: 1px;
+	--height-hr: 2em;
+	--weight-hr: 1px;
 	--top: var(--line-height-em);
 	--right: 0;
 	--bottom: var(--line-height-em);
@@ -259,20 +260,34 @@ hr {
 	margin: var(--top) var(--right) var(--bottom) var(--left);
 	width: calc(100% - var(--right) var(--left));
 	height: var(--height-hr);
-	background-color: hsla(var(--hsl-txt),.25);
+	background-image:
+		linear-gradient(to right, var(--color-bd), var(--color-bd)),
+		linear-gradient(to left, var(--color-bd), var(--color-bd));
+	background-position: left center;
+	background-size: 100% var(--weight-hr), 0 0;
 }
 
-hr::before,
-hr::after {
-	content: '';
+hr.dashed {
+	background-image:
+		repeating-linear-gradient(to right, var(--color-bd) 0em, var(--color-bd) .6em, transparent .6em, transparent 1.2em),
+		repeating-linear-gradient(to left, var(--color-bd) 0em, var(--color-bd) .6em, transparent .6em, transparent 1.2em);
+}
+
+hr.weight-2px {
+	--weight-hr: 2px;
+}
+
+hr.content {
+	--width-content: 5em;
+	background-size: calc(100% - var(--width-content) / 2) var(--weight-hr);
+}
+
+hr.content::before {
+	content: attr('aria-content');
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	/* transform: () */
-}
-
-hr.height-2px {
-	--height-hr: 2px;
+	transform: translate(-50%,-50%);
 }
 
 img {

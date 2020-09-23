@@ -60,7 +60,7 @@ hr[class*="has-"] {
 }
 
 .entry-content > :last-child {
-	margin-bottom: calc(var(--line-height-em) * 2);
+	margin-bottom: calc(var(--line-height-em, 1.6em) * 2);
 }
 
 .entry-content ul {
@@ -98,7 +98,7 @@ hr[class*="has-"] {
 
 .entry-content a:hover {
 	--l-link-: 12%;
-	text-decoration: underline;
+	text-decoration-line: underline;
 }
 
 .entry-content a:active,
