@@ -279,7 +279,8 @@ hr.weight-2px {
 
 hr.content {
 	--width-content: 5em;
-	background-size: calc(100% - var(--width-content) / 2) var(--weight-hr);
+	background-size: calc(50% - var(--width-content) / 2) var(--weight-hr);
+	background-position: left center, right center;
 }
 
 hr.content::before {
