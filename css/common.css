@@ -290,7 +290,7 @@ hr[class*="content"]::before {
 	transform: translate(-50%,-50%);
 }
 
-hr[aria-content="”"] {
+hr[aria-content="”"]::before {
 	top: 98%;
 }
 
