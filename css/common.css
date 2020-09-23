@@ -284,7 +284,7 @@ hr.content {
 }
 
 hr.content::before {
-	content: attr('aria-content');
+	content: attr(aria-content);
 	position: absolute;
 	top: 50%;
 	left: 50%;
