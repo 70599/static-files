@@ -290,6 +290,10 @@ hr[class*="content"]::before {
 	transform: translate(-50%,-50%);
 }
 
+hr[aria-content="”"] {
+	top: 98%;
+}
+
 img {
 	--tran-orig: center;
 	width: 100%;
