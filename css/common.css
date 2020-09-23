@@ -150,6 +150,10 @@ a {
 	text-decoration: none;
 }
 
+a[target="_blank"]::after {
+	content: '\2197';
+}
+
 abbr {
 	position: relative;
 }
