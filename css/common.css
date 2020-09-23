@@ -275,13 +275,13 @@ hr.weight-2px {
 	--weight-hr: 2px;
 }
 
-hr.content {
+hr[class*="content"] {
 	--width-content: 5em;
 	background-size: calc(50% - var(--width-content) / 2) var(--weight-hr);
 	background-position: left center, right center;
 }
 
-hr.content::before {
+hr[class*="content"]::before {
 	content: attr(aria-content);
 	position: absolute;
 	top: 50%;
@@ -454,6 +454,7 @@ h1,
 .font-size-x2-2			{ font-size: 2.2em; }
 .font-size-x2-5			{ font-size: 2.5em; }
 .font-size-x3-75		{ font-size: 3.75em; }
+hr.content-size-x4::before,
 .font-size-x4				{ font-size: 4em; }
 .font-size-x8				{ font-size: 8em; }
 
