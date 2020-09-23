@@ -253,11 +253,9 @@ hr {
 	--weight-hr: 1px;
 	--top: var(--line-height-em);
 	--right: 0;
-	--bottom: var(--line-height-em);
-	--left: 0
 	border: 0;
 	position: relative;
-	margin: var(--top) var(--right) var(--bottom) var(--left);
+	margin: var(--top) var(--right) var(--bottom,var(--top)) var(--left,var(--right));
 	width: calc(100% - var(--right) var(--left));
 	height: var(--height-hr);
 	background-image:
