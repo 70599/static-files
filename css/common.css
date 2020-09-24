@@ -758,7 +758,7 @@ a .favicon {
 
 .flex.column:not(.wp-block-group) > *,
 .flex.column.wp-block-group > .wp-block-group__inner-container > * {
-	width: calc((100% - var(--gap) * (var(--num-col,1) - 1)) / var(--num-col,1));
+	width: calc((100% - var(--gap,2rem) * (var(--num-col,1) - 1)) / var(--num-col,1));
 }
 
 .flex.column:not(.wp-block-group) > .button,
