@@ -570,6 +570,7 @@ svg {
 i[name],
 svg.icon {
 	position: relative;
+	display: inline-block;
 	width: var(--width-icon);
 	height: var(--width-icon);
 }
