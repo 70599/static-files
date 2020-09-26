@@ -8,10 +8,8 @@ const svgLoader = (a) => {
 	ajax.open('GET', 'https://cdn.jsdelivr.net/gh/70599/static-files/images/svg/'+name+'.svg', true);
 	ajax.send();
 	ajax.onload = (e) => {
-		console.log(ajax.status);
 		icon = ajax.responseText;
-		console.log(e);
-		console.log(icon);
-		return icon;
 	}
+	console.log(icon);
+	return icon;
 }
