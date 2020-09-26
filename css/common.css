@@ -562,15 +562,20 @@ i, .italic,
 |-------------------------------------------------------------------------------
 */
 
+i[name],
 svg {
 	width: 100%;
 }
 
+i[name],
 svg.icon {
-	fill: currentColor;
 	position: relative;
 	width: var(--width-icon);
 	height: var(--width-icon);
+}
+
+svg.icon {
+	fill: currentColor;
 	vertical-align: text-top;
 	transform-origin: center;
 	transform: translate3d(0,0,0);
