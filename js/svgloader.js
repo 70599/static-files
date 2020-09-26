@@ -10,6 +10,6 @@ const svgLoader = async (a) => {
 	ajax.onload = (e) => {
 		icon = ajax.responseText;
 		console.log(icon);
-		return await icon;
+		return icon;
 	}
 }
