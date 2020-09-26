@@ -9,7 +9,7 @@ const svgLoader = (a) => {
 	ajax.send();
 	ajax.onload = (e) => {
 		icon = ajax.responseText;
+		console.log(icon);
+		return 'test';
 	}
-	console.log(icon);
-	return icon;
 }
