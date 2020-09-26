@@ -1,0 +1,5 @@
+<svg class="icon ion-person-circle" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+	<circle id="circle" cx="256" cy="256" r="192" fill="var(--color-icon-bg,transparent)" stroke="var(--color-icon-bd,currentColor)" stroke-width="var(--stroke-width-bd,32)"/>
+	<path d="M257 321c30.583 0 63.373 8.648 86.89 24.343 19.02 12.705 35.651 29.289 45.508 48.745C354.856 427.466 307.826 448 256 448c-50.7 0-96.812-19.652-131.131-51.754 10.266-20.388 28.524-37.728 48.241-50.903C196.627 329.642 226.417 321 257 321z" fill="var(--color-body,currentColor)"/>
+	<path d="M256.501 146c19.183 0 36.563 7.386 49.006 20.799 12.597 13.578 18.735 31.856 17.284 51.454C319.907 257.265 290.218 289 256.5 289c-33.717 0-63.457-31.74-66.296-70.76-1.432-19.777 4.668-38.092 17.188-51.569C219.78 153.341 237.216 146 256.501 146z" fill="var(--color-head,currentColor)"/>
+</svg>
