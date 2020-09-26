@@ -1,21 +1,20 @@
 'use strict';
 
 const loadSVG = (a) => {
-	var	iconName	= a.getAttribute('name'),
-			icon			= localStorage.getItem(iconName);
+	var	name	= a.getAttribute('name')
+			ajax, icon;
 
-	if (icon === null) {
-		var	ajax	= new XMLHttpRequest();
-
-		ajax.open('GET', '../svg'+iconName+'.svg', true);
+	try {
+		ajax	= new XMLHttpRequest();
+		ajax.open('GET', '../svg'+name+'.svg', true);
 		ajax.send();
 		ajax.onload = () => {
 			if (ajax.status >= 200 && ajax.status < 400) {
 				icon	= ajax.responseText;
-				console.log(icon);
-				localStorage.setItem(iconName, icon);
 			}
 		}
+	} catch (err) {
+		console.log(err);
 	}
 
 	return icon;
