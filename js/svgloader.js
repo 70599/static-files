@@ -1,7 +1,7 @@
 'use strict';
 
 const svgLoader = (a) => {
-	var	name = a.getAttribute('name'), ajax, icon;
+	var	name = a.getAttribute('name'), ajax;
 
 	try {
 		ajax = new XMLHttpRequest();
@@ -9,12 +9,10 @@ const svgLoader = (a) => {
 		ajax.send();
 		ajax.onload = () => {
 			if (ajax.status >= 200 && ajax.status < 400) {
-				icon	= ajax.responseText;
+				return ajax.responseText;
 			}
 		}
 	} catch (err) {
 		console.log(err);
 	}
-
-	return icon;
 }
