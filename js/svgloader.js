@@ -1,11 +1,11 @@
 'use strict';
 
 const loadSVG = (a) => {
-	var	name	= a.getAttribute('name')
+	var	name = a.getAttribute('name'),
 			ajax, icon;
 
 	try {
-		ajax	= new XMLHttpRequest();
+		ajax = new XMLHttpRequest();
 		ajax.open('GET', '../svg'+name+'.svg', true);
 		ajax.send();
 		ajax.onload = () => {
