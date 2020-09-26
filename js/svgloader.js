@@ -14,8 +14,8 @@ const svgLoader = (a) => {
 				icon = ajax.responseText;
 			}
 		}
-		return icon;
 		console.log(icon);
+		return icon;
 	} catch (err) {
 		console.log(err);
 	}
