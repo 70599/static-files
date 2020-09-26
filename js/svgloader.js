@@ -1,8 +1,7 @@
 'use strict';
 
-const loadSVG = (a) => {
-	var	name = a.getAttribute('name'),
-			ajax, icon;
+const svgLoader = (a) => {
+	var	name = a.getAttribute('name'), ajax, icon;
 
 	try {
 		ajax = new XMLHttpRequest();
