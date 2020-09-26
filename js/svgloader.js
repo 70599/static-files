@@ -12,12 +12,12 @@ const svgLoader = (a) => {
 			if (ajax.status >= 200 && ajax.status < 400) {
 				console.log(ajax.status);
 				icon = ajax.responseText;
+				console.log(icon);
 			}
 		}
 	} catch (err) {
 		console.log(err);
 	}
 
-	console.log(icon);
 	return icon;
 }
