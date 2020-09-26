@@ -1,6 +1,6 @@
 'use strict';
 
-const svgLoader = async (a) => {
+const svgLoader = (a) => {
 	var name = a.getAttribute('name'),
 	    ajax = new XMLHttpRequest(),
 			icon;
