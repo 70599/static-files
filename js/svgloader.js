@@ -12,6 +12,7 @@ const loadSVG = (a) => {
 		ajax.onload = () => {
 			if (ajax.status >= 200 && ajax.status < 400) {
 				icon	= ajax.responseText;
+				console.log(icon);
 				localStorage.setItem(iconName, icon);
 			}
 		}
