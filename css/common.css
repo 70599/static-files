@@ -567,7 +567,6 @@ svg {
 	width: 100%;
 }
 
-i[name],
 svg.icon {
 	position: relative;
 	display: inline-block;
@@ -740,6 +739,19 @@ a .favicon {
 	mask-size: cover;
 	background-color: var(--color-bg);
 	background-image: linear-gradient(var(--dir-gradi), var(--color-stop-1), var(--color-stop-2));
+}
+
+.multi-columns:not(.wp-block-group),
+.multi-columns.wp-block-group > .wp-block-group__inner-container {
+	column-count: var(--num-col);
+	column-gap: var(--gap,var(--line-height-em));
+}
+
+.multi-columns:not(.wp-block-group) > *,
+.multi-columns.wp-block-group > .wp-block-group__inner-container > * {
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 .sticky {
