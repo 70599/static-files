@@ -25,18 +25,18 @@ body {
 	--height-wpadminbar: 0;
 }
 
-body.wpadminbar {
+body.admin-bar {
 	--height-wpadminbar: 32;
 }
 
 @media (max-width: 782px) {
-	body.wpadminbar {
+	body.admin-bar {
 		--height-wpadminbar: 46;
 	}
 }
 
 @media (max-width: 600px) {
-	body.wpadminbar {
+	body.admin-bar {
 		--height-wpadminbar: 0;
 	}
 }
