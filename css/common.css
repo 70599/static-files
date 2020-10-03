@@ -22,27 +22,27 @@
 }
 
 body {
-	--height-admin-bar: 0;
+	--height-wpadminbar: 0;
 }
 
-body.admin-bar {
-	--height-admin-bar: 32;
+body.wpadminbar {
+	--height-wpadminbar: 32;
 }
 
 @media (max-width: 782px) {
-	body.admin-bar {
-		--height-admin-bar: 46;
+	body.wpadminbar {
+		--height-wpadminbar: 46;
 	}
 }
 
 @media (max-width: 600px) {
-	body.admin-bar {
-		--height-admin-bar: 0;
+	body.wpadminbar {
+		--height-wpadminbar: 0;
 	}
 }
 
 body {
-	--height-admin-bar-px: calc(1px * var(--height-admin-bar));
+	--height-wpadminbar-px: calc(1px * var(--height-wpadminbar));
 }
 
 /*
@@ -755,7 +755,7 @@ a .favicon {
 }
 
 .sticky {
-	--offset-top: var(--height-admin-bar-px,0);
+	--offset-top: var(--height-wpadminbar-px,0);
 	position: sticky !important;
 	position: -webkit-sticky !important;
 	top: -1px;
