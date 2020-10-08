@@ -598,6 +598,15 @@ svg.icon.suffix {
 	margin-left: .25em;
 }
 
+svg.icon.duotone .duotone-fill {
+	fill: currentColor;
+	fill-opacity: var(--opacity-duotone,.3);
+}
+
+svg.icon.ion-contrast.duotone {
+	--stroke-width: 0;
+}
+
 /*
 |-------------------------------------------------------------------------------
 |   browser / feature specific
