@@ -593,11 +593,11 @@ svg.icon.suffix {
 	margin-left: .25em;
 }
 
-svg.icon.duotone [class*="duotone-fill"] {
+svg.icon.duotone [class*="fill"] {
 	fill: currentColor;
 }
 
-svg.icon.duotone .duotone-fill-2 {
+svg.icon.duotone .fill-2 {
 	fill-opacity: var(--opacity-duotone,.3);
 }
 
