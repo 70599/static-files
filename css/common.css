@@ -595,10 +595,12 @@ svg.icon.suffix {
 
 svg.icon.duotone [class*="fill"] {
 	fill: currentColor;
+	fill-opacity: 1;
 }
 
 svg.icon.duotone [class*="stroke"] {
 	stroke: currentColor;
+	stroke-opacity: 1;
 }
 
 svg.icon.duotone .fill-2 {
@@ -613,7 +615,8 @@ svg.icon.duotone {
 	--stroke-width: 0;
 }
 
-svg.icon.duotone.ion-speedometer {
+svg.icon.duotone.ion-speedometer,
+svg.icon.duotone.ion-person-circle {
 	--opacity-duotone: .2;
 }
 
