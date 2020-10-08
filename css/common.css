@@ -575,14 +575,9 @@ svg.icon {
 }
 
 svg.icon {
-	fill: currentColor;
 	vertical-align: text-top;
 	transform-origin: center;
 	transform: translate3d(0,0,0);
-}
-
-svg.icon.stroke {
-	stroke: currentColor;
 }
 
 svg.icon.prefix {
@@ -598,12 +593,15 @@ svg.icon.suffix {
 	margin-left: .25em;
 }
 
-svg.icon.duotone .duotone-fill {
+svg.icon.duotone [class*="duotone-fill"] {
 	fill: currentColor;
+}
+
+svg.icon.duotone .duotone-fill-2 {
 	fill-opacity: var(--opacity-duotone,.3);
 }
 
-svg.icon.ion-contrast.duotone {
+svg.icon.duotone {
 	--stroke-width: 0;
 }
 
