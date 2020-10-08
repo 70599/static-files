@@ -598,7 +598,7 @@ svg.icon.duotone [class*="fill"] {
 }
 
 svg.icon.duotone [class*="stroke"] {
-	fill: currentColor;
+	stroke: currentColor;
 }
 
 svg.icon.duotone .fill-2 {
