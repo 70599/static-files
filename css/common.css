@@ -615,6 +615,7 @@ svg.icon.duotone {
 	--stroke-width: 0;
 }
 
+svg.icon.duotone.ion-image,
 svg.icon.duotone.ion-person-circle,
 svg.icon.duotone.ion-responsive,
 svg.icon.duotone.ion-speedometer {

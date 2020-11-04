@@ -93,3 +93,20 @@ const addFavicon = (e, sz = 48) => {
 		a.prepend(img);
 	});
 }
+
+// Scroll to target
+const scrollToTarget = (el, offsetY = heightMenubar + heightAdminbar, offsetX = 0) => {
+	document.querySelectorAll(el).forEach(anchor => {
+		anchor.addEventListener('click', (event) => {
+			event.preventDefault();
+
+			var	aim	= document.querySelector(anchor.getAttribute('href')).getBoundingClientRect();
+
+			window.scrollBy({
+				top: aim.top - offsetY,
+				left: aim.left - offsetX,
+				behavior: 'smooth'
+			});
+		});
+	});
+}
