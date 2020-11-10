@@ -224,7 +224,7 @@ input, textarea {
 	cursor: text;
 }
 
-button, input[type="button"], input[type="radio"], select, label {
+button, input[type="button"], input[type="radio"], input[type="submit"], select, label {
 	cursor: pointer;
 	border-width: 0;
 	box-shadow: none;
