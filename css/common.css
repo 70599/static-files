@@ -232,7 +232,7 @@ button, input, optgroup, select, textarea {
 	line-height: inherit;
 }
 
-input, textarea {
+input, select, textarea {
 	padding: var(--padding-input) calc(var(--padding-input) * 2);
 	cursor: text;
 }
