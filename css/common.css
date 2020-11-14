@@ -460,6 +460,7 @@ body	{ font-size: 1rem; }
 .font-size-x0-5			{ font-size: .5em }
 ruby > rt,
 .font-size-x0-6			{ font-size: .6em }
+.font-size-x0-7			{ font-size: .7em }
 small,
 sup,
 sub,
@@ -1017,6 +1018,7 @@ a .favicon {
 
 .opacity-0-25	{ opacity: .25; }
 .opacity-0-4	{ opacity: .4; }
+.opacity-0-5	{ opacity: .5; }
 .opacity-0-6	{ opacity: .6; }
 .opacity-0-8	{ opacity: .8; }
 
