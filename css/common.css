@@ -496,7 +496,8 @@ hr.content-size-x4::before,
 */
 
 *									{ color: inherit; }
-body, p, *:link		{ color: var(--color-txt); }
+body, p, *:link,
+option						{ color: var(--color-txt); }
 
 .font-color-unset	{ color: unset; }
 
@@ -504,6 +505,8 @@ body, p, *:link		{ color: var(--color-txt); }
 ::-moz-placeholder					{ opacity: .25; }
 :-ms-input-placeholder			{ opacity: .4; }
 :-moz-placeholder						{ opacity: .25; }
+
+option[disabled]	{ --a-txt: .4; }
 
 /*
 |-------------------------------------------------------------------------------
