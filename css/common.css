@@ -647,8 +647,8 @@ svg.icon.duotone.ion-trending-up {
 
 /*	firefox	*/
 .firefox select:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 var(--color-txt);
+    /* color: transparent;
+    text-shadow: 0 0 0 var(--color-txt); */
 }
 
 .firefox option:not(:checked) {
