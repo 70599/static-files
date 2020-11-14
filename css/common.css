@@ -645,6 +645,16 @@ svg.icon.duotone.ion-trending-up {
 |-------------------------------------------------------------------------------
 */
 
+/*	firefox	*/
+/* .firefox select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 var(--color-txt);
+}
+
+.firefox option:not(:checked) {
+    color: black;
+} */
+
 @supports ((backdrop-filter: initial) or (-webkit-backdrop-filter: initial)) {
 	.backdropfilter-blur {
 		-webkit-backdrop-filter: blur(calc(1px * var(--font-size-html)));
@@ -1003,6 +1013,7 @@ a .favicon {
 .line-height-2		{ line-height: calc(2 / 1.6 * var(--line-height, 1.6)); }
 
 .opacity-0-25	{ opacity: .25; }
+option[disabled],
 .opacity-0-4	{ opacity: .4; }
 .opacity-0-6	{ opacity: .6; }
 .opacity-0-8	{ opacity: .8; }
