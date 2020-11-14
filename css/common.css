@@ -1016,7 +1016,6 @@ a .favicon {
 .line-height-2		{ line-height: calc(2 / 1.6 * var(--line-height, 1.6)); }
 
 .opacity-0-25	{ opacity: .25; }
-option[disabled],
 .opacity-0-4	{ opacity: .4; }
 .opacity-0-6	{ opacity: .6; }
 .opacity-0-8	{ opacity: .8; }
