@@ -55,7 +55,7 @@ body {
 *::after,
 * {
 	--hs-txt: var(--h-txt),var(--s-txt);
-	--hsl-txt: var(--hs-txt),var(--l-txt);
+	--hsl-txt: var(--hs-txt),calc(var(--l-txt) + var(--l-txt-,0%));
 	--color-txt: hsla(
 		var(--hs-txt),
 		calc(var(--l-txt) + var(--l-txt-,0%)),
@@ -63,7 +63,7 @@ body {
 	);
 
 	--hs-link: var(--h-link),var(--s-link);
-	--hsl-link: var(--hs-link),var(--l-link);
+	--hsl-link: var(--hs-link),calc(var(--l-link) + var(--l-link-,0%));
 	--color-link: hsla(
 		var(--hs-link),
 		calc(var(--l-link) + var(--l-link-,0%)),
@@ -71,7 +71,7 @@ body {
 	);
 
 	--hs-accent: var(--h-accent),var(--s-accent);
-	--hsl-accent: var(--hs-accent),var(--l-accent);
+	--hsl-accent: var(--hs-accent),calc(var(--l-accent) + var(--l-accent-,0%));
 	--color-accent: hsla(
 		var(--hs-accent),
 		calc(var(--l-accent) + var(--l-accent-,0%)),
@@ -79,7 +79,7 @@ body {
 	);
 
 	--hs-bg: var(--h-bg),var(--s-bg);
-	--hsl-bg: var(--hs-bg),var(--l-bg);
+	--hsl-bg: var(--hs-bg),calc(var(--l-bg) + var(--l-bg-,0%));
 	--color-bg: hsla(
 		var(--hs-bg),
 		calc(var(--l-bg) + var(--l-bg-,0%)),
