@@ -88,6 +88,7 @@ const toggleCheckBox = (el, valA, valB) => {
 	document.querySelectorAll(el).forEach(check_box => {
 		check_box.addEventListener('change', (event) => {
 			check_box.value = check_box.checked ? valA : valB;
+			console.log(check_box.value);
 		});
 	});
 }
