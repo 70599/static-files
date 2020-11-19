@@ -117,7 +117,8 @@ const addFavicon = (e, sz = 48) => {
 }
 
 // Scroll to target
-const scrollToTarget = (el, offsetY = heightMenubar + heightAdminbar, offsetX = 0) => {
+const scrollToTarget = (el, heightMenubar = 0, heightAdminbar = 0, offsetX = 0) => {
+	var offsetY = heightMenubar + heightAdminbar;
 	document.querySelectorAll(el).forEach(anchor => {
 		anchor.addEventListener('click', (event) => {
 			event.preventDefault();
