@@ -146,10 +146,10 @@ const getNth = (node) => {
 }
 
 // convert strings to hankaku
-const toHanKaku = (input) => {
+const toHanKaku = (str) => {
 	return input.replace(/[！-～]/g,
-		function (input) {
-			return String.fromCharCode(input.charCodeAt(0)-0xFEE0);
+		function (str) {
+			return String.fromCharCode(str.charCodeAt(0)-0xFEE0);
 		}
 	);
 }
