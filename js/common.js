@@ -144,3 +144,10 @@ const getNth = (node) => {
 
 	return nth;
 }
+
+// convert strings to hankaku
+const toHanKaku = (str) => {
+	return str.replace(/[Ａ-Ｚａ-ｚ０-９]/g, function(s) {
+		return String.fromCharCode(s.charCodeAt(0) - 0xFEE0);
+	});
+}
