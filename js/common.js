@@ -142,5 +142,5 @@ const getNth = (node) => {
 		if (node && node.nodeType === 1) ++nth;
 	}
 
-	return index;
+	return nth;
 }
