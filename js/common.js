@@ -133,3 +133,14 @@ const scrollToTarget = (el, heightMenubar = 0, heightAdminbar = 0, offsetX = 0) 
 		});
 	});
 }
+
+// get nth-child number
+const getNth = (node) => {
+	var nth = 1;
+	while (node.previousSibling) {
+		node = node.previousSibling;
+		if (node && node.nodeType === 1) ++nth;
+	}
+
+	return index;
+}
