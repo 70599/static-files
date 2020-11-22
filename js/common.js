@@ -153,3 +153,14 @@ const toHanKaku = (input) => {
 		}
 	);
 }
+
+// convert application/json --> application/x-www-form-urlencoded
+const json_to_URLEncoded = (element,key,list) => {
+	var list = list || [];
+	if (typeof(element)=='object') {
+		for (var idx in element) json_to_URLEncoded(element[idx],key?key+'['+idx+']':idx,list);
+	} else {
+		list.push(key+'='+encodeURIComponent(element));
+	}
+	return list.join('&');
+}
