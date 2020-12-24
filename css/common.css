@@ -16,7 +16,7 @@
 
 	--hsl-logo-line: 120,100%,36%;
 	--color-logo-line: hsla(var(--hsl-logo-line), var(--a-logo-line,1));
-		
+
 	--color-logo-twitter: #1da1f2;
 	--color-logo-github: #24292e;
 
@@ -236,6 +236,10 @@ button, input, optgroup, select, textarea {
 }
 
 select::-ms-expand { display: none; }
+
+[onclick] {
+	cursor: pointer;
+}
 
 input, select, textarea {
 	padding: var(--padding-input) calc(var(--padding-input) * 2);
