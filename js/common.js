@@ -160,7 +160,7 @@ const json_to_URLEncoded = (element, key, list) => {
 }
 
 // load css if needed
-const loadCSS = (href, condition = TRUE) => {
+const loadCSS = (href, condition = true) => {
 	if (! condition) return;
 
 	var link = document.createElement('link');
