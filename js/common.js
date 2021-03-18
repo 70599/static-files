@@ -92,12 +92,6 @@ const toggleCheckBox = (el, valA, valB) => {
 	});
 }
 
-/*
-|-------------------------------------------------------------------------------
-|	Action(s)
-|-------------------------------------------------------------------------------
-*/
-
 //	Insert favicon before link
 const addFavicon = (e, sz = 48) => {
 	document.querySelectorAll(e).forEach(a => {
@@ -155,7 +149,7 @@ const toHanKaku = (input) => {
 }
 
 // convert application/json --> application/x-www-form-urlencoded
-const json_to_URLEncoded = (element,key,list) => {
+const json_to_URLEncoded = (element, key, list) => {
 	var list = list || [];
 	if (typeof(element)=='object') {
 		for (var idx in element) json_to_URLEncoded(element[idx],key?key+'['+idx+']':idx,list);
@@ -163,4 +157,17 @@ const json_to_URLEncoded = (element,key,list) => {
 		list.push(key+'='+encodeURIComponent(element));
 	}
 	return list.join('&');
+}
+
+// load css if needed
+const loadCSS = (href, condition === true) => {
+	if (! condition) return;
+
+	var link = document.createElement('link');
+
+	link.rel  = 'stylesheet';
+	link.type = 'text/css';
+	link.href = href;
+
+	document.getElementsByTagName('head')[0].appendChild(link);
 }
