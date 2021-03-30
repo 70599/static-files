@@ -427,10 +427,14 @@ p > small {
 	display: inline;
 }
 
-sup { vertical-align: super; };
-sub	{ vertical-align: sub; }
+sup             { vertical-align: super; }
+sub             { vertical-align: sub; }
 sup,
-sub	{ margin: 0 .2em;}
+sub	            { margin: 0 .2em;}
+sup:first-child,
+sub:first-child { margin-left: 0; }
+sup:last-child,
+sub:last-child  { margin-right: 0; }
 
 table {
 	width: 100%;
