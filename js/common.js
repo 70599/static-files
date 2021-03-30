@@ -161,7 +161,7 @@ const json_to_URLEncoded = (element, key, list) => {
 
 // load css if needed
 const loadCSS = (href, condition = true) => {
-	if (! condition) return;
+	if (! condition || document.querySelector('link[href="'+href+'"]')) return;
 
 	var link = document.createElement('link');
 
