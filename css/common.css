@@ -131,8 +131,8 @@ a .favicon {
 }
 
 html {
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	/* -webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%; */
 	background-color: var(--color-bg);
 }
 
