@@ -131,8 +131,8 @@ a .favicon {
 }
 
 html {
-	/* -webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%; */
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
 	background-color: var(--color-bg);
 }
 
@@ -237,7 +237,7 @@ button, input, optgroup, select, textarea {
 
 select::-ms-expand { display: none; }
 
-[onclick] {
+[onclick]:not(body) {
 	cursor: pointer;
 }
 
