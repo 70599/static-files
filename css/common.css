@@ -23,30 +23,6 @@
 	--width-icon: 1.25em;
 }
 
-body {
-	--height-wpadminbar: 0;
-}
-
-body.admin-bar {
-	--height-wpadminbar: 32;
-}
-
-@media (max-width: 782px) {
-	body.admin-bar {
-		--height-wpadminbar: 46;
-	}
-}
-
-@media (max-width: 600px) {
-	body.admin-bar {
-		--height-wpadminbar: 0;
-	}
-}
-
-body {
-	--height-wpadminbar-px: calc(1px * var(--height-wpadminbar));
-}
-
 /*
 |-------------------------------------------------------------------------------
 |   reset

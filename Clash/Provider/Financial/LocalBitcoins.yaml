@@ -1,0 +1,6 @@
+payload:
+  # > LocalBitcoins
+  # - User-Agent,localbitcoins*
+  # - User-Agent,LocalBitcoins*
+  - DOMAIN-SUFFIX,localbitcoins.com
+  - DOMAIN-SUFFIX,localbitcoins.net
